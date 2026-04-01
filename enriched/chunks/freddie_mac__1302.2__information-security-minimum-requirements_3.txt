@@ -1,0 +1,65 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Information security minimum requirements
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer
+Content Type: procedure
+---
+- Not less than annually, employ a qualified and independent third party to conduct penetration testing on systems or system components used to store, access, process and/or transmit Freddie Mac confidential information or Protected Information or connect to System(s). At a minimum, the executive summary of the penetration report on Freddie Mac-related services and data should be made available to Freddie Mac for review.
+- Maintain a written vulnerability assessment process and policy that has been approved by Senior Management, including, at a minimum, the Chief Information Officer, Chief Technology Officer, Chief Information Security Office or Chief Risk Officer (or the equivalents thereof), communicated to appropriate personnel and has an owner that implements, maintains and reviews the policy at least annually to ensure that it consistently reflects industry best practices
+- Remediate all identified vulnerabilities per defined service level agreements
+- Maintain a record of all identified vulnerabilities and their remediation status
+
+(xii)
+
+##### Configuration and patch management
+
+Seller/Servicers must:
+
+- Implement and maintain a written patch management process and a policy that has been approved by management, communicated to all appropriate personnel and has a designated owner that reviews, implements and maintains the policy to ensure that it consistently reflects industry best practices
+- Develop and execute a process for developing and maintaining secure configuration baselines (also known as hardening guides, baseline secure configurations) of infrastructure components
+- Deploy intrusion detection and/or prevention systems (IDS and/or IPS) with generated events fed into centralized systems for analysis
+- Define, implement and maintain preventive controls designed to block malicious messages and attachments from entering the environment
+- Designate qualified personnel responsible for performing timely software updates and patches and maintain a process for testing and installing software updates as they become available
+
+(xiii)
+
+##### Auditing, logging and monitoring
+
+Seller/Servicers must:
+
+- Develop, implement and maintain written guidelines and requirements for the logging and monitoring of activities and action within information systems. If the Seller/Servicer uses an enterprise log management function, the subject requirements must be integrated with such log management function. The Seller/Servicer may elect to use an external vendor for information security monitoring, subject to the provisions of this [Chapter 1302](/app/guide/chapter/1302).
+- Develop, implement and maintain written log retention and handling requirements to ensure logs retain relevant, useable and timely information sufficient to identify user access and/or system activities
+- Perform an independent security assessment of the control environment not less than annually and upon the occurrence of any Incident (as defined in [Section 1302.5](1302.5))
+
+(xiv)
+
+##### Software and application development life cycle (SDLC)
+
+If a Seller/Servicer develops applications or software that store, access, process or transmit Freddie Mac confidential information, Protected Information or connects to Systems, the Seller/Servicer must develop, implement and maintain a written SDLC process and policy that has been approved by management. This policy must include at minimum:
+
+- Management and separation of production and development environments that reflect contemporary best practices
+- Secure coding requirements
+- Open-source requirements
+- Code development and scanning pre- and post-deployment
+
+(xv)
+
+##### Data Encryption
+
+Seller/Servicers must:
+
+- Maintain a formal Encryption and cryptography use policy that has been approved by Senior Management, including, at a minimum, the Chief Information Officer, Chief Technology Officer, Chief Information Security Office or Chief Risk Officer (or the equivalents thereof), and which has been communicated to appropriate personnel and has an owner that implements, maintains and reviews the policy to ensure it consistently reflects industry best practices
+- Maintain an encryption solution that enables the recovery of a compromised database administrator account
+- Maintain encryption solutions that allow privileged administrators to complete required actions without the ability to decrypt data
+- Ensure the protection, integrity and confidentiality of Freddie Mac confidential information and Protected Information using encryption methods while in transit and at rest
+- Deploy cryptography standards that meet or exceed the then-current industry standard Encryption strength and technology and prohibit use of outdated technologies
+- Generate, exchange, store, use, replace and delete cryptographic keys in a timely manner to prevent unauthorized access to those keys
+- Use Encryption mechanisms on portable end-user devices to protect data if the hardware (laptop, mobile device, etc.) is lost or stolen
+
+(xvi)
+
+##### Incident management
+
+Seller/Servicers must:

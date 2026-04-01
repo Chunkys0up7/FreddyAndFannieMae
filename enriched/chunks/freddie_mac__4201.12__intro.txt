@@ -1,0 +1,31 @@
+Source: freddie_mac
+Section: 4201.12 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+MISMO: PropertyUsageType(Investor, SecondHome); PropertyType(TwoToFourUnit)
+Key Terms: comparable sale, borrower, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: policy_rule
+Summary: 4201.12 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: comparable sale, borrower, seller, servicer, mortgage.
+---
+# 4201.12: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4201.12 -->
+
+(a)
+
+#### Eligibility requirements
+
+The following eligibility requirements apply to second home Mortgages:
+
+- The Mortgage must be an Accept Mortgage
+- The Mortgage must be secured by a 1-unit property
+- The Borrower must occupy the second home for some portion of the year
+- The Borrower must keep the property available primarily (i.e., more than half of the calendar year) for the Borrower’s personal use and enjoyment
+- The Borrower may rent the property on a short-term basis provided that the property is not subject to any rental pools or agreements that require the Borrower to rent the property, give a management company or entity control over the occupancy of the property or involve revenue sharing between any owners and the developer or another party
+- The Mortgaged Premises must be in such a location to function reasonably as a second home
+- The second home must be suitable for year-round occupancy.
+
+  Exception: A second home with seasonal limitations on year-round occupancy (e.g., lack of winter accessibility) is eligible if the appraiser includes at least one comparable sale with similar seasonal limitations to demonstrate the marketability of the subject property. See [Section 5601.1](5601.1) for property eligibility requirements.
+- The property must not be subject to any timesharing or other shared ownership arrangement
+
+Freddie Mac’s determination of whether a property is a second home is conclusive. A 2-unit property used as a second home is considered an Investment Property and must meet all of the requirements of [Section 4201.13](4201.13).

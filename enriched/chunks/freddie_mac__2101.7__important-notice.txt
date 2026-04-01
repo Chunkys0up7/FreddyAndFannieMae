@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 2101.7 - Seller/ServicerGuide
+Subsection: Important Notice
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Content Type: procedure
+---
+#### Important Notice
+
+The Section you are viewing has multiple versions available based on effective date. You may access future and current versions by using the drop-down menu above. For previous versions, [visit AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx).
+
+
+(a)

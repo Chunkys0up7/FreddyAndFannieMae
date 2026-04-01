@@ -1,0 +1,22 @@
+Source: freddie_mac
+Section: 3601.1 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: purchase, borrower, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 3601.1 (Seller/ServicerGuide) covers regulatory. Key topics: purchase, borrower, seller, servicer, mortgage.
+---
+# 3601.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3601.1 -->
+
+(a)
+
+#### Remedies and related requirements
+
+In addition to any other remedies it may have at law or in equity or elsewhere in any Purchase Document, for any Mortgage it purchased, Freddie Mac may require the Seller or Servicer to (and the Seller or Servicer agrees to):
+
+- Indemnify Freddie Mac and hold it harmless for any loss, damage or expense (including court costs and reasonable attorney fees) that it may sustain
+- Repurchase Freddie Mac's interest in the Mortgage at any time if the Borrower or any other party in the Mortgage transaction has made any misstatement, misrepresentation or omission in conjunction with such transaction, whether or not the Seller or Servicer was a party to or had knowledge of such false representation
+- Repurchase Freddie Mac's interest in the Mortgage or comply with the terms of any repurchase alternatives at any time under any of the other circumstances set forth in [Sections 3602.2(a)](/app/guide/section/3602.2#a) and [3602.2(b)](/app/guide/section/3602.2#b)
+- Terminate the Servicing Contract and related Servicing Contract Rights pursuant to [Chapter 3603](/app/guide/chapter/3603)
+- Set off any amounts owed by a Seller/Servicer to Freddie Mac against any other funds that Freddie Mac owes to a Seller/Servicer, including, but not limited to, workout incentives, expense reimbursements or any other amounts

@@ -1,0 +1,61 @@
+Source: freddie_mac
+Section: 4205.1 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+MISMO: MortgageType(USDARuralDevelopment)
+Key Terms: borrower, seller, servicer, lender, mortgage
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: definition
+Summary: 4205.1 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: borrower, seller, servicer, lender, mortgage.
+---
+# 4205.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4205.1 -->
+
+(a)
+
+#### Overview and defined terms
+
+Section 502 GRH Mortgages guaranteed by the United States Department of Agriculture RHS are eligible for sale to Freddie Mac in accordance with the provisions of this chapter.
+
+The Seller must obtain Freddie Mac’s written approval to sell Section 502 GRH Mortgages by contacting its Freddie Mac representative or the Contact Support Center at 800-FREDDIE.
+
+(i)
+
+##### Glossary definitions for Section 502 GRH Mortgages
+
+The Seller should be familiar with the [Glossary](/app/guide/glossary/) definitions of the following terms:
+
+| Glossary definitions for Section 502 GRH Mortgages | |
+| --- | --- |
+| G | |
+| Government Mortgage | A Mortgage funded, guaranteed or insured by a government agency. |
+| R | |
+| --- | --- |
+| RHS | Rural Housing Service, an agency of the U.S. Department of Agriculture. Referred to on [Form 65, Uniform Residential Loan Application](/app/guide/form/65), and [Form 1077, Uniform Underwriting and Transmittal Summary](/app/guide/form/1077), as “RD” (Rural Development). |
+| S | |
+| --- | --- |
+| Section 502 GRH Mortgage | A Mortgage originated to qualified Borrowers living in rural areas that is guaranteed by RHS pursuant to Section 502 of the Housing Act of 1949 (42 U.S.C. 1472) and originated and serviced pursuant to the RHS Guaranteed Regulations and the terms of the Guide. The related ULDD valid value is USDA Rural Housing. |
+
+(ii)
+
+##### Other terms used in the section
+
+The following terms apply for purposes of this section:
+
+| Additional defined terms | |
+| --- | --- |
+| C | |
+| Conditional Commitment | The current Conditional Commitment for Single Family Housing Loan Guarantee — Form RD 1980-18 |
+| G | |
+| --- | --- |
+| Guaranteed Regulations | The RD Instructions 1980D of Title 7, Part 1980, Subpart D of the Code of Federal Regulations, collectively with the forms, agreements, manuals and other material and documents issued by RHS, as may be modified by RHS from time to time. |
+| L | |
+| --- | --- |
+| Lender Agreement | The current RHS Agreement for Participation in Single Family Guaranteed/Insured Loan Programs of the United States Government Lender Agreement — Form RD 1980-16 executed by the Seller. |
+| Lender Record Change | The current Guaranteed Rural Housing Lender Record Change — Form RD 1980-11. |
+| Loan Guarantee | The current RHS guarantee issued on Form RD 1980-17. |
+
+Each Section 502 GRH Mortgage must be originated in compliance with all of the requirements of the Guaranteed Regulations and the Lender Agreement, unless these requirements are either:
+
+- Modified or waived in writing by RHS, and Freddie Mac has approved those modifications or waivers, or
+- Specifically restricted or modified by this chapter

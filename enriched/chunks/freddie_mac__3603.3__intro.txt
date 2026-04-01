@@ -1,0 +1,18 @@
+Source: freddie_mac
+Section: 3603.3 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 3603.3 (Seller/ServicerGuide) covers regulatory. Key topics: seller, servicer, mortgage.
+---
+# 3603.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3603.3 -->
+
+(a)
+
+#### Documents and records
+
+Upon termination of the Servicing Contract and related Servicing Contract Rights to any Mortgage, the Servicer is responsible for supplying and (if applicable) causing its Document Custodian to supply all reports, documents and information (including, but not limited to, all Mortgage records specified in [Section 8101.4(c)](/app/guide/section/8101.4#c)) requested by Freddie Mac on the date specified by Freddie Mac.
+
+The material, including an accounting of the current status of each Mortgage for which the Servicing Contract and related Servicing Contract Rights are being terminated, must be prepared in the form requested by Freddie Mac and delivered to the Transferee Servicer and the new Document Custodian, if applicable, designated by Freddie Mac.

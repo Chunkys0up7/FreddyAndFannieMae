@@ -1,0 +1,24 @@
+Source: freddie_mac
+Section: 3301.4 - Seller/ServicerGuide
+Subsection: Cookie List
+Domains: BORROWER.borrower_credit
+Cross-Source: fannie_mae/B3-5
+Content Type: policy_rule
+---
+### Cookie List
+
+Clear
+
+- checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+checkbox label label
+
+checkbox label label
+
+checkbox label label
+
+Confirm My Choices

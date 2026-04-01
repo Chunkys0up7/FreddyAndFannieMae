@@ -1,0 +1,14 @@
+Source: freddie_mac
+Section: 2202.6 - Seller/ServicerGuide
+Subsection: Targeting Cookies
+Domains: BORROWER.borrower_eligibility
+Cross-Source: fannie_mae/B2-2
+Content Type: policy_rule
+---
+#### Targeting Cookies
+
+Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+Back Button

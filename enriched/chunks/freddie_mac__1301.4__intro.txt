@@ -1,0 +1,32 @@
+Source: freddie_mac
+Section: 1301.4 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: AmortizationType(AdjustableRate)
+Key Terms: judgment, ARM, purchase, seller, servicer, note, security instrument, mortgage, MBS
+Content Type: policy_rule
+Summary: 1301.4 (Seller/ServicerGuide) covers regulatory, servicing. Key topics: judgment, ARM, purchase, seller, servicer.
+---
+# 1301.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1301.4 -->
+
+(a)
+
+#### Seller authorized to sell Mortgages
+
+The Seller must have the full legal authority, taken all action required by law and by its organizational documents and obtained any consent required to sell, transfer and assign a Mortgage to Freddie Mac free and clear of all claims, security interests or other encumbrances.
+
+The Note and the Security Instrument must be enforceable by the Seller. Transfer of the Note and the Security Instrument in whole or in part to any subsequent purchaser must not detract from their enforceability. The Purchase Documents must be valid, binding and enforceable according to its terms and conditions.
+
+Compliance with the terms and conditions of the Purchase Documents by the Seller must not conflict with, result in a breach of or default under or be adversely affected by the following:
+
+- Any terms and conditions of the charter or bylaws or other type of organization constituent documents of the Seller
+- Any agreement or instrument to which the Seller is a party
+- Any judgment, order or regulation to which the Seller is subject
+
+Each Seller that is an “insured depository institution,” as that term is defined in Section 1813(c)(2) of Title 12 of the United States Code, as amended, acknowledges, agrees, covenants, represents and warrants to Freddie Mac that the Seller's Master Agreements and other applicable Purchase Documents entered into by and between the Seller and Freddie Mac:
+
+- Are in writing or are Records or Electronic Records, as those terms are defined in [Section 1401.1(b)](/app/guide/section/1401.1#b)
+- Were executed or authenticated by the Seller and Freddie Mac contemporaneously with the agreement reached by the Seller and Freddie Mac for sale of Mortgages by the Seller to Freddie Mac in return for cash and/or UMBS®, MBS or WAC ARM PCs received by the Seller
+- Were approved by the Seller's board of directors or the Seller's officers or employees who were duly authorized by the board of directors to enter into such agreements and board approvals, resolutions and/or delegations of authority are reflected in the minutes of the board; and
+- Have been, continuously from the time of their execution or authentication, official records of the Seller

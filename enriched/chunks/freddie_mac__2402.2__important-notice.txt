@@ -1,0 +1,25 @@
+Source: freddie_mac
+Section: 2402.2 - Seller/ServicerGuide
+Subsection: Important Notice
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+MISMO: PropertyType(Condominium, Cooperative)
+Key Terms: appraisal, seller
+Cross-Source: fannie_mae/B2-3
+Content Type: procedure
+---
+#### Important Notice
+
+The Section you are viewing has multiple versions available based on effective date. You may access future and current versions by using the drop-down menu above. For previous versions, [visit AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx).
+
+
+**Refer to [Bulletin 2025-7](/app/guide/bulletin/2025-7), which announced the policy requirements for Uniform Appraisal Dataset (UAD) 3.6. Sellers may submit to the Uniform Collateral Data Portal® appraisal reports that use UAD 3.6 before the mandatory effective November 2, 2026 version of this section.**
+
+This section contains requirements related to:
+
+- [System-Specific License for Freddie Mac Gateway](#a)
+- [System-Specific License for Loan Product Advisor®](#b)
+- [System-Specific License for Loan Quality Advisor®](#c)
+- [System-Specific License for Loan Coverage Advisor®](#d)
+- [System-Specific License for Loan Selling Advisor®](#e)
+
+(a)

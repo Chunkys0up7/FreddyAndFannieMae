@@ -1,0 +1,78 @@
+Source: freddie_mac
+Section: 3603.1 - Seller/ServicerGuide
+Domains: PROPERTY.property_insurance
+Key Terms: pension, purchase, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 3603.1 (Seller/ServicerGuide) covers property insurance. Key topics: pension, purchase, seller, servicer, mortgage.
+---
+# 3603.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3603.1 -->
+
+(a)
+
+#### Termination of Servicing Contracts and related Servicing Contract Rights
+
+Freddie Mac may terminate either a Servicer's entire Servicing Contract or any portion of it, along with related Servicing Contract Rights. This termination can occur, in whole or in part, at any time, with cause or without cause as specified in this chapter. See [Section 3603.1(b)](#b) below for requirements for termination of the Servicing Contract and related Servicing Contract Rights in connection with the sale of Mortgages by Freddie Mac.
+
+A termination of a given portion of the Servicing Contract and related Servicing Contract Rights shall not waive or impair Freddie Mac's future right, in the exercise of its sole discretion, to terminate all or further portions of the remaining Servicing Contract Rights under the Servicing Contract for any reason listed in [Section 2301.1(b)](/app/guide/section/2301.1#b), regardless of whether the reason relates to Mortgages subject to the termination of the given portion of the Servicing Contract and related Servicing Contract Rights.
+
+Additionally, Freddie Mac may use its sole discretion in selecting which Mortgages shall be subject to a partial termination of the Servicing Contract and related Servicing Contract Rights.
+
+In lieu of termination of all or a portion of the Servicing Contract and related Servicing Contract Rights, Freddie Mac may also require the Servicer to engage a Servicing Agent for all or a portion of the Mortgages, for such period of time as determined by Freddie Mac. The Servicing Agent must be approved by Freddie Mac, in its sole discretion, and the Servicer must:
+
+- Comply with all other applicable requirements of the Guide
+- Complete the retention and use of the Servicing Agent by the Servicer within such time as specified by Freddie Mac
+- Be responsible for all expenses and costs incurred with respect to the Servicing Agent
+
+Whether the Servicing Contract and related Servicing Contract Rights are terminated or involve the engagement of a Servicing Agent, the Servicer remains fully liable to Freddie Mac for all Servicing representations and warranties as detailed in [Section 8102.1](8102.1).
+
+Freddie Mac's election of a remedy under this section does not waive its right to elect any other remedy or combination of remedies, including termination of all or a portion of the Servicing Contract and related Servicing Contract Rights. The Transferee Servicer’s assumption of responsibilities, representations and warranties upon a Transfer of Servicing does not release the Transferor Servicer of its responsibilities, representations and warranties with respect to the transferred Mortgages.
+
+(i)
+
+##### Termination with cause
+
+Freddie Mac may terminate all or any portion of the Servicing Contract and related Servicing Contract Rights by the Servicer at any time with cause for any of the reasons cited in [Section 2301.1(b)](/app/guide/section/2301.1#b) regarding disqualification and/or suspension.
+
+[Sections 2301.1(c) through 2301.3](/app/guide/section/2301.1#c) govern the notice of termination of the Servicing Contract and related Servicing Contract Rights with cause, along with the Servicer's opportunity to appeal, if applicable.
+
+Termination of the Servicing Contract and related Servicing Contract Rights with cause is a basis for immediate disqualification or suspension as a Seller/Servicer.
+
+A Transfer of Servicing with cause does not relieve the Servicer of any of its obligations under the Purchase Documents with respect to the Mortgages related to such Transfer of Servicing.
+
+(A)
+
+##### Servicer compensation/Freddie Mac reimbursement
+
+Upon termination of the Servicing Contract and related Servicing Contract Rights with cause, the Servicer will have no right to:
+
+- Service the applicable Mortgages for Freddie Mac
+- Receive any compensation for performing such Servicing
+- Be paid a Termination Fee, as detailed in [Section 3603.1(a)(ii)(B)](#a_ii_B) below
+
+If the Servicing Contract and related Servicing Contract Rights are terminated with cause and Freddie Mac appoints a Transferee Servicer, Freddie Mac is entitled to reimbursement from the former Servicer for any loss, damage or expense incident to the Transfer of Servicing. Such expenses include, but are not limited to:
+
+- Court costs
+- Reasonable attorney fees
+- Copying costs
+- Costs of the physical transfer of files
+- Cost of an audit or examination of the Servicer's records, if Freddie Mac determines that such a procedure is appropriate (“transfer-related expenses”)
+
+(B)
+
+##### Other requirements
+
+The transfer requirements in [Section 3603.2(a)](/app/guide/section/3603.2#a), the documents and records requirements in [Section 3603.3(a)](/app/guide/section/3603.3#a), and the remittance to Freddie Mac requirements in [Section 3603.3(b)](/app/guide/section/3603.3#b) apply to any termination of the Servicing Contract and related Servicing Contract Rights with cause.
+
+(ii)
+
+Termination without cause
+
+(A)
+
+Notice period and Servicer right to transfer
+
+Freddie Mac maintains the right to terminate all or any portion of the Servicing Contract and related Servicing Contract Rights at any time without cause with respect to any Mortgage owned or guaranteed by Freddie Mac.
+
+In such cases:

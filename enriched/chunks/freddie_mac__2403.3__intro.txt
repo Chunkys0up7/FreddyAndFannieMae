@@ -1,0 +1,20 @@
+Source: freddie_mac
+Section: 2403.3 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: purchase, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2403.3 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: purchase, seller, servicer, mortgage.
+---
+# 2403.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2403.3 -->
+
+(a)
+
+#### Termination of eligibility
+
+The Seller acknowledges and agrees that at any time and in addition to any other remedies Freddie Mac is entitled to under the Purchase Documents, Freddie Mac may:
+
+- Revoke or suspend its consent for the Seller to use the provisions of this chapter or any chapter providing terms for the sale of Mortgages to Freddie Mac using Loan Selling Advisor®; and/or
+- Terminate the Seller’s eligibility to use any application or functionality within Loan Selling Advisor.

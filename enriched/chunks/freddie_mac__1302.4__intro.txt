@@ -1,0 +1,26 @@
+Source: freddie_mac
+Section: 1302.4 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+Key Terms: purchase, seller, servicer, mortgage
+Content Type: reference
+Summary: 1302.4 (Seller/ServicerGuide) covers regulatory, servicing. Key topics: purchase, seller, servicer, mortgage.
+---
+# 1302.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1302.4 -->
+
+(a)
+
+#### DRPs
+
+A Seller/Servicer must have a written DRP needed to support its business operations following:
+
+- A natural climate
+
+or
+
+- Manmade disaster or other event which may cause or causes interruption to Seller/Servicer’s business operation, processes or access to systems
+
+The DRP should include plans to maintain or restore access to Freddie Mac confidential information, Protected Information and Systems (as defined in [Section 2401.1(b)](/app/guide/section/2401.1#b)), including without limitation to Mortgage files, data and records, operation at an alternate location, if applicable, and back up communication and contact systems. Seller/Servicers must maintain a documented process to ensure out of band or immutable backups for all critical Freddie Mac data required for processing.
+
+A Seller/Servicer must be able to maintain and restore any such information it is required to retain in accordance with its Purchase Documents, including without limitation, any information that it is required to retain pursuant to [Chapter 1302](/app/guide/chapter/1302), following Freddie Mac’s termination of Seller/Servicer’s right to sell and/or service Mortgages. If Seller/Servicer’s BCP is inclusive of provisions that would otherwise be included in a DRP, no separate DRP is required.

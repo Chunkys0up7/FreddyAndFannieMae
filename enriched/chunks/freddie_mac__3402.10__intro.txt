@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 3402.10 - Seller/ServicerGuide
+Domains: BORROWER.borrower_liabilities
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B3-6
+Content Type: policy_rule
+Summary: 3402.10 (Seller/ServicerGuide) covers borrower liabilities. Key topics: seller, servicer.
+---
+# 3402.10: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3402.10 -->
+
+[What does the Seller do if the Loan Collateral Advisor risk score is lower than or equal to 2.5, but there are data quality issues or the condition or marketability of the subject property is not supported?](/app/guide/faq/FA1707)

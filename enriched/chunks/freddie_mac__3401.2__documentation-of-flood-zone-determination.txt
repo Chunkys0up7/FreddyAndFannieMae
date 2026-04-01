@@ -1,0 +1,36 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Documentation of flood zone determination
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: flood zone, flood insurance, borrower, seller, mortgage, closing disclosure, settlement
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Documentation of flood zone determination
+
+The flood zone determination must be documented in the Mortgage file.
+
+(m)
+
+#### Evidence of flood insurance
+
+If flood insurance is required, the Mortgage file must include acceptable final evidence of flood insurance.
+
+If final evidence of flood insurance is not available at the time of the quality control review, one of the following documents is acceptable:
+
+- Completed and executed National Flood Insurance Program (NFIP) Flood Insurance Application **plus** a copy of the Borrower’s premium check or agent’s paid receipt
+
+or
+
+- Completed and executed NFIP Flood Insurance Application **plus** the final Settlement/Closing Disclosure Statement reflecting the flood insurance premium collected at closing
+
+or
+
+- Completed and executed NFIP General Change Endorsement Form showing the assignment of the current flood insurance policy by the property seller to the Borrower
+
+If the flood insurer is not the NFIP, the insurer’s equivalent of the applicable NFIP form is acceptable.
+
+If the flood zone determination documentation shows the insurable improvements are in a Special Flood Hazard Area but flood insurance was waived, the Mortgage file must include the documentation which served as the basis for the waiver.
+
+(n)

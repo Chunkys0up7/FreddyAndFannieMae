@@ -1,0 +1,16 @@
+Source: freddie_mac
+Section: 2101.12 - Seller/ServicerGuide
+Domains: QUALITY_CONTROL.representations
+Key Terms: seller, servicer
+Content Type: policy_rule
+Summary: 2101.12 (Seller/ServicerGuide) covers representations. Key topics: seller, servicer.
+---
+# 2101.12: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2101.12 -->
+
+- [Bulletin 2025-H Refactoring](/app/guide/bulletin/2025-H)
+- [Bulletin 2025-13 Selling](/app/guide/bulletin/2025-13)
+- [Bulletin 2025-11 Servicing](/app/guide/bulletin/2025-11)
+- [Bulletin 2025-10 Selling](/app/guide/bulletin/2025-10)
+- [Bulletin 2024-7 Selling](/app/guide/bulletin/2024-7)

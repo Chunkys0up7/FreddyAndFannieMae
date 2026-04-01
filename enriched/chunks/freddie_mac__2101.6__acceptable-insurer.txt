@@ -1,0 +1,22 @@
+Source: freddie_mac
+Section: 2101.6 - Seller/ServicerGuide
+Subsection: Acceptable insurer
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer, mortgage
+Content Type: procedure
+---
+#### Acceptable insurer
+
+Freddie Mac will accept coverage underwritten by an insurer that is rated A- (A-minus) or better by the A.M. Best Company.
+
+(c)
+
+#### Parent institution's coverage
+
+When the Seller/Servicer is a subsidiary of an institution with fidelity and/or mortgagee's E&O insurance that meets Freddie Mac's requirements, Freddie Mac will accept the insurance of the Seller/Servicer's parent as adequate for the Seller/Servicer if:
+
+- The Seller/Servicer is named as joint insured, and
+- Coverage under the parent's policy or policies of insurance does not restrict or otherwise limit the Seller/Servicer's ability to comply with all of Freddie Mac's insurance requirements
+
+(d)

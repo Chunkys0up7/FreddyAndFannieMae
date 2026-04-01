@@ -1,0 +1,16 @@
+Source: freddie_mac
+Section: 3402.6 - Seller/ServicerGuide
+Domains: BORROWER.borrower_liabilities
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B3-6
+Content Type: policy_rule
+Summary: 3402.6 (Seller/ServicerGuide) covers borrower liabilities. Key topics: seller, servicer.
+---
+# 3402.6: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3402.6 -->
+
+- [Bulletin 2022-2 Selling](/app/guide/bulletin/2022-2)
+- [Bulletin 2019-20 Selling](/app/guide/bulletin/2019-20)
+- [Bulletin 2016-12 Selling and Servicing](/app/guide/bulletin/2016-12)
+- [Bulletin 2016-6 Selling](/app/guide/bulletin/2016-6)

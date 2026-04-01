@@ -1,0 +1,121 @@
+Source: freddie_mac
+Section: 4201.1 - Seller/ServicerGuide
+Subsection: Investment Quality Mortgage
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+MISMO: PropertyType(Cooperative)
+Key Terms: purchase, borrower, seller, servicer, mortgage, ATR, QM
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: procedure
+---
+## Investment Quality Mortgage
+
+
+Effective 04/02/2025
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4200 : General Mortgage Eligibility](/app/guide/topic/4200)
+[Chapter 4201 : General Mortgage Eligibility](/app/guide/chapter/4201)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+An Investment Quality Mortgage is a Mortgage that is:
+
+- Made to a Borrower from whom repayment of the Mortgage can be expected
+- Adequately secured by real property, and
+- Originated in accordance with the requirements of the Purchase Documents
+
+The Seller warrants that:
+
+- All Mortgages sold to Freddie Mac have the characteristics of an Investment Quality Mortgage, and
+- ATR Covered Mortgages sold to Freddie Mac satisfy the QM requirements in the Revised General QM Rule
+
+
+[*angle left* Prev](4101.11)
+
+
+[Next *angle right*](4201.2)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related Bulletins
+
+
+- [Bulletin 2025-4 Selling](/app/guide/bulletin/2025-4)
+- [Bulletin 2021-27 Selling](/app/guide/bulletin/2021-27)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

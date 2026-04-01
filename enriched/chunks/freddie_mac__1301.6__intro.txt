@@ -1,0 +1,12 @@
+Source: freddie_mac
+Section: 1301.6 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+Key Terms: borrower, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 1301.6 (Seller/ServicerGuide) covers regulatory, servicing. Key topics: borrower, seller, servicer, mortgage.
+---
+# 1301.6: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1301.6 -->
+
+[Does the relief still apply if a Mortgage is granted relief based on a satisfactory conclusion of a QC review, but the borrower later becomes delinquent?](/app/guide/faq/FA1716)

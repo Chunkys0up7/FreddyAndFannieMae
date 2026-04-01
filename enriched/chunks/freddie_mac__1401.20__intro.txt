@@ -1,0 +1,16 @@
+Source: freddie_mac
+Section: 1401.20 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: seller, servicer
+Content Type: policy_rule
+Summary: 1401.20 (Seller/ServicerGuide) covers regulatory. Key topics: seller, servicer.
+---
+# 1401.20: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1401.20 -->
+
+We use cookies to make it easier for you to navigate our websites and some cookies are essential to make our websites work properly. We also use non-essential cookies to improve user experience, personalize advertisements, and analyze website traffic. For these reasons, we may share your site usage data, including information you enter into the website, with our social media, advertising, and analytics partners. We will continue to use non-essential cookies until you choose to reject them. See our Privacy Policy to learn more about how we use cookies and how we may collect and use visitor data. [Privacy Policy](https://www.freddiemac.com/terms/privacy)
+
+Customize Settings
+
+Reject All Accept All

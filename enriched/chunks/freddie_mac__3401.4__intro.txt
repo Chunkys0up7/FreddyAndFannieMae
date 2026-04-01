@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 3401.4 - Seller/ServicerGuide
+Domains: BORROWER.borrower_liabilities
+Key Terms: purchase, seller, servicer, mortgage
+Cross-Source: fannie_mae/B3-6
+Content Type: policy_rule
+Summary: 3401.4 (Seller/ServicerGuide) covers borrower liabilities. Key topics: purchase, seller, servicer, mortgage.
+---
+# 3401.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3401.4 -->
+
+(a)
+
+#### Sales contract
+
+For purchase Mortgages, a copy of the fully executed sales contract and all addenda must be included in the Mortgage file.

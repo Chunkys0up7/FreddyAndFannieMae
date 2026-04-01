@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 4201.14 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: policy_rule
+Summary: 4201.14 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: seller, servicer.
+---
+# 4201.14: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4201.14 -->
+
+- [Bulletin 2025-4 Selling](/app/guide/bulletin/2025-4)
+- [Bulletin 2024-12 Selling](/app/guide/bulletin/2024-12)
+- [Bulletin 2022-7 Selling](/app/guide/bulletin/2022-7)
+- [Bulletin 2021-29 Selling](/app/guide/bulletin/2021-29)
+- [Bulletin 2021-27 Selling](/app/guide/bulletin/2021-27)

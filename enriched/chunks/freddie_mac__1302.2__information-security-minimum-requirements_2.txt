@@ -1,0 +1,70 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Information security minimum requirements
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Key Terms: authorized user, seller, servicer
+Content Type: procedure
+---
+- Maintain a data loss prevention/transmission protection mechanism and related written policy establishing requirements to protect the confidentiality and integrity of information exchange using technology applications or information systems
+- Ensure adequate and up-to-date data loss prevention software is used and a corresponding management process is in place to scan for sensitive information stored on media and outgoing transmissions over public communication paths as well as to restrict the transfer of data to USB and other removable media devices at the desktop level
+- Not transmit to System(s) or the Uniform Collateral Data Portal®, through an application programming interface or otherwise, any Malicious Code. “Malicious Code” means software or firmware intended to perform an unauthorized process that may have adverse impacts on the confidentiality, integrity, or availability of an information system (including, without limitation, data in transit), such as a “virus,” “time bomb,” “worm,” “trojan horse,” or other code-based entity that infects a host; ransomware, spyware and certain forms of adware are also examples of Malicious Code.
+- Conduct regular audits to ensure compliance with data loss prevention policies and procedures and verify that data loss prevention software is functioning as intended
+- For data loss prevention policies, implement a data classification scheme to identify and categorize Freddie Mac confidential information and personal information
+- Ensure adequate and up-to-date data loss prevention software is used and a corresponding management process is in place to scan all inbound files and e-mails for malware
+- Establish an incident response plan for data loss prevention policy violations. Ensure staff are trained to respond to potential data loss incidents.
+
+(vi)
+
+##### Anti-virus program/updates
+
+Seller/Servicers must install anti-virus software to protect servers and end user systems and must keep all such software up to date with the latest anti-virus software and definitions.
+
+(vii)
+
+##### Network security
+
+Seller/Servicers must:
+
+- Implement information technology controls such as stateful firewalls to block all traffic inbound from, and outbound to, public networks that have not been expressly permitted by policy (i.e., “deny by default”)
+- Manage and restrict ports, protocols and services to only those that are required and approved for business operations
+- Formally recertify and authorize firewall rules upon each significant change (including, but not limited to, physical appliance updates, firmware updates and other changes to firewall technology) in infrastructure and otherwise not less than annually
+- Define a network segmentation strategy, commensurate with the Seller/Servicer’s risk profile, that is documented in policies and procedures and requires physical and logical segmentation from the user environment
+- Establish a comprehensive strategy and process for endpoint detection and response that includes continuous monitoring of endpoint detection and response and remote access technologies to detect any misuse or abuse
+- At least annually, review and update the endpoint detection and response strategy and processes to adapt to evolving threats and technologies
+- Define criteria and indicators to identify when privileged credentials are compromised or used maliciously
+- Develop procedures for prompt response and mitigation of identified threats, ensuring that all incidents involving compromised credentials are thoroughly investigated and remediated
+
+(viii)
+
+##### Privacy policy
+
+Seller/Servicers must maintain a written privacy policy that has been approved by management and communicated to all appropriate personnel. The policy must meet industry best practices and require the Seller/Servicer to have an easily accessible online privacy notice that complies with applicable laws.
+
+(ix)
+
+##### Mobile computing
+
+Seller/Servicers must maintain a written mobile device/computing management (MDM) policy that has been approved by management and communicated to all appropriate personnel. This policy must reflect current and best practices, specifying parameters including but not limited to:
+
+- Approved and prohibited applications
+- Cryptographic mechanisms to ensure data security
+- Identity and access management requirements
+- Software updates
+
+(x)
+
+##### Wireless networks
+
+Seller/Servicers must control, secure, and monitor wireless access points. In addition, Seller/Servicers that offer wireless networks for network users must:
+
+- Implement and keep up to date a strong Wireless Local Area Network (WLAN) Authentication method that meets or exceeds the current industry standard Encryption strength and technology
+- Prohibit use of outdated wireless technologies such as Wired Equivalent Privacy (WEP)
+- At least annually, perform reviews of approved wireless networks to validate and verify authorized users and access points
+- Password protect and control administrative access to the router
+
+(xi)
+
+##### Vulnerability management and penetration testing
+
+Seller/Servicers must conduct vulnerability testing on a regular basis and have a process in place to analyze and remediate identified vulnerabilities. To accomplish this, the Seller/Servicer must:

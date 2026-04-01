@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 4201.3 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+Key Terms: seller, servicer, note, mortgage
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: policy_rule
+Summary: 4201.3 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: seller, servicer, note, mortgage.
+---
+# 4201.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4201.3 -->
+
+(a)
+
+#### Amortization
+
+The Note must provide for full amortization by maturity through regular monthly payments. Amortization must begin no later than 62 days after final disbursement of the Mortgage proceeds.

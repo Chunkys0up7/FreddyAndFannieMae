@@ -1,0 +1,37 @@
+Source: freddie_mac
+Section: 4202.1 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+Key Terms: seller, servicer, note, mortgage, ATR, QM
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: policy_rule
+Summary: 4202.1 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: seller, servicer, note, mortgage, ATR.
+---
+# 4202.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4202.1 -->
+
+(a)
+
+#### Compliance with law
+
+(i)
+
+##### Applicable law
+
+The Mortgage and the Servicing of the Mortgage, Mortgage transaction and Mortgaged Premises must comply with all requirements of all applicable federal, State and local laws, rules and regulations. This includes, but is not limited to:
+
+- Truth-in-lending laws
+- Licensing laws
+- Doing-business laws
+- Usury laws
+- Anti-predatory lending
+
+Additionally, any right of rescission involving the Mortgage under such laws, rules or regulations must have expired.
+
+(ii)
+
+##### Compliance with QM requirements
+
+In addition to ensuring compliance with applicable laws, Sellers must ensure that all ATR Covered Mortgages satisfy the QM requirements of the Revised General QM Rule, even if the Seller is not required by law or regulation to comply with the Revised General QM Rule.
+
+Note: Refer to [Section 4202.2(c)](/app/guide/section/4202.2#c) for additional information about the ATR/QM Rule requirements.

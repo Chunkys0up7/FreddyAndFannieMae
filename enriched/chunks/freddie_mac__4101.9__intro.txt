@@ -1,0 +1,21 @@
+Source: freddie_mac
+Section: 4101.9 - Seller/ServicerGuide
+Domains: PROPERTY.property_valuation
+Key Terms: borrower, seller, servicer, mortgage
+Cross-Source: fannie_mae/B4-1
+Content Type: policy_rule
+Summary: 4101.9 (Seller/ServicerGuide) covers property valuation. Key topics: borrower, seller, servicer, mortgage.
+---
+# 4101.9: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4101.9 -->
+
+(a)
+
+Description of due-on-sale clauses
+
+The “due-on-sale” clauses in the Uniform Instruments include provisions governing whether the loan will be accelerated if the Borrower sells or transfers the Mortgaged Premises or any interest in the Mortgaged Premises, or whether instead the loan may be assumed by a third party who acquires the Mortgaged Premises or any interest in the Mortgaged Premises by sale or transfer.
+
+Uniform Instruments for different Mortgage products may have different due-on-sale clauses. The type of due-on-sale clause set forth in the Uniform Instruments used to originate a particular Mortgage determines whether the Mortgage is assumable by the party to whom the Mortgaged Premises is transferred.
+
+The Uniform Instruments used in connection with the origination of ARMs contain due-on-sale provisions governing whether the loan will be accelerated if the Borrower sells or transfers the Mortgaged Premises or any interest in the Mortgaged Premises, or whether instead the loan may be assumed by a third party who acquires the Mortgaged Premises or any interest in the Mortgaged Premises.

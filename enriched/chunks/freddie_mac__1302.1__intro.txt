@@ -1,0 +1,12 @@
+Source: freddie_mac
+Section: 1302.1 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+Key Terms: seller, servicer
+Content Type: policy_rule
+Summary: 1302.1 (Seller/ServicerGuide) covers regulatory, servicing. Key topics: seller, servicer.
+---
+# 1302.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1302.1 -->
+
+[What if we’re still investigating and haven’t determined the scope of the Incident (as defined in Section 1302.5)?](/app/guide/faq/FA1439)

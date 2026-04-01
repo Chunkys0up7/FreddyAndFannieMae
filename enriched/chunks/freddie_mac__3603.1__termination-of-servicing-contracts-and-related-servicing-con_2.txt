@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 3603.1 - Seller/ServicerGuide
+Subsection: Termination of Servicing Contracts and related Servicing Contract Rights
+Domains: PROPERTY.property_insurance
+Key Terms: lender
+Content Type: policy_rule
+---
+- [Exhibit 33A, Acknowledgement Agreement Incorporated Provisions](/app/guide/exhibit/33A)
+- [Exhibit 33B, Acknowledgement Agreement (Syndication) Incorporated Provisions](/app/guide/exhibit/33B)
+- [Exhibit 33C, Acknowledgement Agreement (Cashflow) Incorporated Provisions](/app/guide/exhibit/33C), or
+- [Exhibit 33D, Acknowledgement Agreement (Combination) Incorporated Provisions](/app/guide/exhibit/33D)
+
+Upon Termination With Cause or Without Cause, any prior approval by Freddie Mac of a Conveyance related to Financing—whether characterized as a pledge of the Servicing Contract Rights or for tax/accounting purposes as a “sale” of cash flow from such Rights—is automatically terminated without the need for further action by any person and does not survive such termination. Upon a Termination With Cause or a Termination Without Cause, the Financing's lender/cashflow “buyer” has no further right, title or interest whatsoever in the Collateral, with the sole exception of any interest in the Termination Fee or Surplus Proceeds, if any, and, as applicable, all such rights having been conclusively extinguished.

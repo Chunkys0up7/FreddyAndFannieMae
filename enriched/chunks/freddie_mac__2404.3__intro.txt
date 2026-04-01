@@ -1,0 +1,19 @@
+Source: freddie_mac
+Section: 2404.3 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2404.3 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: seller, servicer.
+---
+# 2404.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2404.3 -->
+
+(a)
+
+#### Scope and applicability
+
+Resolve® is the System licensed pursuant to this System-Specific License and the Master Systems License.
+
+Immediately upon a User’s first access to Resolve on or after the Effective Date, the Seller/Servicer shall be bound by this System-Specific License and the Master Systems License. This System-Specific License is incorporated into and made a part of the Master Systems License by this reference. Any reference herein to the System-Specific License shall be deemed to include this System-Specific License and the Master Systems License.

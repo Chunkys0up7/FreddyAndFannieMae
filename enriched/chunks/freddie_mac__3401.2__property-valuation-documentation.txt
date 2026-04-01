@@ -1,0 +1,14 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Property valuation documentation
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: appraisal, seller, mortgage
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Property valuation documentation
+
+Except for Loan Product Advisor® Mortgages for which the Seller is offered and accepts automated collateral evaluation (ACE), or ACE+ PDR, in accordance with [Section 5602.3](5602.3) or [5602.4](5602.4), the Mortgage file must include all documentation used to determine that the Mortgaged Premises is acceptable, including, but not limited to, an appraisal report and any completion report for appraisals subject to conditions.
+
+(h)

@@ -1,0 +1,35 @@
+Source: freddie_mac
+Section: 3301.1 - Seller/ServicerGuide
+Domains: BORROWER.borrower_credit
+Key Terms: Social Security, purchase, borrower, seller, servicer, mortgage
+Cross-Source: fannie_mae/B3-5
+Content Type: reference
+Summary: 3301.1 (Seller/ServicerGuide) covers borrower credit. Key topics: Social Security, purchase, borrower, seller, servicer.
+---
+# 3301.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3301.1 -->
+
+(a)
+
+#### Mortgage file
+
+The Seller (if it services the Mortgage for Freddie Mac) and any Transferee Servicer must maintain the Mortgage file in accordance with [Chapter 3302](/app/guide/chapter/3302) for so long as each services the Mortgage for Freddie Mac. The Mortgage file must contain all applicable documents listed in [Chapter 3401](/app/guide/chapter/3401) and in this chapter.
+
+Sellers that sell Mortgages under the Servicing-Released Sales Process must comply with the Mortgage file and related data retention requirements set forth in [Exhibit 28A, Loan Servicing Purchase and Sale Agreement for Cash-Released XChange®](/app/guide/exhibit/28A).
+
+Except with respect to Mortgages sold under the Servicing-Released Sales Process as set forth above, for convenience with Transfers of Servicing, the Transferor Servicer may maintain copies of the Mortgage file content.
+
+Sellers and Transferor Servicers that retain copies of any or all of the Mortgage file must do so until the later of:
+
+- Seven years after all associated representation and warranty obligations expire as set forth in Loan Coverage Advisor®, or
+- Seven years after any Transfer of Servicing
+
+The Mortgage file, its contents and any copies (and all associated data and information, whether stored electronically or otherwise) are and remain at all times the property of Freddie Mac. See [Section 1201.9](1201.9) for additional information regarding Freddie Mac's ownership of the Mortgage file, Mortgage data and related records in the possession of a Servicer.
+
+The Seller may redact or delete the Borrower's Social Security number from all documents in the Mortgage file, provided that the Seller:
+
+- Delivers to Freddie Mac a complete Social Security number for each Borrower as required in [Section 6302.9](6302.9),
+- Delivers unredacted documents to Freddie Mac whenever the Mortgage file is submitted to Freddie Mac for quality control review in accordance with [Section 3401.1(a)](/app/guide/section/3401.1#a),
+- Maintains the Borrower's Social Security number in its electronic files as part of the Mortgage file, and
+- Provides the Servicing Transferee with the Borrower's Social Security number in connection with any Transfer of Servicing

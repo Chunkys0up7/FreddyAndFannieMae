@@ -1,0 +1,14 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Mortgage insurance certificate
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: mortgage insurance, mortgage
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Mortgage insurance certificate
+
+If mortgage insurance is required, a copy of the mortgage insurance certificate or electronic evidence of mortgage insurance coverage, as well as all documents and information relating to any change in mortgage insurance from that provided at delivery—including, but not limited to, notices of cancelation, rescission or termination of mortgage insurance and denials of claims—must be included in the Mortgage file.
+
+(l)

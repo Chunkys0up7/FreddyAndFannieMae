@@ -1,0 +1,219 @@
+Source: freddie_mac
+Section: 4301.1 - Seller/ServicerGuide
+Domains: UNDERWRITING.special_programs
+MISMO: LoanPurposeType(CashOutRefinance); PropertyType(Cooperative)
+Key Terms: pension, bankruptcy, foreclosure, purchase, borrower, guarantor, seller, servicer, lender, investor, mortgage, escrow
+Content Type: procedure
+Summary: 4301.1 (Seller/ServicerGuide) covers special programs. Key topics: pension, bankruptcy, foreclosure, purchase, borrower.
+---
+# 4301.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4301.1 -->
+
+[Freddie Mac Home
+(opens in new window)](http://www.freddiemac.com)
+
+- [Freddie Mac Home
+  (opens in new window)](http://www.freddiemac.com)
+- [Single-Family Division
+
+  (opens in new window)](https://sf.freddiemac.com/)
+  - [Single-Family Division
+
+    Insights, products, and technology to help you grow your business.
+    (opens in new window)](https://sf.freddiemac.com/)
+  - [Seller/Servicer Guide
+
+    Learn how to work with us with our Guide Bulletins and Industry Letters.](/app/guide/home)
+- [Multifamily Division
+  (opens in new window)](https://mf.freddiemac.com/)
+- [Capital Markets Division
+  (opens in new window)](https://capitalmarkets.freddiemac.com/)
+- [Renters, Buyers and Owners](/app/guide)
+  - [My Home by Freddie Mac®
+
+    Resources to help you rent, buy and own your home.
+    (opens in new window)](https://myhome.freddiemac.com/)
+  - [Do we own your mortgage?
+
+    Find out if Freddie Mac owns your loan using our secure lookup tool.
+    (opens in new window)](https://loanlookup.freddiemac.com/)
+  - [Did we finance your apartment?
+
+    Use our lookup tool to see if Freddie Mac financed your apartment building.
+    (opens in new window)](https://myhome.freddiemac.com/renting/lookup)
+  - [CreditSmart®
+
+    Financial and homeownership education resources all about you.
+    (opens in new window)](https://creditsmart.freddiemac.com/)
+
+# [Seller/Servicer Guide](/app/guide/home)
+
+- [Guide Home](/app/guide/home)
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+
+Back
+
+##### Seller/Servicer Relationship
+
+This segment has content common to both Sellers and Servicers and includes general contract terms (Series 1000 through 3000).
+
+[Browse Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+
+---
+
+###### 1000 General Contract Terms
+
+- [1100: The Guide](/app/guide/topic/1100)
+- [1200: General Freddie Mac Policies](/app/guide/topic/1200)
+- [1300: General Responsibilities of the Seller/Servicer](/app/guide/topic/1300)
+- [1400: Electronic Transactions](/app/guide/topic/1400)
+- [1500: Seller Master Agreements, other Pricing Identifier Terms and Guide Plus Additional Provisions](/app/guide/topic/1500)
+
+###### 2000 Doing Business with Freddie Mac
+
+- [2100: Seller/Servicer Institutional Eligibility](/app/guide/topic/2100)
+- [2200: Additional Requirements for Doing Business with Freddie Mac](/app/guide/topic/2200)
+- [2300: Disqualification or Suspension of a Seller/Servicer](/app/guide/topic/2300)
+- [2400: Access to Freddie Mac Tools and Systems](/app/guide/topic/2400)
+
+###### 3000 Risk Management and Remedies
+
+- [3100: Freddie Mac Exclusionary List and FHFA Suspended Counterparty Program](/app/guide/topic/3100)
+- [3200: Fraud Prevention, Detection and Reporting; Reporting Other Suspicious Activity](/app/guide/topic/3200)
+- [3300: Mortgage File Contents and Retention](/app/guide/topic/3300)
+- [3400: Quality Control](/app/guide/topic/3400)
+- [3500: Freddie Mac Servicer Success Performance and File Reviews](/app/guide/topic/3500)
+- [3600: Remedies (Including Repurchase and Termination of Servicing)](/app/guide/topic/3600)
+
+---
+
+CLOSE
+
+##### Selling
+
+This segment includes requirements applicable to originating, underwriting, and selling eligible Mortgages (Series 4000 through 6000).
+
+[Browse Selling](/app/guide/segment/Selling)
+
+---
+
+###### 4000 Mortgage Eligibility
+
+- [4100: Uniform Instruments](/app/guide/topic/4100)
+- [4200: General Mortgage Eligibility](/app/guide/topic/4200)
+- [4300: Loan Purpose](/app/guide/topic/4300)
+- [4400: Special Mortgage Eligibility Requirements](/app/guide/topic/4400)
+- [4500: Affordable Mortgages and Duty to Serve](/app/guide/topic/4500)
+- [4600: Special Freddie Mac Mortgage Products](/app/guide/topic/4600)
+- [4700: Insurance Requirements](/app/guide/topic/4700)
+
+###### 5000 Origination and Underwriting
+
+- [5100: Determining Borrower Eligibility](/app/guide/topic/5100)
+- [5200: Credit Assessment](/app/guide/topic/5200)
+- [5300: Stable Monthly Income and Asset Qualification Sources](/app/guide/topic/5300)
+- [5400: Evaluation of Monthly Obligations](/app/guide/topic/5400)
+- [5500: Assets](/app/guide/topic/5500)
+- [5600: Property Eligibility and Valuation](/app/guide/topic/5600)
+- [5700: Property](/app/guide/topic/5700)
+- [5800: The Uniform Closing Dataset](/app/guide/topic/5800)
+
+###### 6000 Selling and Delivery
+
+- [6100: Cash Program](/app/guide/topic/6100)
+- [6200: Guarantor and MultiLender Swap Programs](/app/guide/topic/6200)
+- [6300: Delivery of All Mortgages](/app/guide/topic/6300)
+- [6400: Nondelivery](/app/guide/topic/6400)
+
+---
+
+CLOSE
+
+##### Servicing
+
+This segment includes requirements applicable to Servicing Freddie Mac Mortgages (Series 7000 through 9000).
+
+[Browse Servicing](/app/guide/segment/Servicing)
+
+---
+
+###### 7000 Transfers of Servicing
+
+- [7100: Transfers of Servicing](/app/guide/topic/7100)
+
+###### 8000 Servicing All Mortgages
+
+- [8100: General Freddie Mac Servicing Policies](/app/guide/topic/8100)
+- [8200: Escrow and Insurance](/app/guide/topic/8200)
+- [8300: Servicing Performing Loans – Investor Accounting and Remitting](/app/guide/topic/8300)
+- [8400: Property Matters](/app/guide/topic/8400)
+- [8500: Servicing for Special Mortgages](/app/guide/topic/8500)
+- [8600: Servicing Requirements for Senior Subordinate Mortgages](/app/guide/topic/8600)
+- [8700: Servicing Requirements for Community Land Trust Mortgages](/app/guide/topic/8700)
+- [8800: Servicing Requirements for Cooperative Share Loans](/app/guide/topic/8800)
+- [8900: Servicing Requirements for HeritageOne℠ Mortgages](/app/guide/topic/8900)
+
+###### 9000 Servicing Default Management
+
+- [9100: Delinquencies](/app/guide/topic/9100)
+- [9200: Loss Mitigation](/app/guide/topic/9200)
+- [9300: Foreclosure](/app/guide/topic/9300)
+- [9400: Bankruptcy and Other Litigation Involving Freddie Mac-Owned or Guaranteed Mortgages](/app/guide/topic/9400)
+- [9500: Selection, Retention and Management of Law Firms for Freddie Mac Default Legal Matters](/app/guide/topic/9500)
+- [9600: Post-Foreclosure/Real Estate Owned](/app/guide/topic/9600)
+- [9700: Reimbursement of Expenses](/app/guide/topic/9700)
+
+---
+
+CLOSE
+
+
+Search the Guide
+
+View All
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Frequently Asked Questions](/app/guide/faqs)
+- [Upcoming Changes](/app/guide/revisions)
+- [Exhibits](/app/guide/exhibits)
+- [Forms](/app/guide/forms)
+- [Glossary](/app/guide/glossary)
+- [Directory](/app/guide/directories)
+- [Archives](/app/guide/archive)
+- [AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+Search The Single-Family Seller Servicer Guide and Related Resources
+
+Search
+
+- [Glossary](/app/guide/glossary)
+- [AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx)
+- [Freddie Mac Income Calculator(opens in new window)](https://sf.freddiemac.com/tools-learning/technology-tools/our-solutions/income-calculator)
+
+- [Featured Resources](/app/guide/home)
+- [Browse Guide](/app/guide/browse)
+- [Recent Bulletins](/app/guide/bulletins)
+- [FAQs](/app/guide/faqs)
+- [Upcoming Changes](/app/guide/revisions)
+- [Archives](/app/guide/archive)
+
+
+Featured Resources
+Browse Guide
+Recent Bulletins
+FAQs
+Upcoming Changes
+Archives
+
+
+##### 4301.1
+
+[*angle left* Prev](4205.5)
+
+
+[Next *angle right*](4301.2)

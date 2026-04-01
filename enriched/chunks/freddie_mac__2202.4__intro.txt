@@ -1,0 +1,32 @@
+Source: freddie_mac
+Section: 2202.4 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: pension, seller, servicer
+Cross-Source: fannie_mae/B2-2
+Content Type: policy_rule
+Summary: 2202.4 (Seller/ServicerGuide) covers borrower eligibility. Key topics: pension, seller, servicer.
+---
+# 2202.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2202.4 -->
+
+(a)
+
+#### Transfers and terminations initiated by Freddie Mac
+
+(i)
+
+##### Termination without cause
+
+Upon 30 days written notice to the Seller/Servicer and the Document Custodian and at its sole discretion, Freddie Mac may terminate a Tri-Party Agreement without cause and require the transfer of all Notes and assignments held by the Document Custodian to another Document Custodian or to a Designated Custodian **(see [Directory 4](/app/guide/directory/4))**.
+
+(ii)
+
+##### Immediate termination conditions
+
+Freddie Mac may immediately terminate a Tri-Party Agreement upon written notice to a Seller/Servicer and the Document Custodian and require the transfer of all Notes and assignments to another Document Custodian or as directed by Freddie Mac upon the occurrence of any of the following:
+
+- Disqualification or suspension of the Seller/Servicer pursuant to [Section 2301.1(b)](/app/guide/section/2301.1#b),
+- Failure of the Document Custodian to meet Freddie Mac’s eligibility requirements (see [Section 2202.1(b)](/app/guide/section/2202.1#b)),
+- Freddie Mac’s determination that the Document Custodian’s performance has been unsatisfactory, or
+- Any other circumstance with respect to the Document Custodian, the Notes or assignments that might adversely affect the Notes or assignments or Freddie Mac’s interests

@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 2101.8 - Seller/ServicerGuide
+Subsection: Documentation
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer, mortgage
+Content Type: procedure
+---
+#### Documentation
+
+Mortgagee's errors and omissions (E&O) insurance coverage must be documented on policy forms commonly issued to institutions similar to the Seller/Servicer. The coverage may be provided in policy forms with names that include, but are not limited to, Mortgage Bankers Bond, Mortgage Errors & Omissions, Mortgage Impairment, Mortgage Holders Liability, Professional Liability or Mortgage Protection. Whichever policy form is relied upon to document the coverage required by Freddie Mac, the Seller/Servicer warrants that the terms of such coverage meet all of the requirements in [Section 2101.8(b)](#Scope) below.
+
+(b)

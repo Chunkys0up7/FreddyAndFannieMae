@@ -1,0 +1,16 @@
+Source: freddie_mac
+Section: 4304.5 - Seller/ServicerGuide
+Domains: UNDERWRITING.special_programs
+Key Terms: refinance, seller, servicer
+Content Type: policy_rule
+Summary: 4304.5 (Seller/ServicerGuide) covers special programs. Key topics: refinance, seller, servicer.
+---
+# 4304.5: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4304.5 -->
+
+- [Bulletin 2021-16 Selling](/app/guide/bulletin/2021-16)
+- [Bulletin 2021-4 Selling](/app/guide/bulletin/2021-4)
+- [Bulletin 2020-36 Selling](/app/guide/bulletin/2020-36)
+- [Bulletin 2018-19 Selling](/app/guide/bulletin/2018-19)
+- [Bulletin 2017-17 Relief Refinance](/app/guide/bulletin/2017-17)

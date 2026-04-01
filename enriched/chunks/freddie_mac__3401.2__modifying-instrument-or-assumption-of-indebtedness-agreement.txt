@@ -1,0 +1,20 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Modifying instrument or assumption of indebtedness agreement
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: credit report, fixed-rate, ARM, purchase, borrower, seller, servicer, note, mortgage
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Modifying instrument or assumption of indebtedness agreement
+
+The following documents must be included in the Mortgage file:
+
+- The modification or conversion agreement, or the ownership transfer instrument and assumption of indebtedness agreement, if the Mortgage has been modified or converted from an ARM to a fixed-rate Mortgage or if the ownership of the Mortgaged Premises has been transferred in any way.
+
+  Note: The Seller/Servicer does not need to submit for postfunding quality control review a copy of any modifying instrument that by its terms ceases to be effective upon purchase of the Mortgage by Freddie Mac.
+- The Construction to Permanent Modification Agreement for Construction to Permanent Mortgages and Renovation Mortgages; and
+- The Mortgage application, credit report, employment and income verifications for the current Borrowers if the Mortgaged Premises is currently owned by anyone other than the original Borrowers. A certification of the terms of the sale of the Mortgaged Premises (e.g., a copy of the purchase agreement signed by the seller and purchaser) must also be included.
+
+(c)

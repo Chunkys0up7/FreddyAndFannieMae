@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 2101.7 - Seller/ServicerGuide
+Subsection: Documentation
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer, mortgage
+Content Type: procedure
+---
+#### Documentation
+
+Fidelity insurance coverage may be documented on a bond form acceptable to Freddie Mac or on the standard bond form currently mandated by or acceptable to the government agency that has regulatory or supervisory authority over the Seller/Servicer. If the Seller/Servicer is not regulated or supervised, Freddie Mac will accept coverage documented on the bond form commonly issued to institutions similar to the Seller/Servicer. The coverage may be provided in policy forms with names that include, but are not limited to, Fidelity Bond, Mortgage Bankers Bond, Financial Institution Bond, Financial Institution Crime Policy or Bankers Blanket Bond. Whichever policy form is relied upon to document the coverage required by Freddie Mac, the Seller/Servicer warrants that the terms of such coverage meet all of the requirements in [Section 2101.7(b)](#Scope).
+
+(b)

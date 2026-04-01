@@ -1,0 +1,18 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Important Notice
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Content Type: procedure
+---
+#### Important Notice
+
+The Section you are viewing has multiple versions available based on effective date. You may access future and current versions by using the drop-down menu above. For previous versions, [visit AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx).
+
+
+This section contains:
+
+- [Defined terms](#a)
+- [Information security minimum requirements](#b)
+
+(a)

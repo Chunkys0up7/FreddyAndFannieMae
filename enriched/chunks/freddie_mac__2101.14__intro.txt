@@ -1,0 +1,13 @@
+Source: freddie_mac
+Section: 2101.14 - Seller/ServicerGuide
+Domains: QUALITY_CONTROL.representations
+Key Terms: seller, servicer
+Content Type: policy_rule
+Summary: 2101.14 (Seller/ServicerGuide) covers representations. Key topics: seller, servicer.
+---
+# 2101.14: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2101.14 -->
+
+- [Bulletin 2020-42 New Deployment Date for Unified Counterparty Experience System® (UCount℠)](/app/guide/bulletin/2020-42)
+- [Bulletin 2020-33 Selling and Servicing](/app/guide/bulletin/2020-33)

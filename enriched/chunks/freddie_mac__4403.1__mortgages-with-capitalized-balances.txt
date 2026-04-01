@@ -1,0 +1,29 @@
+Source: freddie_mac
+Section: 4403.1 - Seller/ServicerGuide
+Subsection: Mortgages with capitalized balances
+Domains: LOAN.loan_amortization
+MISMO: PropertyType(Cooperative); LienPriorityType(FirstLien)
+Key Terms: mortgage
+Cross-Source: fannie_mae/B2-1.4
+Content Type: procedure
+---
+## Mortgages with capitalized balances
+
+
+Effective 12/04/2024
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4400 : Special Mortgage Eligibility Requirements](/app/guide/topic/4400)
+[Chapter 4403 : Mortgages with Capitalized Balances](/app/guide/chapter/4403)
+
+
+- Current
+  07/01/2026
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)

@@ -1,0 +1,36 @@
+Source: freddie_mac
+Section: 2301.3 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: pension, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-1.1, fannie_mae/B2-2
+Content Type: policy_rule
+Summary: 2301.3 (Seller/ServicerGuide) covers borrower eligibility. Key topics: pension, seller, servicer, mortgage.
+---
+# 2301.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2301.3 -->
+
+(a)
+
+#### Eligibility for appeal
+
+The provisions of this section do not apply to Sellers and Servicers approved by Freddie Mac on or after October 3, 2012 to sell and/or service Mortgages. Those Sellers and Servicers do not have a right to appeal Freddie Mac’s notice of determination to disqualify or suspend.
+
+A Seller or Servicer approved to sell and/or service Mortgages for Freddie Mac prior to October 3, 2012 may write to Freddie Mac **(see [Directory 1](/app/guide/directory/1))** to appeal a determination to disqualify or suspend with cause pursuant to [Section 2301.1(b)(i)](/app/guide/section/2301.1#b_i).
+
+(i)
+
+##### Deadline for filling an appeal
+
+The appeal must be postmarked or hand delivered no later than 15 days:
+
+- From the date the Seller or the Servicer received written notice of Freddie Mac’s intention to suspend or disqualify, or
+- If prior written notice was not provided by Freddie Mac, from the date the Seller or Servicer received written confirmation of Freddie Mac’s oral notice to suspend or disqualify
+
+If an appeal is not filed within the 15-day period, the Seller or Servicer will be deemed to have waived its right to appeal.
+
+(ii)
+
+##### Required documentation for appeal
+
+Any appeal must provide Freddie Mac with information and documentation that clearly supports the Seller’s or Servicer’s request for reconsideration of Freddie Mac’s disqualification or suspension determination.

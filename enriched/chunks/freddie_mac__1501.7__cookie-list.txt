@@ -1,0 +1,23 @@
+Source: freddie_mac
+Section: 1501.7 - Seller/ServicerGuide
+Subsection: Cookie List
+Domains: COMPLIANCE.regulatory
+Content Type: policy_rule
+---
+### Cookie List
+
+Clear
+
+- checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+checkbox label label
+
+checkbox label label
+
+checkbox label label
+
+Confirm My Choices

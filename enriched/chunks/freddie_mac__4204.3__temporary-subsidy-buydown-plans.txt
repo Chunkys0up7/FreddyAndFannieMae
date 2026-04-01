@@ -1,0 +1,29 @@
+Source: freddie_mac
+Section: 4204.3 - Seller/ServicerGuide
+Subsection: Temporary subsidy buydown plans
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+MISMO: LoanPurposeType(CashOutRefinance); PropertyUsageType(Investor, PrimaryResidence); PropertyType(Cooperative, TwoToFourUnit); AmortizationType(Fixed)
+Key Terms: buydown, mortgage
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: procedure
+---
+## Temporary subsidy buydown plans
+
+
+Effective 09/10/2025
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4200 : General Mortgage Eligibility](/app/guide/topic/4200)
+[Chapter 4204 : Secondary Financing and Other Financing Arrangements](/app/guide/chapter/4204)
+
+
+- Current
+  04/12/2026
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)

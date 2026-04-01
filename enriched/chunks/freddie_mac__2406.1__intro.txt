@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 2406.1 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: purchase, seller, servicer
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2406.1 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: purchase, seller, servicer.
+---
+# 2406.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2406.1 -->
+
+(a)
+
+#### Quality Control Advisor
+
+Seller/Servicers’ use of Quality Control Advisor continues to be subject to the terms and conditions set forth in [Sections 2401.1](2401.1), [2402.2(a)](/app/guide/section/2402.2#a) and [2402.3](2402.3) and Seller/Servicers’ other applicable Purchase Documents, as amended from time to time.

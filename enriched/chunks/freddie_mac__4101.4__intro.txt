@@ -1,0 +1,21 @@
+Source: freddie_mac
+Section: 4101.4 - Seller/ServicerGuide
+Domains: PROPERTY.property_valuation
+Key Terms: purchase, seller, servicer, note, security instrument, mortgage
+Cross-Source: fannie_mae/B4-1
+Content Type: reference
+Summary: 4101.4 (Seller/ServicerGuide) covers property valuation. Key topics: purchase, seller, servicer, note, security instrument.
+---
+# 4101.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4101.4 -->
+
+(a)
+
+Uniform Instrument changes and modifications
+
+The Seller must not make any changes or additions to the Uniform Instruments that have any force or effect after purchase of the Mortgage by Freddie Mac, except for changes and modifications that:
+
+- Are accomplished by use of Fannie Mae/Freddie Mac Uniform Instrument Riders
+- Pertain to an assumption or an alteration of the principal, Note Rate, payment amount or date, or maturity date of the Mortgage, or
+- Are required or permitted by the provisions in [Exhibit 5A, Authorized Changes to Notes, Riders, Security Instruments and the Uniform Residential Loan Application](/app/guide/exhibit/5A)

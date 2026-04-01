@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 4402.4 - Seller/ServicerGuide
+Domains: LOAN.loan_amortization
+Key Terms: purchase, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-1.4
+Content Type: policy_rule
+Summary: 4402.4 (Seller/ServicerGuide) covers loan amortization. Key topics: purchase, seller, servicer, mortgage.
+---
+# 4402.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4402.4 -->
+
+(a)
+
+#### Overview
+
+Unless specifically made applicable to Seller-Owned Modified Mortgages, negotiated underwriting provisions in the Seller’s Purchase Documents do not apply to Seller-Owned Modified Mortgages and cannot be used with Seller-Owned Modified Mortgages.

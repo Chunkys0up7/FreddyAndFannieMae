@@ -1,0 +1,62 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Information security minimum requirements
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Key Terms: purchase, seller, servicer, mortgage
+Content Type: procedure
+---
+#### Information security minimum requirements
+
+(i)
+
+##### Information security program
+
+Seller/Servicers must define an individual or group of individuals responsible for the development of information security requirements, including the adoption, implementation, maintenance and administration of written minimum-security standards, policies and procedures that responsibly address critical issues such as user responsibilities (e.g., “Acceptable Use”); ownership of and access to information; baseline security practices; physical, administrative and technical security protection mechanisms and other requirements.
+
+Not less than annually, Seller/Servicers must review and assess the adequacy of their information security policies and procedures used in connection with the selling and Servicing of Freddie Mac Mortgages to ensure compliance with the Guide, their other Purchase Documents and industry best practices (including as set forth by the National Institute of Standards and Technology and International Organization for Standardization/International Electrotechnical Commission standards).
+
+Upon request of Freddie Mac, Seller/Servicers must make their information security program policies and procedures available; further, upon request of Freddie Mac, Seller/Servicers must provide an attestation executed by a duly authorized corporate officer of the adequacy of these policies and procedures, including following the termination of a Seller/Servicer’s right to sell or service Mortgages, or the occurrence of an Incident (as defined in [Section 1302.5](1302.5)).
+
+(ii)
+
+##### Human resources security
+
+The following are requirements related to human resources security:
+
+- Pre-employment screening: Seller/Servicers must conduct, or retain a qualified third party to conduct, thorough background verification checks (screening) for all candidates for employment or contractor status who will have access to Freddie Mac confidential information, Protected Information or Systems (as defined in [Section 2401.1(b)](/app/guide/section/2401.1#b))
+- Code of conduct or non-disclosure agreement: Prior to being granted access to Freddie Mac confidential information, Protected Information or Systems, Seller/Servicers must require all employees, contractors and third parties to (i) sign a non-disclosure agreement or (ii) be subject to a code of conduct, which in either case includes obligations to restrict the use or disclosure of and to maintain as confidential all Freddie Mac confidential information
+- Protected Information and information related to or contained in Systems: The code of conduct must be acknowledged by the employee, contractor or third party, and must address at least the following subjects:
+  - Appropriate use of company assets
+  - Information protection, including non-disclosure and confidentiality
+  - Records management
+  - Information security and privacy
+  - Business courtesies
+  - Personal investments and insider trading
+  - Conflicts of interest
+- Information security awareness, education and training: At least annually, Seller/Servicers must provide information security awareness training to all employees and contractors who have access to Freddie Mac confidential information, Protected Information and/or Systems.
+
+  The training should incorporate current cybersecurity threats, including phishing, social engineering, supply chain attacks, malware/ransomware, credential compromise via weak password hygiene, insider threats, artificial intelligence (AI)-powered tactics (e.g., deepfakes, targeted phishing content) and threats to AI systems (e.g., model inversion, data poisoning, prompt injection). When necessary, the organization personnel and partners must receive AI risk management training to enable them to perform their duties and responsibilities consistent with related policies, procedures and agreements. At a minimum, the training must address the importance of data security, provide details on roles and responsibilities for all users in protecting information at the Seller/Servicer (along with practical ways to incorporate information security into daily routines) and include the specific processes in place for protecting Freddie Mac confidential information and Protected Information.
+
+(iii)
+
+##### Physical and environmental security controls
+
+Seller/Servicers must create and maintain:
+
+- A physical security control program of the organization’s buildings and facilities that contain information systems, designed to detect, monitor and prevent unauthorized access and to respond to physical security incidents using real-time physical intrusion alarms and surveillance equipment
+- An updated list of personnel with authorized access to facilities where information systems reside, including an access privilege review performed not less than annually and upon the departure of any authorized personnel
+- Environmental controls to monitor, mitigate and protect the organization with regards to a loss of connectivity, access to or integrity of information and damage caused by natural disasters or man-made incidents such as fire, earthquake, flood, hurricane, tornado or weather-related adverse conditions
+- A clean desk policy that ensures that Freddie Mac confidential information and Protected Information are stored securely
+
+(iv)
+
+##### Communications and operations management
+
+Seller/Servicers must implement technical security measures designed to monitor for, mitigate against and prevent malicious software, stop unwanted spam and traffic and to protect against unauthorized use of wireless connections. Measures must include those provided in the remainder of this section or meet industry best practices, whichever is more stringent.
+
+(v)
+
+##### Data transmission and data loss prevention
+
+Seller/Servicers must:

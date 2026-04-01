@@ -1,0 +1,61 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Information security minimum requirements
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Key Terms: authorized user, purchase, seller, servicer
+Content Type: procedure
+---
+- Develop and maintain, and implement when triggered, an incident response plan that provides a roadmap for implementing incident response capabilities and defines the resources and management support needed. The plan must:
+  - Be approved by Senior Management, including, at a minimum, the Chief Information Officer, Chief Technology Officer, Chief Information Security Office or Chief Risk Officer (or the equivalents thereof);
+  - Include a plan, with a clearly defined process, to shut off access to Freddie Mac Systems when an Incident occurs;
+  - As specified in [Section 1302.5](1302.5), address any security breaches or incidents involving Freddie Mac confidential information or Protected Information promptly and effectively;
+  - Be tested at a pre-defined periodic frequency, or more frequently, if prudent, given the circumstances;
+  - Be reviewed and updated at least annually
+- Document a process to identify and respond to malicious domains, taking immediate action to block access to these domains across all network and endpoint security systems
+- Notify relevant stakeholders and provide detailed reports on the identified threats and actions taken
+- Coordinate with Related Third Parties on Incident detection and remediation
+- Regularly review and update the response processes to adapt to evolving threats and technologies, incorporating lessons learned from past incidents to enhance the overall effectiveness of the response strategy
+- Annually, unless formally activated, test the effectiveness of the incident response plan and capabilities
+- Annually, unless formally activated, audit the incident response plan. The audit may be performed by (i) an internal independent function within the organization, or (ii) an external entity who is qualified to do such audits;
+- Evaluate lessons learned from all Incidents;
+- Implement or identify an existing classification scale for Incidents to quantify the severity of the Incident;
+- Have documented action plans for remediation of Incidents, including playbooks for Incidents related to AI/ML (as defined in [Section 1302.8](1302.8))
+
+(xvii)
+
+##### Access control
+
+A.
+
+##### Access management policy
+
+A Seller/Servicer must:
+
+- Establish, implement and maintain an access management policy that aligns with industry best practices, including a process for granting and removing system access, requirements for Authentication and rules of behavior. The access management policy must be reviewed and updated at least annually.
+- Define a process for securing administrative user and other privileged accounts, which must be reviewed and updated at least annually, and enforce access and Authentication requirements, including establishing and maintaining multifactor authentication procedures for system administrators and other privileged accounts
+- Define and enforce remote access requirements, including acceptable use, approvals and recertification processes
+- Define and enforce requirements around locked accounts after multiple failed login attempts and timeout requirements
+- Establish and enforce access control methods that limit access to systems, physical or virtual resources and grant access to users, including third parties, on a need-to-know basis
+- Define and enforce requirements for multifactor authentication where applicable (privileged sessions, remote connectivity, applications housing Freddie Mac confidential information or Protected Information, etc.)
+- Manage user accounts for System(s), in accordance with the Guide and the other Purchase Documents. Seller/Servicers must monitor account access for users who transfer roles or are terminated or no longer need access to their accounts. Seller/Servicers must notify Freddie Mac  (see [Directory 8](/app/guide/directory/8)) within one Business Day after any transfer or termination.
+
+  Refer to and comply with the instructions to update systems access for relevant applications at [https://sf.freddiemac.com/tools-learning/technology-login (opens in new window)](https://sf.freddiemac.com/tools-learning/technology-login)
+
+B.
+
+##### Granting, removing and reviewing access
+
+Seller/Servicers must maintain and enforce written procedures to ensure that only necessary personnel are granted access to Freddie Mac Systems. Access should be granted based on the principle of least privilege, ensuring that individuals have only the access necessary for their roles. Access to sensitive information is limited to authorized users only, commensurate with their roles and responsibilities, on a need-to-know basis. The procedures must specifically address:
+
+- Approval of access requests
+- Removal of access for terminations and transfers
+- Analysis of user access and removal of access that is inactive or no longer needed
+- At least annual review of all user access privileges and certification of access according to the minimum information necessary to access permission rules
+- At least twice annual review of all administrator roles and responsibilities and certification of access according to the minimum necessary to access permission rules
+- Timely compliance with Freddie Mac requests pertaining to recertification of user access privileges and/or administrator roles for Systems
+- Prohibit or prevent using the same service account identifiers and passwords in both production and non-production environments
+
+C.
+
+##### Authentication requirements and guidelines

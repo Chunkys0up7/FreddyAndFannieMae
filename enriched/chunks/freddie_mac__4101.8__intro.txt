@@ -1,0 +1,17 @@
+Source: freddie_mac
+Section: 4101.8 - Seller/ServicerGuide
+Domains: PROPERTY.property_valuation
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B4-1
+Content Type: policy_rule
+Summary: 4101.8 (Seller/ServicerGuide) covers property valuation. Key topics: seller, servicer.
+---
+# 4101.8: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4101.8 -->
+
+- [Bulletin 2025-H Refactoring](/app/guide/bulletin/2025-H)
+- [Bulletin 2025-3 Selling](/app/guide/bulletin/2025-3)
+- [Bulletin 2021-25 Selling](/app/guide/bulletin/2021-25)
+- [Bulletin 2017-28 Selling](/app/guide/bulletin/2017-28)
+- [Bulletin 2016-20 Selling](/app/guide/bulletin/2016-20)

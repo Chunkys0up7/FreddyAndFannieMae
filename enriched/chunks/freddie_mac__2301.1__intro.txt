@@ -1,0 +1,23 @@
+Source: freddie_mac
+Section: 2301.1 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: pension, purchase, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-1.1, fannie_mae/B2-2
+Content Type: procedure
+Summary: 2301.1 (Seller/ServicerGuide) covers borrower eligibility. Key topics: pension, purchase, seller, servicer, mortgage.
+---
+# 2301.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2301.1 -->
+
+(a)
+
+#### Disqualification or suspension of Seller’s eligibility to sell
+
+Freddie Mac, in its discretion, may disqualify or suspend a Seller from eligibility to sell Mortgages to Freddie Mac. The Seller will be ineligible to obtain new purchase commitments during a period of disqualification or suspension.
+
+During the period of Seller disqualification or suspension, Freddie Mac may, in its discretion, determine whether outstanding commitments held by the Seller must be honored or the outstanding balance of the commitment fulfilled by using the pairoff procedure (see [Section 6401.1](6401.1)).
+
+Freddie Mac will determine the length of any suspension period and may prescribe the terms and conditions for reinstatement. The notice of disqualification or suspension and the opportunity of a Seller to respond to and appeal the action are governed by the procedures in this chapter.
+
+For information regarding outstanding purchase commitments when Freddie Mac terminates the Servicing Contract and related Servicing Contract Rights with or without cause, see [Section 3602.2(b)](/app/guide/section/3602.2#b).

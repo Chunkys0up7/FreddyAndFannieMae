@@ -1,0 +1,28 @@
+Source: freddie_mac
+Section: 4305.1 - Seller/ServicerGuide
+Subsection: General requirements for all purchase transaction Mortgages
+Domains: UNDERWRITING.special_programs
+MISMO: LoanPurposeType(Purchase); PropertyUsageType(Investor, SecondHome); PropertyType(Cooperative)
+Key Terms: purchase, mortgage
+Content Type: procedure
+---
+## General requirements for all purchase transaction Mortgages
+
+
+Effective 02/04/2026
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4300 : Loan Purpose](/app/guide/topic/4300)
+[Chapter 4305 : Purchase Transaction Mortgages](/app/guide/chapter/4305)
+
+
+- Current
+  06/03/2026
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)

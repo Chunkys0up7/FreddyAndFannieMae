@@ -1,0 +1,26 @@
+Source: freddie_mac
+Section: 4402.3 - Seller/ServicerGuide
+Domains: LOAN.loan_amortization
+Key Terms: bankruptcy, foreclosure, borrower, seller, servicer, lender, note, security instrument, mortgage, hazard insurance, escrow
+Cross-Source: fannie_mae/B2-1.4
+Content Type: policy_rule
+Summary: 4402.3 (Seller/ServicerGuide) covers loan amortization. Key topics: bankruptcy, foreclosure, borrower, seller, servicer.
+---
+# 4402.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4402.3 -->
+
+(a)
+
+#### Original Security Instrument and Convertible Adjustable Rate Rider
+
+The original Security Instrument and Convertible Adjustable Rate Rider must be either:
+
+- The version of the Fannie Mae/Freddie Mac Uniform Security Instrument for the State in which the Mortgaged Premises is located in effect on the Note Date, with either the Fannie Mae or Freddie Mac Uniform Convertible Adjustable Rate Rider, or
+- A nonstandard document that contains provisions comparable to the provisions of the version of the Fannie Mae/Freddie Mac Uniform Security Instrument in effect on the Note Date for the State in which the Mortgaged Premises are located, including the provisions relating to:
+  - Default and foreclosure rights
+  - The use of hazard insurance proceeds, condemnation and hazardous waste
+  - No waivers of homestead rights, dower or similar marital rights
+  - Matters that affect the security for the Mortgage, including charges and liens and property preservation
+  - Borrower Mortgage payment and escrow obligations
+  - Rights of the lender in the event of Borrower bankruptcy

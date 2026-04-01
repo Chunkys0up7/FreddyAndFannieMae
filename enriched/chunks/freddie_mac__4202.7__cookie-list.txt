@@ -1,0 +1,24 @@
+Source: freddie_mac
+Section: 4202.7 - Seller/ServicerGuide
+Subsection: Cookie List
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: policy_rule
+---
+### Cookie List
+
+Clear
+
+- checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+checkbox label label
+
+checkbox label label
+
+checkbox label label
+
+Confirm My Choices

@@ -1,0 +1,64 @@
+Source: freddie_mac
+Section: 3302.4 - Seller/ServicerGuide
+Subsection: Not Found
+Domains: BORROWER.borrower_credit
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B3-5
+Content Type: procedure
+---
+## Not Found
+
+We're sorry. That page is not available. Please check the URL and try again or return to the [home page](/app/guide/).
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

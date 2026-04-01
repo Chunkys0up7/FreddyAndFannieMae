@@ -1,0 +1,18 @@
+Source: freddie_mac
+Section: 3603.2 - Seller/ServicerGuide
+Domains: BORROWER.borrower_assets
+Key Terms: reserves, purchase, seller, servicer, mortgage, servicing fee
+Content Type: policy_rule
+Summary: 3603.2 (Seller/ServicerGuide) covers borrower assets. Key topics: reserves, purchase, seller, servicer, mortgage.
+---
+# 3603.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3603.2 -->
+
+(a)
+
+#### Transfer Servicing Contract and related Servicing Contract Rights
+
+If Freddie Mac transfers all or a portion of the Servicing Contract and related Servicing Contract Rights to any Mortgages, the Servicing compensation (as stated in [Section 8105.1(a)](/app/guide/section/8105.1#a)) is paid to the Transferee Servicer, except as otherwise set forth in applicable Purchase Documents with that Transferee Servicer. Freddie Mac reserves the right to negotiate a Servicing fee with the subsequent Servicer.
+
+Freddie Mac will have the exclusive right to receive any amount that may be paid by the Transferee Servicer for the right to the Servicing compensation under the Servicing Contract.

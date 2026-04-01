@@ -1,0 +1,14 @@
+Source: freddie_mac
+Section: 4401.2 - Seller/ServicerGuide
+Domains: LOAN.loan_amortization
+MISMO: AmortizationType(AdjustableRate)
+Key Terms: ARM, seller, servicer
+Cross-Source: fannie_mae/B2-1.4
+Content Type: policy_rule
+Summary: 4401.2 (Seller/ServicerGuide) covers loan amortization. Key topics: ARM, seller, servicer.
+---
+# 4401.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4401.2 -->
+
+[What if State law requires a higher qualifying rate for an ARM than the rates listed in Guide Section 4401.2(b)?](/app/guide/faq/FA1812)

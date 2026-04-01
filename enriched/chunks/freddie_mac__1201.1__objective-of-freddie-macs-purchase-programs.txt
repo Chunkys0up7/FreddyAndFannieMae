@@ -1,0 +1,124 @@
+Source: freddie_mac
+Section: 1201.1 - Seller/ServicerGuide
+Subsection: Objective of Freddie Mac’s purchase programs
+Domains: COMPLIANCE.regulatory
+MISMO: PropertyType(Cooperative)
+Key Terms: foreclosure, purchase, borrower, seller, servicer, lender, mortgage
+Content Type: procedure
+---
+## Objective of Freddie Mac’s purchase programs
+
+
+Effective 12/17/2025
+
+
+[Guide Home](/app/guide/)
+
+[Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+[Series 1000 : General Contract Terms](/app/guide/series/1000)
+[Topic 1200 : General Freddie Mac Policies](/app/guide/topic/1200)
+[Chapter 1201 : General Freddie Mac Policies](/app/guide/chapter/1201)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+Freddie Mac was created by Congress in 1970 under the Federal Home Loan Mortgage Corporation Act (12 U.S.C. 1451 et. seq.).
+
+Freddie Mac's public mission is to provide liquidity, stability and affordability to the United States housing market.
+
+Freddie Mac does this primarily by purchasing residential Mortgages originated by mortgage lenders. In most instances, Freddie Mac packages these Mortgages into mortgage-related securities, which are guaranteed by Freddie Mac and sold in the global capital markets.
+
+Freddie Mac also invests in Mortgages and mortgage-related securities. Freddie Mac does not originate Mortgages or lend money directly to consumers.
+
+Freddie Mac supports the United States housing market and the overall economy by:
+
+- Providing America's families with access to mortgage funding at lower rates
+- Helping distressed Borrowers keep their homes and avoid foreclosure, and
+- Providing consistent liquidity to the multifamily mortgage market, which includes providing financing for affordable rental housing
+
+Additionally, Freddie Mac works closely with FHFA and the broader industry to build a stronger housing finance system for the nation.
+
+
+[*angle left* Prev](1101.3)
+
+
+[Next *angle right*](1201.2)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related Bulletins
+
+
+- [Bulletin 2025-H Refactoring](/app/guide/bulletin/2025-H)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

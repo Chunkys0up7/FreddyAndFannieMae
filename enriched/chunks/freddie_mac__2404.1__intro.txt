@@ -1,0 +1,21 @@
+Source: freddie_mac
+Section: 2404.1 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: authorized user, purchase, seller, servicer
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2404.1 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: authorized user, purchase, seller, servicer.
+---
+# 2404.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2404.1 -->
+
+(a)
+
+#### Scope and applicability
+
+The Specifications are licensed pursuant to this System-Specific License and the Master Systems License.
+
+Immediately upon a User’s first receipt of any Specifications on or after the Effective Date, the Seller/Servicer shall be bound by this System-Specific License and the Master Systems License. This System-Specific License is incorporated into and made a part of the Master Systems License by this reference. Any reference herein to the System-Specific License shall be deemed to include this System-Specific License and the Master Systems License.
+
+Notwithstanding any applicable Purchase Document, the Servicer shall only access and use a Servicing Tool with Authentication Credentials and other Confidential Means of Access that are specifically assigned or provisioned to an Authorized User by means of a System.

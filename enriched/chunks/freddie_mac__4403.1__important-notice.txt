@@ -1,0 +1,14 @@
+Source: freddie_mac
+Section: 4403.1 - Seller/ServicerGuide
+Subsection: Important Notice
+Domains: LOAN.loan_amortization
+MISMO: PropertyType(Cooperative); LienPriorityType(FirstLien)
+Cross-Source: fannie_mae/B2-1.4
+Content Type: procedure
+---
+#### Important Notice
+
+The Section you are viewing has multiple versions available based on effective date. You may access future and current versions by using the drop-down menu above. For previous versions, [visit AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx).
+
+
+(a)

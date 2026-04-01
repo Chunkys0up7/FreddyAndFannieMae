@@ -1,0 +1,27 @@
+Source: freddie_mac
+Section: 2101.4 - Seller/ServicerGuide
+Domains: QUALITY_CONTROL.representations
+Key Terms: reserves, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 2101.4 (Seller/ServicerGuide) covers representations. Key topics: reserves, seller, servicer, mortgage.
+---
+# 2101.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2101.4 -->
+
+(a)
+
+#### All Seller/Servicers
+
+The Seller/Servicer must at all times comply with the following reporting requirements:
+
+- Each Seller/Servicer must submit annual audited financial statements to Freddie Mac, except that:
+
+  - A federally insured depository institution need not submit such statements, and
+  - A Seller/Servicer that is approved only to sell Mortgages to Freddie Mac may submit Reviewed Financial Statements
+- Each Seller/Servicer that is a subsidiary of another institution and that is required to submit audited financial statements (as noted above) may submit audited financial statements prepared at the Seller/Servicer level or at its parent level, with a consolidating worksheet
+- An annual audited report on internal controls is required only if audited financial statements are required by Freddie Mac. This internal control report should be a separate report stating whether the independent public accountant (IPA) noted any material weaknesses during the audit of the financial statements. The report should be prepared in accordance with Interpretation 1 of Statement and Auditing Standards (SAS) No. 60, “Communication of Internal Control Structure Related Matters Noted in an Audit,” titled, “Reporting on the Existence of Material Weaknesses” (AICPA, Professional Standards, vol. I, AU sec. 9325).
+
+If audited financial statements and internal control reports are required by Freddie Mac, the audited financial statements and internal control reports must be prepared by an IPA who is a licensed certified public accountant (CPA) or a public accountant licensed on or before December 31, 1970, who complies with the applicable provisions of the public accountancy law and rules of the jurisdiction(s) where the audit is conducted and the jurisdiction(s) in which the IPA is licensed.
+
+Freddie Mac reserves the right to require audited financial statements, audited reports on internal controls, additional financial statements and other information relevant to the Seller/Servicer’s eligibility, including audited or Reviewed Financial Statements for the Seller/Servicer’s parent, subsidiaries and affiliates, at any time and regardless of the Seller/Servicer’s annual eligibility reporting requirements.

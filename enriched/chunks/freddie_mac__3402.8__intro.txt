@@ -1,0 +1,22 @@
+Source: freddie_mac
+Section: 3402.8 - Seller/ServicerGuide
+Domains: BORROWER.borrower_liabilities
+Key Terms: seller, servicer, settlement
+Cross-Source: fannie_mae/B3-6
+Content Type: policy_rule
+Summary: 3402.8 (Seller/ServicerGuide) covers borrower liabilities. Key topics: seller, servicer, settlement.
+---
+# 3402.8: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3402.8 -->
+
+(a)
+
+#### Procedures
+
+The Seller's preclosing review process should include procedures for:
+
+- Sample selection and timing that permits reviews to be completed prior to closing
+- Reporting deficiencies and taking appropriate corrective measures
+- Documenting the resolution of defects
+- Canceling or postponing settlement when the preclosing review reveals deficiencies or when the review cannot be completed prior to the scheduled settlement

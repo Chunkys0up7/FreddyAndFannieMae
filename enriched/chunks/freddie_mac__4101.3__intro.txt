@@ -1,0 +1,46 @@
+Source: freddie_mac
+Section: 4101.3 - Seller/ServicerGuide
+Domains: PROPERTY.property_valuation
+Key Terms: purchase, borrower, seller, servicer, lender, security instrument, deed of trust, mortgage
+Cross-Source: fannie_mae/B4-1
+Content Type: reference
+Summary: 4101.3 (Seller/ServicerGuide) covers property valuation. Key topics: purchase, borrower, seller, servicer, lender.
+---
+# 4101.3: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4101.3 -->
+
+(a)
+
+Master Form and Short Form Security Instruments
+
+Certain States have statutes that allow originating lenders to record a Master Form Security Instrument in a given county and then to record a Short Form Security Instrument for each subsequent Mortgage originated and recorded in that county. The Short Form Security Instrument contains the loan-specific information (e.g., Borrower name, lender name, loan amount, description of property) and identifies the provisions of the Master Form Security Instrument that are being incorporated into the Short Form Security Instrument.
+
+The State-specific Fannie Mae/Freddie Mac Uniform Master Form Security Instrument and Short Form Security Instrument are available from Freddie Mac’s website at [https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments). See [Exhibit 4A, Single-Family Uniform Instruments](/app/guide/exhibit/4A), for the list of currently available Master Form Security Instruments and Short Form Security Instruments and the current dates of these instruments.
+
+Freddie Mac will purchase Mortgages originated on a Short Form Security Instrument provided the requirements stated in this Section 4101.3 are satisfied.
+
+The Seller must not use or record a Short Form Security Instrument unless it has already recorded a Master Form Security Instrument in the recorder’s office serving the recording jurisdiction in which the Mortgaged Premises is located. In North Carolina, a Master Form may not be recorded in certain designated counties stated in the North Carolina statute.
+
+A copy of the recorded Master Form Security Instrument must be provided to the Borrower.
+
+(i)
+
+##### Master Form Security Instrument
+
+The Master Form Security Instrument is the Master Form Mortgage or Deed of Trust that is permitted under certain State statutes to be recorded by originating lenders in a given recording jurisdiction in the State. The Master Form Security Instrument for each State (with the exception of Ohio) consists of:
+
+- A title page (the name of the title page differs in different States), which contains the information required under the State statute to record the Master Form Security Instrument in that State and
+- The current Fannie Mae/Freddie Mac Uniform Security Instrument for that State
+
+In Ohio, there is no title page; the Master Form Security Instrument is the current Fannie Mae/Freddie Mac Ohio Mortgage with the required Master Form information provided on the first page of the Ohio Mortgage form itself.
+
+(ii)
+
+##### Short Form Security Instrument
+
+The Short Form Security Instrument is the Mortgage or Deed of Trust recorded for each individual Mortgage made and recorded in the recording jurisdiction where the Master Form Security Instrument is recorded.
+
+The Short Form Security Instrument contains loan-specific information and incorporates by reference the provisions of the previously recorded Master Form Security Instrument.
+
+A Seller must not use or record a Short Form Security Instrument unless the Seller has already recorded a Master Form Security Instrument in the recorder’s office serving the recording jurisdiction in which the Mortgaged Premises is located.

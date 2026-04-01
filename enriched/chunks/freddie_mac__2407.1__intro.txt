@@ -1,0 +1,16 @@
+Source: freddie_mac
+Section: 2407.1 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2407.1 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: seller, servicer.
+---
+# 2407.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2407.1 -->
+
+- [Bulletin 2025-H Refactoring](/app/guide/bulletin/2025-H)
+- [Bulletin 2025-17 Servicing](/app/guide/bulletin/2025-17)
+- [Bulletin 2024-16 Selling](/app/guide/bulletin/2024-16)
+- [Bulletin 2019-21 Servicing](/app/guide/bulletin/2019-21)

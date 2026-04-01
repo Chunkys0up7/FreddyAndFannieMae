@@ -1,0 +1,29 @@
+Source: freddie_mac
+Section: 1401.2 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: purchase, seller, servicer
+Content Type: reference
+Summary: 1401.2 (Seller/ServicerGuide) covers regulatory. Key topics: purchase, seller, servicer.
+---
+# 1401.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1401.2 -->
+
+(a)
+
+#### Requirements applicable to all Eligible Electronic Transactions
+
+The following requirements and applicable requirements in [Chapter 1302](/app/guide/chapter/1302) apply to all Eligible Electronic Transactions that Freddie Mac permits or requires the Seller/Servicer to engage in or conduct:
+
+- This [Chapter 1401](/app/guide/chapter/1401)
+- Other Guide chapters
+- The Seller/Servicer’s other Purchase Documents
+- Any user agreement(s) by and between the Seller/Servicer and Freddie Mac. (Examples of some Eligible Electronic Transactions include, but are not limited to, use of Loan Selling Advisor®, Loan Product Advisor® and Servicing Tools.)
+
+If these requirements conflict with requirements in any of the following, then the requirements in the other Guide chapters, the Seller/Servicer’s other Purchase Documents or any user agreement(s) shall control and prevail over these requirements, but only to the extent necessary to resolve the conflict:
+
+- Other Guide chapters
+- The Seller/Servicer’s other Purchase Documents
+- Any user agreement(s) by and between the Seller/Servicer and Freddie Mac
+
+If the Seller/Servicer believes there is any such conflict, the Seller/Servicer should contact Freddie Mac to discuss any such conflict in an effort to resolve it.

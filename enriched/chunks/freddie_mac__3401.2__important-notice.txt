@@ -1,0 +1,36 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Important Notice
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: appraisal, flood zone, flood insurance, leasehold, buydown, mortgage insurance, seller, note, mortgage, title insurance
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Important Notice
+
+The Section you are viewing has multiple versions available based on effective date. You may access future and current versions by using the drop-down menu above. For previous versions, [visit AllRegs(opens in new window)](https://www.allregs.com/tpl/public/fhlmc_freesite_tll.aspx).
+
+
+**Refer to [Bulletin 2025-7](/app/guide/bulletin/2025-7), which announced the policy requirements for Uniform Appraisal Dataset (UAD) 3.6. Sellers may submit to the Uniform Collateral Data Portal® appraisal reports that use UAD 3.6 before the mandatory effective November 2, 2026 version of this section.**
+
+This section contains requirements related to:
+
+- [Note](#a)
+- [Modifying instrument or assumption of indebtedness agreement](#b)
+- [Underwriting summary](#c)
+- [Title insurance](#d)
+- [Residential loan application](#e)
+- [Underwriting explanation](#f)
+- [Property valuation documentation](#g)
+- [Appraisal form rental information](#h)
+- [Leasehold Mortgage](#i)
+- [Buydown agreement](#j)
+- [Mortgage insurance certificate](#k)
+- [Documentation of flood zone determination](#l)
+- [Evidence of flood insurance](#m)
+- [Secondary financing](#n)
+- [Electronic Records and Electronic Signatures](#o)
+- [Other documentation](#p)
+
+(a)

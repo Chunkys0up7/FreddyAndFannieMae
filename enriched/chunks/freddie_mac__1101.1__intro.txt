@@ -1,0 +1,24 @@
+Source: freddie_mac
+Section: 1101.1 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: seller, servicer
+Content Type: definition
+Summary: 1101.1 (Seller/ServicerGuide) covers regulatory. Key topics: seller, servicer.
+---
+# 1101.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1101.1 -->
+
+(a)
+
+#### Guide segments
+
+The Guide is grouped into three segments:
+
+- Freddie Mac Seller/Servicer Relationship
+- Selling
+- Servicing
+
+The Guide’s design places the provisions applicable to all Seller/Servicers in one central location (Freddie Mac Seller/Servicer Relationship) and then differentiates between those for selling and Servicing. Although the Guide has distinct Selling and Servicing segments, there may be information and/or cross references for Servicers in the Selling segment and for Sellers in the Servicing segment.
+
+Additionally, the Guide contains [exhibits](/app/guide/exhibits/), [forms](/app/guide/forms/), the [Glossary](/app/guide/glossary/) and [directories](/app/guide/directories/).

@@ -1,0 +1,116 @@
+Source: freddie_mac
+Section: 2408.1 - Seller/ServicerGuide
+Subsection: Mortgage relation to Chapters 2404, 2405, 2406 and 2407
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-3
+Content Type: procedure
+---
+## Mortgage relation to Chapters 2404, 2405, 2406 and 2407
+
+
+Effective 12/17/2025
+
+
+[Guide Home](/app/guide/)
+
+[Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+[Series 2000 : Doing Business with Freddie Mac](/app/guide/series/2000)
+[Topic 2400 : Access to Freddie Mac Tools and Systems](/app/guide/topic/2400)
+[Chapter 2408 : Servicing Mortgages Through Freddie Mac Gateway® and Other Servicing Tools](/app/guide/chapter/2408)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+[Chapter 2408](/app/guide/chapter/2408) addresses rights and obligations associated with the Servicing of Mortgages on behalf of Freddie Mac by means of the Servicing Tools and is in addition to and not in limitation of:
+
+- [Chapters 2404](/app/guide/chapter/2404), [2405](/app/guide/chapter/2405) and [2406](/app/guide/chapter/2406), which, along with [Chapter 2401](/app/guide/chapter/2401), address the licensing of Freddie Mac Servicing Tools; and
+- [Chapter 2407](/app/guide/chapter/2407), which addresses the third-party licensing of Excluded Servicing Tools
+
+
+[*angle left* Prev](2407.1)
+
+
+[Next *angle right*](2408.2)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related Bulletins
+
+
+- [Bulletin 2025-H Refactoring](/app/guide/bulletin/2025-H)
+- [Bulletin 2023-9 Selling](/app/guide/bulletin/2023-9)
+- [Bulletin 2019-21 Servicing](/app/guide/bulletin/2019-21)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

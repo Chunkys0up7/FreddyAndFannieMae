@@ -1,0 +1,20 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Leasehold Mortgage
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: leasehold, buydown, mortgage
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+#### Leasehold Mortgage
+
+If the Mortgaged Premises is on a leasehold estate, a copy of the lease with recordation information must be retained in the Mortgage file.
+
+(j)
+
+#### Buydown agreement
+
+For Mortgages with a temporary subsidy buydown plan, the Mortgage file must contain a copy of the executed buydown agreement.
+
+(k)

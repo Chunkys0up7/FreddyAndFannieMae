@@ -1,0 +1,131 @@
+Source: freddie_mac
+Section: 4302.3 - Seller/ServicerGuide
+Subsection: Eligibility requirements for the Mortgage being refinanced
+Domains: UNDERWRITING.special_programs
+MISMO: MortgageType(Conventional); PropertyType(Cooperative); LienPriorityType(FirstLien)
+Key Terms: credit report, tradeline, mortgage insurance, purchase, refinance, borrower, seller, servicer, note, mortgage
+Content Type: procedure
+---
+## Eligibility requirements for the Mortgage being refinanced
+
+
+Effective 12/04/2024
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4300 : Loan Purpose](/app/guide/topic/4300)
+[Chapter 4302 : Refi Possible® Mortgages](/app/guide/chapter/4302)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+| Eligibility requirements for the Mortgage being refinanced under the Refi Possible® offering | |
+| --- | --- |
+| Topic | Eligibility requirements for Mortgage being refinanced |
+| General eligibility requirements | The Mortgage being refinanced must:   - Be a First Lien, conventional Mortgage currently owned by Freddie Mac, in whole or in part, or securitized by Freddie Mac - Be seasoned for at least 12 months (i.e., the Note Date of the Mortgage being refinanced must be at least 12 months prior to the Note Date of the Refi Possible Mortgage) |
+| Ineligible Mortgages | The Mortgage being refinanced must not be:   - A Freddie Mac Relief Refinance Mortgage℠ - A Freddie Mac Enhanced Relief Refinance® Mortgage - A Refi Possible Mortgage - A Mortgage subject to an outstanding repurchase request - A Mortgage subject to recourse, indemnification, or another credit enhancement other than mortgage insurance unless requirements in [Section 4302.6](4302.6) are met |
+| Payment history | The Mortgage being refinanced must have a payment history that indicates all of the following:   - The Mortgage has not been 30 days delinquent in the most recent six months - The Mortgage has not been 30 days delinquent more than once in the most recent 12 months - The Mortgage has not been 60 or more days delinquent in the most recent 12 months   The credit report can be relied on for determination of payment history through the date the Mortgage tradeline was last reported.  The Seller is responsible for the payment history between the date the Mortgage tradeline was last reported and the Note Date. If the Borrower has missed payments due to COVID-19 forbearance and those payments have been resolved according to the temporary eligibility requirements in [Bulletin 2020-17](/app/guide/bulletin/2020-17), those missed payments are not considered delinquencies for the purpose of meeting the payment history requirements. |
+| Loan Product Advisor® assessment | Loan Product Advisor will assess whether the Mortgage being refinanced complies with the above eligibility requirements with the following exceptions:   - The Seller is responsible for ensuring the Mortgage is seasoned at least 12 months as of the Note Date of the Refi Possible Mortgage, and - The Seller must consider the payment history after the date the Mortgage tradeline is last reported on the credit report and through the Note Date when determining whether the payment history requirements have been met |
+
+
+[*angle left* Prev](4302.2)
+
+
+[Next *angle right*](4302.4)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related FAQs
+
+
+- [Can a Mortgage with a recent history of forbearance be refinanced as a Refi Possible® Mortgage?](/app/guide/faq/FA1720)
+
+
+##### Related Bulletins
+
+
+- [Bulletin 2024-16 Selling](/app/guide/bulletin/2024-16)
+- [Bulletin 2021-36 Selling](/app/guide/bulletin/2021-36)
+- [Bulletin 2021-25 Selling](/app/guide/bulletin/2021-25)
+
+
+##### Additional Links
+
+
+- [Refi Possible and Home Possible Mortgages(PDF 5mb opens in new window)](https://sf.freddiemac.com/docs/pdf/fact-sheet/refi-possible-and-home-possible-refinance-comparison.pdf)
+- [Freddie Mac Refi Possible℠(opens in new window)](https://sf.freddiemac.com/Refi-Possible)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

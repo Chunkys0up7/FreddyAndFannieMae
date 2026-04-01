@@ -1,0 +1,18 @@
+Source: freddie_mac
+Section: 4305.1 - Seller/ServicerGuide
+Subsection: Purchase transaction definition
+Domains: UNDERWRITING.special_programs
+MISMO: LoanPurposeType(Purchase); PropertyUsageType(Investor, SecondHome); PropertyType(Cooperative)
+Key Terms: purchase, seller, mortgage
+Content Type: procedure
+---
+#### Purchase transaction definition
+
+A purchase transaction Mortgage is a Mortgage for which the proceeds are used for one of the following:
+
+- Acquire the Mortgaged Premises
+- Acquire the Mortgaged Premises and finance improvements to the property as permitted under the Seller’s Purchase Documents
+- Pay off the Interim Construction Financing in accordance with the requirements of [Chapter 4602](/app/guide/chapter/4602) for Construction to Permanent Mortgages and Renovation Mortgages
+- Pay off the outstanding balance under a land contract or contract for deed in accordance with requirements of [Chapter 4404](/app/guide/chapter/4404)
+
+(b)

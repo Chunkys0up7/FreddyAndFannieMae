@@ -1,0 +1,20 @@
+Source: freddie_mac
+Section: 4402.5 - Seller/ServicerGuide
+Domains: LOAN.loan_amortization
+Key Terms: seller, servicer, note, security instrument, mortgage
+Cross-Source: fannie_mae/B2-1.4
+Content Type: policy_rule
+Summary: 4402.5 (Seller/ServicerGuide) covers loan amortization. Key topics: seller, servicer, note, security instrument, mortgage.
+---
+# 4402.5: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4402.5 -->
+
+(a)
+
+#### Security Instrument
+
+The Security Instrument must be either:
+
+- The version of the Fannie Mae/Freddie Mac Uniform Security Instrument for the State in which the Mortgaged Premises is located in effect on the Note Date, or
+- A nonstandard document that has been modified to conform to the current Fannie Mae/Freddie Mac Uniform Security Instrument for the State in which the Mortgaged Premises are located

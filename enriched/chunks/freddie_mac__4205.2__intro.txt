@@ -1,0 +1,25 @@
+Source: freddie_mac
+Section: 4205.2 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+Key Terms: grants, purchase, seller, servicer, note, deed of trust, mortgage
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: definition
+Summary: 4205.2 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: grants, purchase, seller, servicer, note.
+---
+# 4205.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4205.2 -->
+
+(a)
+
+#### Overview
+
+A Home Possible® Mortgage with an RHS Leveraged Second is eligible for sale to Freddie Mac in accordance with the provisions of this chapter. Freddie Mac will not purchase the RHS Leveraged Second.
+
+The following additional terms apply for the purposes of this section.
+
+| Additional defined terms | |
+| --- | --- |
+| S | |
+| Second Loan Documentation | Second Loan Documents are all of the following RHS documents:   - Promissory Note, Form RD 1940-16 (Rev. 10-96) - Real Estate [Deed of Trust] or [Mortgage] for [the State in which the Mortgaged Premises is located], Form RHS 3550-14 (Rev. 10-96) - Subsidy Repayment Agreement, Form RD 3550-12 (Rev.10-96) - Interest Credit Agreement (Section 502 RHS Loans), Form FmHA 1944-6 (Rev. 12-95), and - Agreement with Prior Lienholder, Form FmHA 1927-8 (Rev. 1-92) |
+| Second Loan Regulations | The provisions applicable to Section 502 direct leveraged Mortgages originated by RHS contained in Part 3550 of Title 7 of the Code of Federal Regulations and the RHS Direct Single Family Housing Loans and Grants Field Service Handbook and Centralized Servicing Center Handbook collectively with the forms, agreements, manuals and other material and documents issued by RHS, as may be modified by RHS from time to time. |

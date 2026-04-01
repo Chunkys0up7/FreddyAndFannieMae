@@ -1,0 +1,92 @@
+Source: freddie_mac
+Section: 4204.2 - Seller/ServicerGuide
+Domains: LOAN.loan_limits, LOAN.loan_purpose
+MISMO: LoanPurposeType(Purchase); PropertyUsageType(PrimaryResidence); PropertyType(TwoToFourUnit); AmortizationType(AdjustableRate, Fixed); LienPriorityType(FirstLien)
+Key Terms: fixed-rate, ARM, balloon payment, purchase, refinance, borrower, seller, servicer, note, mortgage, CRA
+Cross-Source: fannie_mae/B2-1.2, fannie_mae/B2-1.3
+Content Type: reference
+Summary: 4204.2 (Seller/ServicerGuide) covers loan limits, loan purpose. Key topics: fixed-rate, ARM, balloon payment, purchase, refinance.
+---
+# 4204.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4204.2 -->
+
+(a)
+
+Special requirements for Affordable Seconds®
+
+Affordable Seconds must comply with the requirements of [Section 4204.1(a)](/app/guide/section/4204.1#a) and the requirements of this section, regardless of whether the Affordable Second is originated simultaneously with the First Lien Mortgage (i.e., the First Lien Mortgage and the Affordable Second are originated on the same day) or is being subordinated to the First Lien Mortgage through a refinance transaction.
+
+Note: A checklist for Affordable Seconds is available as an additional resource at [https://sf.freddiemac.com/docs/pdf/affordable-seconds-checklist.pdf(opens in new window)](https://sf.freddiemac.com/docs/pdf/affordable-seconds-checklist.pdf).
+
+The special requirements in [Section 4204.2(b)](#b) must be met if an Affordable Second is secured by a property that is subject to an equity sharing agreement.
+
+Affordable Seconds secured by Manufactured Homes or CHOICEHomes® must meet the additional requirements in [Sections 5703.5(c)](/app/guide/section/5703.5#c) and [5703.12(g)](/app/guide/section/5703.12#g).
+
+Note: Refer to [Section 4504.5](4504.5) for special requirements for HeritageOne® Mortgages with Affordable Seconds.
+
+(i)
+
+##### Funding source
+
+The Affordable Second must not be funded in any way through the First Lien Mortgage transaction, including differential pricing in rate, discount points or fees for individual loans.
+
+The Seller may not participate in an equity sharing agreement with respect to the Mortgaged Premises, unless the equity sharing agreement meets the requirements of [Section 4204.2(b)](#b).
+
+The Affordable Second must not be funded by the property seller or another interested party to the transaction, except as permitted in [Section 4204.2(a)(i)(B)](#a_i_B), [Section 4406.10](4406.10) for Mortgages secured by properties subject to income-based resale restrictions or [Section 4502.3(a)](/app/guide/section/4502.3#a) for Community Land Trust Mortgages.
+
+The terms and conditions of the Seller’s secondary financing or financial assistance program must be made available by the Seller to Freddie Mac upon request.
+
+(A)
+
+##### Non-Seller-funded Affordable Seconds
+
+An Affordable Second must be provided by an Agency, a credit union or a community development financial institution (CDFI) pursuant to an established, ongoing, documented secondary financing or financial assistance program.
+
+With respect to the subject Mortgage, an Agency or credit union must not:
+
+- Be the Seller or have participated in any aspect of the Mortgage origination process, other than to assess the Borrower’s ability to meet the requirements of the program and to fund the Affordable Second
+- Be affiliated with, under contract to, or financed (directly or indirectly) by the Seller or by any party that participated in the Mortgage origination process such as the property seller, builder, developer or real estate agent
+
+With respect to the subject Mortgage, a CDFI working with an Agency must:
+
+- Be a CDFI that has received CDFI certification from the Treasury’s CDFI Fund (a “Certified CDFI”)
+- Remain a Certified CDFI through the date the Mortgage is sold to Freddie Mac
+- Not be the Seller
+
+The Agency with which the CDFI is working may participate in the origination of the subject Mortgage.
+
+The Agency may be affiliated with, under contract to or financed by the Certified CDFI if the Agency is a nonprofit entity and third-party originator that works with the Certified CDFI.
+
+For these purposes, “affiliated with” means that the Agency and the Seller or other party are related to each other as a consequence of one entity directly or indirectly controlling the other party, being controlled by the other party or being under common control with that party.
+
+The First Lien Mortgage must be:
+
+- A fixed-rate Mortgage or an ARM with an initial fixed-rate period of five years or more,
+- A purchase transaction or a “no cash-out” refinance, and
+- Secured by a 1-4 unit Primary Residence
+
+(B)
+
+##### Seller-funded Affordable Seconds
+
+A Seller may be the source of an Affordable Second if the following requirements are met:
+
+- If the Seller is not a CDFI, the Seller must:
+  - Be a depository institution
+  - Have an Affordable Seconds program that supports its affordable lending and/or mission focused program(s), or a program designed to broadly support its Community Reinvestment Act (CRA) requirements
+- If the Seller is a credit union that is not required by law to participate in the CRA, the credit union must have an Affordable Seconds program that supports its affordable lending and/or mission-focused program
+- If the Seller is a CDFI, the Seller may be a non-depository institution if the established Affordable Seconds program supports affordable lending and the credit needs of prospective homebuyers in the Seller’s market(s)
+- The First Lien Mortgage must be:
+  - A Home Possible® Mortgage
+  - A fixed-rate Mortgage or an ARM with an initial fixed-rate period of five years or more
+  - An Accept Mortgage
+  - A purchase transaction Mortgage
+  - Secured by a 1-unit Primary Residence, and
+  - A Retail Mortgage
+
+(ii)
+
+##### Maturity date
+
+The terms of the Affordable Second must not require a balloon payment that becomes due before the maturity date or before payment in full of the First Lien Mortgage.

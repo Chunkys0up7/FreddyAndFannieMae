@@ -1,0 +1,22 @@
+Source: freddie_mac
+Section: 1302.2 - Seller/ServicerGuide
+Subsection: Defined terms
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer
+Content Type: procedure
+---
+#### Defined terms
+
+Seller/Servicers should be familiar with the following defined terms as they relate to information security requirements:
+
+| Information security defined terms | |
+| --- | --- |
+| A | |
+| Authentication | The process in which a system verifies the identity and role of an individual, usually based on some form of credential(s) (password/ID, token, etc.). |
+| E | |
+| Encryption | The process of encoding or obfuscating messages or information in such a way that only authorized parties can read it. |
+| V | |
+| Vulnerability Management | The process of identifying and testing known software vulnerabilities within a system and prioritizing remediation according to each vulnerability’s likelihood of occurrence and how the exploitation of the vulnerability would impact the system. |
+
+(b)

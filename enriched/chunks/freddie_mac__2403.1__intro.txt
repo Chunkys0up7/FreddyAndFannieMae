@@ -1,0 +1,21 @@
+Source: freddie_mac
+Section: 2403.1 - Seller/ServicerGuide
+Domains: PROPERTY.property_eligibility, PROPERTY.property_type
+Key Terms: purchase, seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-3
+Content Type: policy_rule
+Summary: 2403.1 (Seller/ServicerGuide) covers property eligibility, property type. Key topics: purchase, seller, servicer, mortgage.
+---
+# 2403.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2403.1 -->
+
+(a)
+
+#### Sale of Mortgages through Loan Selling Advisor®
+
+This chapter sets forth requirements for the sale of Mortgages through Loan Selling Advisor®.
+
+By using Loan Selling Advisor, the Seller agrees to be bound by the Purchase Documents including, but not limited to, [Chapter 1401](/app/guide/chapter/1401), the applicable terms of this chapter, the terms of any applicable Guide chapters, and any other relevant Purchase Documents.
+
+This Section 2403.1(a) is in addition to, and not in limitation of, [Chapter 2401](/app/guide/chapter/2401) and [Section 2402.2(e)](/app/guide/section/2402.2#e), which address the license terms applicable to the Sellers’ and Selling Agents’ use of Loan Selling Advisor in connection with the sale of Mortgages to Freddie Mac.

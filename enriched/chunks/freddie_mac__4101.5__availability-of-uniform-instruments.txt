@@ -1,0 +1,115 @@
+Source: freddie_mac
+Section: 4101.5 - Seller/ServicerGuide
+Subsection: Availability of Uniform Instruments
+Domains: PROPERTY.property_valuation
+MISMO: PropertyType(Condominium, Cooperative, PUD)
+Key Terms: seller, servicer, mortgage
+Cross-Source: fannie_mae/B4-1
+Content Type: procedure
+---
+## Availability of Uniform Instruments
+
+
+Effective 03/05/2025
+
+
+[Guide Home](/app/guide/)
+
+[Selling](/app/guide/segment/Selling)
+[Series 4000 : Mortgage Eligibility](/app/guide/series/4000)
+[Topic 4100 : Uniform Instruments](/app/guide/topic/4100)
+[Chapter 4101 : Uniform Instruments](/app/guide/chapter/4101)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+Fannie Mae/Freddie Mac Uniform Instruments (including condominium rider and Planned Unit Development (PUD) rider forms) and Freddie Mac-specific Uniform Instruments are available from Freddie Mac’s website at [https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments).
+
+Sellers may reprint the Uniform Instruments on their own letterhead, by computer or in any other way that Sellers may choose. However, the text of the Uniform Instruments must remain unchanged and the tagline that identifies the instrument as a Uniform Instrument must remain part of the document and be included on each page.
+
+
+[*angle left* Prev](4101.4)
+
+
+[Next *angle right*](4101.6)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related Bulletins
+
+
+- [Bulletin 2025-3 Selling](/app/guide/bulletin/2025-3)
+- [Bulletin 2021-25 Selling](/app/guide/bulletin/2021-25)
+- [Bulletin 2020-3 Selling](/app/guide/bulletin/2020-3)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

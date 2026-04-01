@@ -1,0 +1,131 @@
+Source: freddie_mac
+Section: 2101.5 - Seller/ServicerGuide
+Subsection: Mortgage bankers financial reporting
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Key Terms: pension, seller, servicer, mortgage
+Content Type: procedure
+---
+## Mortgage bankers financial reporting
+
+
+Effective 04/30/2024
+
+
+[Guide Home](/app/guide/)
+
+[Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+[Series 2000 : Doing Business with Freddie Mac](/app/guide/series/2000)
+[Topic 2100 : Seller/Servicer Institutional Eligibility](/app/guide/topic/2100)
+[Chapter 2101 : Seller/Servicer Institutional Eligibility](/app/guide/chapter/2101)
+
+
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)
+
+Each Seller/Servicer that is a mortgage banker must submit a complete and accurate [Form 1055, Mortgage Bankers’ Financial Reporting Form](/app/guide/form/1055), on a quarterly basis. For reporting purposes, mortgage bankers are firms other than federally insured depositories originating mortgages for sale in the secondary market and/or servicing mortgages. This includes Sellers/Servicers that are mortgage banker subsidiaries of federally insured depositories.
+
+[Form 1055](/app/guide/form/1055) must be completed and submitted as follows:
+
+- For reporting periods ending March 31, June 30 or September 30, [Form 1055](/app/guide/form/1055) must be filed no later than 30 days after the end of the reporting period. For reporting periods ending on December 31, the [Form 1055](/app/guide/form/1055) must be filed no later than 60 days after the end of the reporting period. Mortgage bankers with fiscal years that do not end on December 31 should refer to the instructions for [Form 1055](/app/guide/form/1055) at [http://www.mbfrf.org (opens in new window)](http://www.mbfrf.org/).
+- [Form 1055](/app/guide/form/1055) may be printed from the website and must be completed and submitted online at [http://www.mbfrf.org (opens in new window)](http://www.mbfrf.org/)
+- Seller/Servicer’s chief executive officer (CEO), chief financial officer (CFO) or an equivalent officer must certify that [Form 1055](/app/guide/form/1055) was prepared in accordance with generally accepted accounting principles (GAAP) and that the information submitted is true and accurate
+
+Additionally, for each Seller/Servicer that completes [Form 1055](/app/guide/form/1055) quarterly reporting and is either (1) a Large Non-Depository Institution, as defined in  [Section 2101.2](2101.2) or (2) separately identified by Freddie Mac through a written communication to that Seller/Servicer, such Seller/Servicer must submit a complete and accurate [Form 1055A](/app/guide/form/1055A), Monthly Mortgage Bankers’ Financial Reporting Short Form, as follows:
+
+- [Form 1055A](/app/guide/form/1055A) must be filed no later than the last day of the month following the end of the reporting month for the first and second months of each fiscal quarter (e.g., [Form 1055A](/app/guide/form/1055A) will be effective for the April 2024 filing, due May 31, 2024). Seller/Servicers are not required to provide a monthly report for each third month of the fiscal quarter, as the data will be captured in the quarterly [Form 1055](/app/guide/form/1055) report.
+- [Form 1055A](/app/guide/form/1055A) may be printed from the website and must be completed and submitted online at [http://www.mbfrf.org (opens in new window)](http://www.mbfrf.org)
+- Seller/Servicer’s CEO, CFO or an equivalent officer must certify that [Form 1055A](/app/guide/form/1055A) was prepared in accordance with GAAP and that the information submitted is true and accurate
+
+Failure to submit [Form 1055](/app/guide/form/1055) or [1055A](/app/guide/form/1055A) as described herein may result in suspension or disqualification of the Seller/Servicer.
+
+
+[*angle left* Prev](2101.4)
+
+
+[Next *angle right*](2101.6)
+
+
+##### Client Feedback
+
+Was this section helpful?
+
+Yes
+
+No
+
+Send Feedback
+
+##### Related Bulletins
+
+
+- [Bulletin 2024-1 Selling](/app/guide/bulletin/2024-1)
+- [Bulletin 2020-13 Selling](/app/guide/bulletin/2020-13)
+
+
+##### Related Forms/Docs
+
+
+- [Form 1055 Mortgage Bankers' Financial Reporting Form](/app/guide/form/1055)
+
+
+[object Object]
+
+
+<[object Object]>
+
+[object Object]
+
+
+Need Help?
+
+Please contact your Freddie Mac Account Representative or Customer Support
+
+[+1-800-FREDDIE](tel:800-373-3343)
+
+[Start Cobrowse Session](#)
+
+###### Guide Home
+
+- [Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+- [Selling](/app/guide/segment/Selling)
+- [Servicing](/app/guide/segment/Servicing)
+
+- [Bulletins & Industry Letters](/app/guide/bulletins)
+- [Glossary](/app/guide/glossary)
+- [Forms](/app/guide/forms)
+- [Uniform Instruments(opens in new window)](https://sf.freddiemac.com/tools-learning/uniform-instruments/2021-updated-instruments)
+
+###### More Single-Family
+
+- [Selling & Delivery(opens in new window)](https://sf.freddiemac.com/working-with-us/selling-delivery/overview)
+- [Origination & Underwriting(opens in new window)](https://sf.freddiemac.com/working-with-us/origination-underwriting/overview)
+- [Servicing(opens in new window)](https://sf.freddiemac.com/working-with-us/servicing/overview)
+- [Freddie Mac Learning(opens in new window)](https://sf.freddiemac.com/tools-learning/freddie-mac-learning/overview)
+
+
+###### All Freddie Mac
+
+- [Freddie Mac Capital Markets(opens in new window)](https://capitalmarkets.freddiemac.com)
+- [FreddieMac.com(opens in new window)](https://www.freddiemac.com)
+- [Freddie Mac Single-Family(opens in new window)](https://sf.freddiemac.com/)
+- [Freddie Mac Multifamily(opens in new window)](https://mf.freddiemac.com/)
+
+© 1989-2026 Freddie Mac
+
+- [Terms of Use(opens in new window)](http://www.freddiemac.com/terms)
+- [Privacy(opens in new window)](https://www.freddiemac.com/terms/privacy)
+- [State Privacy Notices(opens in new window)](https://www.freddiemac.com/terms/state_privacy_notices)
+
+
+Cookie Preferences
+
+[Your Privacy Choices](https://www.freddiemac.com/terms/state_privacy_notices#opt-out)
+
+
+- [(opens in new window)](https://www.linkedin.com/showcase/freddiemacsf/)
+- [(opens in new window)](https://twitter.com/FreddieMacSF)
+
+top

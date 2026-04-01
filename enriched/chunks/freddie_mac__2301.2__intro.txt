@@ -1,0 +1,25 @@
+Source: freddie_mac
+Section: 2301.2 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B2-1.1, fannie_mae/B2-2
+Content Type: policy_rule
+Summary: 2301.2 (Seller/ServicerGuide) covers borrower eligibility. Key topics: seller, servicer.
+---
+# 2301.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2301.2 -->
+
+(a)
+
+#### Submission and receipt of request
+
+The request will be deemed to have been duly given to and received by Freddie Mac on the date such request is:
+
+- Received in writing by Freddie Mac **(see [Directory 1](/app/guide/directory/1))** via first class mail
+- Received in electronic form (e-mail) as an Electronic Record by Freddie Mac’s computer information processing system via the internet at its internet e-mail address **(see [Directory 1](/app/guide/directory/1))**
+- Received as a Record or Electronic Record in electronic form (facsimile) by Freddie Mac’s electronic facsimile machine or system at Freddie Mac **(see [Directory 1](/app/guide/directory/1))**
+
+Other addresses may be substituted for the above upon notice of the substitution.
+
+The Seller/Servicer may also request the termination of its status as a Freddie Mac-approved Seller and/or Servicer by submitting a Change and Activity Report as described in [Section 2101.12](2101.12).

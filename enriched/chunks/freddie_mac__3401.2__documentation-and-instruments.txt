@@ -1,0 +1,29 @@
+Source: freddie_mac
+Section: 3401.2 - Seller/ServicerGuide
+Subsection: Documentation and instruments
+Domains: BORROWER.borrower_liabilities
+MISMO: PropertyType(Cooperative); AmortizationType(AdjustableRate, Fixed); LienPriorityType(SecondLien)
+Key Terms: seller, servicer
+Cross-Source: fannie_mae/B3-6
+Content Type: procedure
+---
+## Documentation and instruments
+
+
+Effective 02/04/2026
+
+
+[Guide Home](/app/guide/)
+
+[Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+[Series 3000 : Risk Management and Remedies](/app/guide/series/3000)
+[Topic 3400 : Quality Control](/app/guide/topic/3400)
+[Chapter 3401 : Freddie Mac's Postfunding Quality Control Review](/app/guide/chapter/3401)
+
+
+- Current
+  11/02/2026
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)

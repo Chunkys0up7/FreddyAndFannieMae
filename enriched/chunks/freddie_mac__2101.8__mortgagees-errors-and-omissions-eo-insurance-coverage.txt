@@ -1,0 +1,28 @@
+Source: freddie_mac
+Section: 2101.8 - Seller/ServicerGuide
+Subsection: Mortgagee's errors and omissions (E&O) insurance coverage
+Domains: QUALITY_CONTROL.representations
+MISMO: PropertyType(Cooperative)
+Key Terms: seller, servicer, mortgage
+Content Type: procedure
+---
+## Mortgagee's errors and omissions (E&O) insurance coverage
+
+
+Effective 06/10/2020
+
+
+[Guide Home](/app/guide/)
+
+[Seller/Servicer Relationship](/app/guide/segment/Seller%2FServicer%20Relationship)
+[Series 2000 : Doing Business with Freddie Mac](/app/guide/series/2000)
+[Topic 2100 : Seller/Servicer Institutional Eligibility](/app/guide/topic/2100)
+[Chapter 2101 : Seller/Servicer Institutional Eligibility](/app/guide/chapter/2101)
+
+
+- Current
+  06/08/2026
+- [*copy url*
+  Copy Link](#)
+- [*print*
+  Print](#)

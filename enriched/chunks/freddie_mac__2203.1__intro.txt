@@ -1,0 +1,19 @@
+Source: freddie_mac
+Section: 2203.1 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: seller, servicer, mortgage
+Cross-Source: fannie_mae/B2-2
+Content Type: policy_rule
+Summary: 2203.1 (Seller/ServicerGuide) covers borrower eligibility. Key topics: seller, servicer, mortgage.
+---
+# 2203.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2203.1 -->
+
+(a)
+
+#### MERS membership
+
+A Seller/Servicer must comply with the requirements of the MERS Governing Documents if the Seller/Servicer is a MERS Member and sells to and/or services on behalf of Freddie Mac, as applicable, Mortgages registered on the MERS System.
+
+If any requirements of the MERS Governing Documents conflict with the requirements of the Guide, the Seller/Servicer must comply with the requirements of the Guide.

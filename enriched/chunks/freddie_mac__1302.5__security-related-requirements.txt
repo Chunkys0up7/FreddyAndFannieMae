@@ -1,0 +1,8 @@
+Source: freddie_mac
+Section: 1302.5 - Seller/ServicerGuide
+Subsection: Security-related requirements
+Domains: COMPLIANCE.regulatory, DELIVERY.servicing
+Key Terms: seller, servicer
+Content Type: reference
+---
+The Seller/Servicer must comply with Applicable Laws that require notification to federal or state authorities. Promptly following a request by Freddie Mac, the Seller/Servicer will provide Freddie Mac and its designees all information and assistance needed to enable Freddie Mac to evaluate the need for, and to timely make, any notification it deems necessary or advisable concerning the Incident.

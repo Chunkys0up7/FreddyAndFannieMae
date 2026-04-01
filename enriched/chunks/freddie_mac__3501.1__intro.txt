@@ -1,0 +1,22 @@
+Source: freddie_mac
+Section: 3501.1 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: short sale, collection, purchase, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 3501.1 (Seller/ServicerGuide) covers regulatory. Key topics: short sale, collection, purchase, seller, servicer.
+---
+# 3501.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/3501.1 -->
+
+(a)
+
+#### Types of File Reviews
+
+Freddie Mac will notify a Servicer in writing that certain Mortgages have been selected for a Servicer Success File Review. Freddie Mac may conduct the following types of File Reviews:
+
+- Prudent Servicing Review: An assessment of the Servicer’s collection activities, loss mitigation activities, timeline management and property preservation processes
+- Short Sale Compliance Review: An assessment of the Servicer’s compliance with the requirements of the Guide and other Purchase Documents, as applicable, regarding completed short sales
+- Loan Modification Compliance Review: An assessment of the Servicer’s compliance with the requirements of the Guide and other Purchase Documents, as applicable, regarding completed modifications
+
+Freddie Mac may modify or expand the types of File Reviews from time to time.

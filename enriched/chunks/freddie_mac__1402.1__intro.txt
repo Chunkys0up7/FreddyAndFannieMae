@@ -1,0 +1,41 @@
+Source: freddie_mac
+Section: 1402.1 - Seller/ServicerGuide
+Domains: COMPLIANCE.regulatory
+Key Terms: purchase, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 1402.1 (Seller/ServicerGuide) covers regulatory. Key topics: purchase, seller, servicer, mortgage.
+---
+# 1402.1: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/1402.1 -->
+
+(a)
+
+#### Introduction
+
+[Chapter 1402](/app/guide/chapter/1402) sets forth Freddie Mac’s requirements for eMortgages. Seller/Servicers, custodians and System Providers must comply with these requirements to create, store, sell and service eMortgages. The requirements and specifications in this chapter are based, for the most part, on the requirements of E-SIGN and the UETA.
+
+(i)
+
+##### Interpreting requirements set forth in this [Chapter 1402](/app/guide/chapter/1402)
+
+Most types of Mortgages are eligible for delivery to Freddie Mac as eMortgages. Mortgages that are not currently eligible for sale to Freddie Mac as eMortgages are set forth in [Section 1402.1(d)](#d).
+
+Seller/Servicers of eMortgages must comply with all selling and Servicing requirements of the Guide and the Seller/Servicer’s other Purchase Documents, as applicable, including the special requirements set forth in this chapter.
+
+With the exception of a Seller/Servicer’s obligation to comply with applicable law, the requirements set forth in this chapter prevail over conflicting or contradictory requirements in other chapters of the Guide or the Seller/Servicer’s other Purchase Documents with respect to any eMortgage.
+
+(ii)
+
+##### Complying with eMortgage requirements
+
+A Seller/Servicer must obtain Freddie Mac’s prior written approval, which it may provide in its sole discretion, to sell to and/or service eMortgages for Freddie Mac. This approval is a Purchase Document and may include additional restrictions, requirements, conditions or stipulations relating to the sale and/or Servicing of eMortgages.
+
+Seller/Servicers of eMortgages must ensure that they and their System Providers (and if applicable, Correspondents and/or Mortgage Brokers) comply with the requirements specified in this chapter. In addition, contracts between the Seller/Servicer and any System Providers (and if applicable, Correspondents and/or Mortgage Brokers) regarding the provision of eMortgage closing services and eNote Vault System services, must contain certain terms and conditions that may be prescribed by Freddie Mac in its approval or other Purchase Documents.
+
+The Seller/Servicer is solely, and, if applicable, with any Servicing Agent are jointly, responsible for any failure to comply with the provisions of the MERS® eRegistry membership agreement, including, but not limited to:
+
+- Any rules and procedures; and
+- Any liability that it, or its applicable Servicing Agent, or Freddie Mac incurs as a result of Seller/Servicer’s registration of (or failure to timely register) eNotes in the MERS eRegistry
+
+A Transfer of Control identifying Freddie Mac as the Controller of an eNote registered in the MERS eRegistry does not relieve the Seller/Servicer and, if applicable, any Servicing Agent, from its responsibility to comply with all applicable provisions of the MERS eRegistry rules, the Guide, and the Seller/Servicer’s other Purchase Documents.

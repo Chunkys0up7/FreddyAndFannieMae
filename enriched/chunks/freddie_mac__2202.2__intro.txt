@@ -1,0 +1,60 @@
+Source: freddie_mac
+Section: 2202.2 - Seller/ServicerGuide
+Domains: BORROWER.borrower_eligibility
+Key Terms: seller, servicer, note, mortgage
+Cross-Source: fannie_mae/B2-2
+Content Type: policy_rule
+Summary: 2202.2 (Seller/ServicerGuide) covers borrower eligibility. Key topics: seller, servicer, note, mortgage.
+---
+# 2202.2: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/2202.2 -->
+
+(a)
+
+#### Contracting with a Document Custodian other than a Designated Custodian
+
+(i)
+
+##### Submission of [Form 1035, Document Custodial Agreement: Single-Family Mortgages](/app/guide/form/1035)
+
+Before delivering any Notes and assignments to a Document Custodian other than a Designated Custodian, a paper version of [Form 1035](/app/guide/form/1035) executed by the Seller/Servicer and the Document Custodian must be delivered to and approved by Freddie Mac **(see [Directory 1](/app/guide/directory/1))**.
+
+[Form 1035](/app/guide/form/1035) is the Tri-Party Agreement among Freddie Mac, a Document Custodian and a Seller/Servicer governing the verification and custody of all Notes and assignments for Mortgages delivered for sale to or serviced for Freddie Mac by a Seller/Servicer.
+
+Note: Additional application requirements to become a Freddie Mac-approved Document Custodian may be obtained from Freddie Mac **(see [Directory 1](/app/guide/directory/1))**.
+
+(ii)
+
+##### Freddie Mac approval and assignments
+
+After reviewing the Document Custodian application and any other required documentation, if Freddie Mac determines that the applicant meets the eligibility requirements, Freddie Mac will:
+
+- Assign a Document Custodian number to the Document Custodian,
+- Assign a Tri-Party Agreement number to identify that relationship,
+- Execute [Form 1035](/app/guide/form/1035),
+- Provide the Seller/Servicer and the Document Custodian each with a copy of the fully executed [Form 1035](/app/guide/form/1035),
+- Inform the respective parties of the Document Custodian number and the Document Custodial agreement number, and
+- Maintain the original fully executed [Form 1035](/app/guide/form/1035)
+
+The Document Custodian will be assigned only one Document Custodian number for all Seller/Servicer relationships approved at that location. It must, however, complete a separate application, including a [Form 1035](/app/guide/form/1035) executed by the Seller/Servicer and the Document Custodian, for each Seller/Servicer that wishes to use its custodial services. A Document Custodian with an assigned Document Custodian number must insert the number in the appropriate space on [Form 1035](/app/guide/form/1035).
+
+(iii)
+
+##### Delivery restrictions
+
+Seller/Servicers may not make a delivery pursuant to [Section 6301.4(a)](/app/guide/section/6301.4#a) until Freddie Mac has:
+
+- Executed the [Form 1035](/app/guide/form/1035), and
+- Provided written confirmation of the approval and its effective date
+
+(iv)
+
+##### Audit and compliance checks
+
+For Document Custodians other than the Designated Custodians, Freddie Mac relies on the representations and warranties of the Seller/Servicer in [Form 1035](/app/guide/form/1035) that the Document Custodian satisfies the eligibility requirements of [Section 2202.1(b)](/app/guide/section/2202.1#b). Freddie Mac and/or its auditors:
+
+- May perform, with or without prior notice, on-site audits of all records and documents held by the Document Custodian that relate to the Notes and assignments held for Freddie Mac, and
+- Reserve the right to perform on-site audits at any time to evaluate the Document Custodian’s compliance with Freddie Mac requirements and to assess its internal controls
+
+Freddie Mac’s execution of [Form 1035](/app/guide/form/1035) will not be deemed to be an approval of the Document Custodian or a waiver of any rights to enforce the eligibility conditions.

@@ -1,0 +1,12 @@
+Source: freddie_mac
+Section: 4301.4 - Seller/ServicerGuide
+Domains: UNDERWRITING.special_programs
+Key Terms: refinance, seller, servicer, mortgage
+Content Type: policy_rule
+Summary: 4301.4 (Seller/ServicerGuide) covers special programs. Key topics: refinance, seller, servicer, mortgage.
+---
+# 4301.4: Seller/ServicerGuide
+
+<!-- chunk: freddie_mac/4301.4 -->
+
+[For a HomeOne® “no cash-out” refinance Mortgage, if there is an Affordable Second®, does the Affordable Second have to be paid off, or can it be resubordinated?](/app/guide/faq/FA1605)
