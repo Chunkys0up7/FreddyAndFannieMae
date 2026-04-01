@@ -1,7 +1,7 @@
 {
   "source": "freddie_mac",
   "total_discovered": 897,
-  "total_scraped": 396,
+  "total_scraped": 401,
   "total_failed": 0,
   "total_skipped": 0,
   "sections": {
@@ -395,9 +395,14 @@
     "4602.2": "success",
     "4602.3": "success",
     "4602.4": "success",
-    "4602.5": "success"
+    "4602.5": "success",
+    "4602.6": "success",
+    "4602.7": "success",
+    "4602.8": "success",
+    "4602.9": "success",
+    "4602.10": "success"
   },
   "errors": [],
   "started_at": "2026-04-01T14:38:54.443062+00:00",
-  "last_updated": "2026-04-01T18:09:14.732748+00:00"
+  "last_updated": "2026-04-01T18:11:42.960165+00:00"
 }
