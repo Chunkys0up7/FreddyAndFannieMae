@@ -130,6 +130,79 @@ class TestContentClassifier:
         assert result == "policy_rule"
 
 
+# --- ContentClassifier.classify_severity ---
+
+
+class TestClassifySeverity:
+    def setup_method(self):
+        self.classifier = ContentClassifier()
+
+    def test_must_comply_detected(self):
+        content = "The borrower must provide documentation of income."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "must_comply"
+
+    def test_shall_detected_as_must(self):
+        content = "The lender shall verify employment before closing."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "must_comply"
+
+    def test_ineligible_detected_as_must(self):
+        content = "Properties in this category are ineligible."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "must_comply"
+
+    def test_should_comply_detected(self):
+        content = "The lender should review the credit report carefully."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "should_comply"
+
+    def test_best_practice_detected(self):
+        content = "Fannie Mae encourages lenders to follow best practice guidelines."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "best_practice"
+
+    def test_info_only_detected(self):
+        content = "This overview provides general information about the program."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "info_only"
+
+    def test_strongest_signal_wins(self):
+        content = "The borrower should review, but must provide tax returns."
+        result = self.classifier.classify_severity(content)
+        assert result.severity == "must_comply"
+
+    def test_empty_content(self):
+        result = self.classifier.classify_severity("")
+        assert result.severity == "info_only"
+        assert result.requirement_type == "guideline"
+
+    def test_eligibility_requirement_type(self):
+        content = "The borrower must be eligible and qualified for this program. Maximum LTV is 80%."
+        result = self.classifier.classify_severity(content)
+        assert result.requirement_type == "eligibility"
+
+    def test_documentation_requirement_type(self):
+        content = "The lender must verify income with documented evidence."
+        result = self.classifier.classify_severity(content)
+        assert result.requirement_type == "documentation"
+
+    def test_calculation_requirement_type(self):
+        content = "Calculate the DTI ratio by dividing total monthly obligations by gross monthly income."
+        result = self.classifier.classify_severity(content)
+        assert result.requirement_type == "calculation"
+
+    def test_guideline_fallback(self):
+        content = "The program offers flexible options for borrowers."
+        result = self.classifier.classify_severity(content)
+        assert result.requirement_type == "guideline"
+
+    def test_severity_signals_tracked(self):
+        content = "The borrower must have reserves. Documentation is required."
+        result = self.classifier.classify_severity(content)
+        assert len(result.severity_signals) > 0
+
+
 # --- CrossLinker ---
 
 

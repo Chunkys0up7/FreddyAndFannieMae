@@ -158,6 +158,49 @@ class Chunk:
     chunk_type: str  # "section" or "subsection"
 
 
+# --- Ontology models ---
+
+
+@dataclass
+class EntityTag:
+    """A typed entity value detected in content."""
+
+    entity_type: str  # e.g., "income_sources"
+    value: str  # e.g., "SelfEmployment"
+    confidence: str = "high"  # "high" (exact pattern) or "medium" (keyword)
+
+
+@dataclass
+class NumericConstraint:
+    """A numeric threshold extracted from content."""
+
+    metric: str  # e.g., "LTV", "credit_score", "reserves_months"
+    operator: str  # "<=", ">=", "==", "<", ">"
+    value: str  # e.g., "80", "620", "6"
+    unit: str = "%"  # "%" or "months" or "" (dimensionless)
+    conditions: list[str] = field(default_factory=list)
+    source_text: str = ""
+
+
+@dataclass
+class RequirementMeta:
+    """Classification of a requirement's type and severity."""
+
+    requirement_type: str = "guideline"  # eligibility | documentation | calculation | guideline
+    severity: str = "info_only"  # must_comply | should_comply | best_practice | info_only
+    severity_signals: list[str] = field(default_factory=list)
+
+
+@dataclass
+class OntologyEdge:
+    """A relationship edge in the knowledge graph."""
+
+    edge_type: str  # APPLIES_TO | REQUIRES | CONDITIONAL | EQUIVALENT | IMPLIES | CONSTRAINS
+    source: str  # chunk_id or entity_value
+    target: str  # chunk_id, entity_value, or constraint
+    metadata: dict = field(default_factory=dict)
+
+
 # --- Enrichment models ---
 
 
@@ -193,6 +236,12 @@ class EnrichedChunk:
     hierarchy_path: str = ""
     content: str = ""
 
+    # Ontology fields (optional — backward-compatible)
+    entities: dict[str, list[str]] = field(default_factory=dict)
+    requirement: RequirementMeta | None = None
+    numeric_constraints: list[NumericConstraint] = field(default_factory=list)
+    conditional_refs: list[dict] = field(default_factory=list)
+
 
 @dataclass
 class EnrichmentResult:
@@ -205,3 +254,9 @@ class EnrichmentResult:
     cross_source_link_count: int = 0
     avg_chunk_words: int = 0
     errors: list[str] = field(default_factory=list)
+
+    # Ontology stats
+    entity_distribution: dict[str, int] = field(default_factory=dict)
+    severity_distribution: dict[str, int] = field(default_factory=dict)
+    total_constraints: int = 0
+    total_ontology_edges: int = 0

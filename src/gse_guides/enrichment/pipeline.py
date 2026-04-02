@@ -21,7 +21,9 @@ from gse_guides.enrichment.adaptive_chunker import AdaptiveChunker
 from gse_guides.enrichment.content_classifier import ContentClassifier
 from gse_guides.enrichment.cross_linker import CrossLinker
 from gse_guides.enrichment.domain_tagger import DomainTagger
+from gse_guides.enrichment.entity_extractor import EntityExtractor
 from gse_guides.enrichment.mismo_extractor import MismoExtractor
+from gse_guides.enrichment.relationship_builder import RelationshipBuilder
 from gse_guides.enrichment.summarizer import Summarizer
 from gse_guides.enrichment.term_extractor import TermExtractor
 from gse_guides.enrichment.writer import EnrichmentWriter
@@ -38,6 +40,8 @@ class EnrichmentPipeline:
         self.mismo = MismoExtractor()
         self.terms = TermExtractor()
         self.classifier = ContentClassifier()
+        self.entity_extractor = EntityExtractor()
+        self.relationship_builder = RelationshipBuilder()
         self.summarizer = Summarizer()
         self.chunker = AdaptiveChunker(config)
         self.writer = EnrichmentWriter(config)
@@ -104,6 +108,20 @@ class EnrichmentPipeline:
                 result.content_type_distribution[chunk.content_type] = (
                     result.content_type_distribution.get(chunk.content_type, 0) + 1
                 )
+                # Ontology stats
+                for etype, values in chunk.entities.items():
+                    for v in values:
+                        key = f"{etype}.{v}"
+                        result.entity_distribution[key] = (
+                            result.entity_distribution.get(key, 0) + 1
+                        )
+                if chunk.requirement:
+                    result.severity_distribution[chunk.requirement.severity] = (
+                        result.severity_distribution.get(chunk.requirement.severity, 0) + 1
+                    )
+            result.total_constraints = sum(
+                len(c.numeric_constraints) for c in all_chunks
+            )
 
         # Write output
         if all_chunks:
@@ -122,6 +140,16 @@ class EnrichmentPipeline:
             else:
                 index_path = self.writer.write_index(all_chunks)
             logger.info("Index written to %s", index_path)
+
+            # Build and write ontology graph
+            logger.info("Building ontology graph...")
+            ontology = self.relationship_builder.build(all_chunks)
+            ontology_path = self.writer.write_ontology(ontology)
+            result.total_ontology_edges = len(ontology.get("edges", []))
+            logger.info(
+                "Ontology written to %s (%d edges)",
+                ontology_path, result.total_ontology_edges,
+            )
         elif not incremental:
             # Non-incremental with no chunks: write empty index
             index_path = self.writer.write_index(all_chunks)
@@ -182,6 +210,22 @@ class EnrichmentPipeline:
                 else:
                     merged_mismo[k] = v
 
+            # Step 7: Extract typed entities
+            entities = self.entity_extractor.extract_entities(raw.content)
+
+            # Step 8: Extract numeric constraints
+            constraints = self.entity_extractor.extract_constraints(
+                raw.content, entities
+            )
+
+            # Step 9: Extract conditional references
+            conditional_refs = self.entity_extractor.extract_conditional_refs(
+                raw.content, section_code
+            )
+
+            # Step 10: Classify requirement severity
+            requirement = self.classifier.classify_severity(raw.content)
+
             # Generate summary (only for first chunk / section intro)
             summary = self.summarizer.summarize(
                 title, section_code, domains, chunk_terms,
@@ -210,6 +254,10 @@ class EnrichmentPipeline:
                 url=url,
                 hierarchy_path=hierarchy_path,
                 content=raw.content,
+                entities=entities,
+                requirement=requirement,
+                numeric_constraints=constraints,
+                conditional_refs=conditional_refs,
             ))
 
         return enriched

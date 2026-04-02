@@ -39,6 +39,17 @@ class EnrichmentWriter:
         filepath.write_text(header + chunk.content, encoding="utf-8")
         return filepath
 
+    def write_ontology(self, ontology: dict) -> Path:
+        """Write the ontology knowledge graph to ontology.json."""
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        ontology_path = self.output_dir / "ontology.json"
+
+        # Atomic write
+        tmp_path = ontology_path.with_suffix(".json.tmp")
+        tmp_path.write_text(json.dumps(ontology, indent=2), encoding="utf-8")
+        os.replace(str(tmp_path), str(ontology_path))
+        return ontology_path
+
     def write_index(self, chunks: list[EnrichedChunk]) -> Path:
         """Write the master index.json with metadata for every chunk."""
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -46,7 +57,7 @@ class EnrichmentWriter:
 
         entries = []
         for chunk in chunks:
-            entries.append({
+            entry = {
                 "chunk_id": chunk.chunk_id,
                 "source": chunk.source.value,
                 "section_code": chunk.section_code,
@@ -67,7 +78,29 @@ class EnrichmentWriter:
                 "effective_date": chunk.effective_date,
                 "url": chunk.url,
                 "hierarchy_path": chunk.hierarchy_path,
-            })
+            }
+            # Ontology fields (only include if populated)
+            if chunk.entities:
+                entry["entities"] = chunk.entities
+            if chunk.requirement:
+                entry["requirement"] = {
+                    "type": chunk.requirement.requirement_type,
+                    "severity": chunk.requirement.severity,
+                }
+            if chunk.numeric_constraints:
+                entry["numeric_constraints"] = [
+                    {
+                        "metric": c.metric,
+                        "operator": c.operator,
+                        "value": c.value,
+                        "unit": c.unit,
+                        "conditions": c.conditions,
+                    }
+                    for c in chunk.numeric_constraints
+                ]
+            if chunk.conditional_refs:
+                entry["conditional_refs"] = chunk.conditional_refs
+            entries.append(entry)
 
         # Build domain distribution
         domain_dist: dict[str, int] = {}
@@ -113,6 +146,24 @@ class EnrichmentWriter:
 
         if chunk.key_terms:
             lines.append(f"Key Terms: {', '.join(chunk.key_terms[:15])}")
+
+        if chunk.entities:
+            entity_parts = []
+            for etype, values in chunk.entities.items():
+                entity_parts.append(f"{etype}={','.join(values)}")
+            lines.append(f"Entities: {'; '.join(entity_parts)}")
+
+        if chunk.requirement:
+            lines.append(
+                f"Requirement: type={chunk.requirement.requirement_type}, "
+                f"severity={chunk.requirement.severity}"
+            )
+
+        if chunk.numeric_constraints:
+            constraint_strs = [
+                f"{c.metric}{c.operator}{c.value}{c.unit}" for c in chunk.numeric_constraints[:5]
+            ]
+            lines.append(f"Constraints: {'; '.join(constraint_strs)}")
 
         if chunk.cross_source_links:
             link_strs = [
