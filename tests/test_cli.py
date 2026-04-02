@@ -325,7 +325,7 @@ class TestEnrichCommand:
             MockPipeline.return_value.run.return_value = result_obj
             result = runner.invoke(cli, ["enrich", "--source", "fannie-mae", "--incremental"])
             assert result.exit_code == 0
-            MockPipeline.return_value.run.assert_called_once_with("fannie_mae", incremental=True)
+            MockPipeline.return_value.run.assert_called_once_with("fannie_mae", incremental=True, enable_llm=False)
 
     def test_enrich_stats_flag_shows_distributions(self, runner):
         result_obj = self._make_enrichment_result()
@@ -344,7 +344,7 @@ class TestEnrichCommand:
             MockPipeline.return_value.run.return_value = result_obj
             result = runner.invoke(cli, ["enrich"])
             assert result.exit_code == 0
-            MockPipeline.return_value.run.assert_called_once_with(None, incremental=False)
+            MockPipeline.return_value.run.assert_called_once_with(None, incremental=False, enable_llm=False)
 
     def test_enrich_shows_errors(self, runner):
         result_obj = self._make_enrichment_result(errors=["Failed to parse section X"])

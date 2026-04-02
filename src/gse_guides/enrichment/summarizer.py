@@ -28,20 +28,32 @@ class Summarizer:
 
         return summary
 
-    def summarize_llm(self, content: str, section_code: str) -> str:
+    def summarize_llm(
+        self, content: str, section_code: str, provider=None,
+    ) -> str:
         """Generate an LLM-powered summary.
 
-        NOT IMPLEMENTED in this environment. Configure an LLM provider
-        (e.g., OpenAI, Anthropic) and implement this method to generate
-        richer summaries from the full section content.
+        Args:
+            content: The section content to summarize.
+            section_code: The section code for context.
+            provider: An LLMProvider instance. If None, raises NotImplementedError.
 
-        Expected signature for implementation:
-            - Call LLM with prompt: "Summarize this mortgage guideline section
-              in 1-2 sentences for retrieval purposes: {content}"
-            - Return the summary string
+        Returns:
+            A 1-2 sentence summary focused on requirements.
         """
-        raise NotImplementedError(
-            "LLM summaries are not enabled in this environment. "
-            "Set enable_llm_summaries=True in config and implement "
-            "the LLM provider integration in summarizer.py."
+        if provider is None:
+            raise NotImplementedError(
+                "LLM summaries require a provider. Use --llm flag or pass a provider."
+            )
+
+        prompt = (
+            f"Summarize this mortgage guide section ({section_code}) in 1-2 sentences. "
+            f"Focus on what the section REQUIRES, not just what it discusses.\n\n"
+            f"{content[:4000]}"
         )
+        system = (
+            "You are a mortgage underwriting expert. "
+            "Write concise summaries for retrieval-augmented generation."
+        )
+        text, _tokens = provider.complete(prompt, system=system)
+        return text.strip()

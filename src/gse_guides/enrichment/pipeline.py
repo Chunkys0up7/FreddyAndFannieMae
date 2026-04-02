@@ -48,6 +48,7 @@ class EnrichmentPipeline:
 
     def run(
         self, source: str | None = None, incremental: bool = False,
+        enable_llm: bool = False,
     ) -> EnrichmentResult:
         """Run enrichment on all scraped output files."""
         result = EnrichmentResult()
@@ -94,6 +95,10 @@ class EnrichmentPipeline:
                     logger.error("Failed to enrich %s: %s", md_path.name, e)
 
         result.total_chunks = len(all_chunks)
+
+        # Optional LLM enrichment pass (Phase 2)
+        if enable_llm and all_chunks:
+            self._run_llm_pass(all_chunks, result)
 
         # Compute stats
         if all_chunks:
@@ -164,6 +169,52 @@ class EnrichmentPipeline:
             self._save_state(merged_hashes)
 
         return result
+
+    def _run_llm_pass(
+        self, all_chunks: list[EnrichedChunk], result: EnrichmentResult
+    ) -> None:
+        """Run optional LLM enrichment on all chunks."""
+        from gse_guides.enrichment.llm_provider import create_provider
+        from gse_guides.enrichment.llm_enricher import LLMEnricher
+
+        logger.info("Starting LLM enrichment pass...")
+
+        try:
+            provider = create_provider(
+                self.config.llm_provider,
+                model=self.config.llm_model,
+                max_retries=self.config.llm_max_retries,
+                timeout=self.config.llm_timeout_seconds,
+            )
+        except (ImportError, ValueError) as e:
+            logger.error("Failed to create LLM provider: %s", e)
+            result.errors.append(f"LLM provider error: {e}")
+            return
+
+        enricher = LLMEnricher(provider, self.config)
+
+        if self.config.llm_dry_run:
+            dry_run = enricher.dry_run(all_chunks)
+            logger.info("LLM dry run results: %s", dry_run)
+            return
+
+        try:
+            llm_results = enricher.enrich_batch(all_chunks)
+            for chunk, llm_result in zip(all_chunks, llm_results):
+                chunk.llm_summary = llm_result.summary
+                chunk.llm_entities = llm_result.entities
+                chunk.llm_constraints = llm_result.numeric_constraints
+                chunk.llm_relationships = llm_result.relationships
+                chunk.llm_model = llm_result.model
+        except Exception as e:
+            logger.error("LLM enrichment failed: %s", e)
+            result.errors.append(f"LLM enrichment error: {e}")
+
+        # Update stats
+        result.llm_chunks_processed = enricher.chunks_processed
+        result.llm_chunks_cached = enricher.chunks_cached
+        result.llm_total_tokens = enricher.total_tokens
+        result.llm_estimated_cost = enricher.total_cost
 
     def _process_file(
         self, md_path: Path, source: GuideSource

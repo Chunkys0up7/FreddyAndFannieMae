@@ -160,25 +160,51 @@ def discover(source, verbose):
 @click.option("--enriched", type=click.Path(), default="enriched", help="Enriched output directory")
 @click.option("--source", type=click.Choice(["fannie-mae", "freddie-mac"]), help="Only enrich one source")
 @click.option("--incremental", is_flag=True, help="Only re-enrich files that changed since last run")
+@click.option("--llm", is_flag=True, help="Enable LLM-powered enrichment pass")
+@click.option("--provider", type=click.Choice(["anthropic", "openai"]), default="anthropic", help="LLM provider")
+@click.option("--llm-model", default="", help="Override LLM model (default: provider's cheapest)")
+@click.option("--llm-max-chunks", type=int, help="Max chunks to LLM-enrich (cost control)")
+@click.option("--llm-dry-run", is_flag=True, help="Estimate LLM cost without calling API")
 @click.option("--stats", is_flag=True, help="Print enrichment statistics")
 @click.option("--verbose", "-v", is_flag=True, help="Enable verbose logging")
-def enrich(output, enriched, source, incremental, stats, verbose):
+def enrich(output, enriched, source, incremental, llm, provider, llm_model,
+           llm_max_chunks, llm_dry_run, stats, verbose):
     """Enrich scraped sections with domain tags, MISMO metadata, and adaptive chunks."""
     _setup_logging(verbose)
 
     from gse_guides.enrichment.pipeline import EnrichmentPipeline
 
     config = ScraperConfig(output_dir=Path(output), enriched_dir=Path(enriched))
+
+    # Wire LLM options into config
+    if llm or llm_dry_run:
+        config.llm_provider = provider
+        config.llm_model = llm_model
+        if llm_max_chunks is not None:
+            config.llm_max_chunks = llm_max_chunks
+        config.llm_dry_run = llm_dry_run
+
     pipeline = EnrichmentPipeline(config)
 
     normalized_source = source.replace("-", "_") if source else None
-    result = pipeline.run(normalized_source, incremental=incremental)
+    result = pipeline.run(
+        normalized_source,
+        incremental=incremental,
+        enable_llm=llm or llm_dry_run,
+    )
 
     click.echo(f"\nEnrichment Complete:")
     click.echo(f"  Sections processed: {result.total_sections}")
     click.echo(f"  Chunks produced:    {result.total_chunks}")
     click.echo(f"  Avg chunk words:    {result.avg_chunk_words}")
     click.echo(f"  Cross-source links: {result.cross_source_link_count}")
+
+    if result.llm_chunks_processed > 0:
+        click.echo(f"\n  LLM Enrichment:")
+        click.echo(f"    Chunks processed: {result.llm_chunks_processed}")
+        click.echo(f"    Chunks cached:    {result.llm_chunks_cached}")
+        click.echo(f"    Total tokens:     {result.llm_total_tokens}")
+        click.echo(f"    Estimated cost:   ${result.llm_estimated_cost:.2f}")
 
     if result.errors:
         click.echo(f"\n  Errors ({len(result.errors)}):")

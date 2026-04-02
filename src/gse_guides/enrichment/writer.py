@@ -100,6 +100,26 @@ class EnrichmentWriter:
                 ]
             if chunk.conditional_refs:
                 entry["conditional_refs"] = chunk.conditional_refs
+            # LLM enrichment fields (only if populated)
+            if chunk.llm_summary:
+                entry["llm_summary"] = chunk.llm_summary
+            if chunk.llm_entities:
+                entry["llm_entities"] = chunk.llm_entities
+            if chunk.llm_constraints:
+                entry["llm_constraints"] = [
+                    {
+                        "metric": c.metric,
+                        "operator": c.operator,
+                        "value": c.value,
+                        "unit": c.unit,
+                        "conditions": c.conditions,
+                    }
+                    for c in chunk.llm_constraints
+                ]
+            if chunk.llm_relationships:
+                entry["llm_relationships"] = chunk.llm_relationships
+            if chunk.llm_model:
+                entry["llm_model"] = chunk.llm_model
             entries.append(entry)
 
         # Build domain distribution
@@ -170,6 +190,29 @@ class EnrichmentWriter:
                 f"{l.source}/{l.section_code}" for l in chunk.cross_source_links[:5]
             ]
             lines.append(f"Cross-Source: {', '.join(link_strs)}")
+
+        # LLM enrichment fields (only if populated)
+        if chunk.llm_summary:
+            lines.append(f"LLM Summary: {chunk.llm_summary}")
+        if chunk.llm_entities:
+            entity_parts = [
+                f"{k}={','.join(v)}" for k, v in chunk.llm_entities.items()
+            ]
+            lines.append(f"LLM Entities: {'; '.join(entity_parts)}")
+        if chunk.llm_constraints:
+            strs = [
+                f"{c.metric}{c.operator}{c.value}{c.unit}"
+                for c in chunk.llm_constraints[:5]
+            ]
+            lines.append(f"LLM Constraints: {'; '.join(strs)}")
+        if chunk.llm_relationships:
+            rel_strs = [
+                f"{r.get('type', '?')}->{r.get('target_section', '?')}"
+                for r in chunk.llm_relationships[:5]
+            ]
+            lines.append(f"LLM Relationships: {'; '.join(rel_strs)}")
+        if chunk.llm_model:
+            lines.append(f"LLM Model: {chunk.llm_model}")
 
         lines.append(f"Content Type: {chunk.content_type}")
 

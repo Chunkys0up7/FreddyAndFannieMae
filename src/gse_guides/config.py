@@ -52,6 +52,17 @@ class ScraperConfig:
     enrich_table_max_words: int = 1500  # Tables get wider allowance
     enable_llm_summaries: bool = False
 
+    # LLM enrichment (optional — triggered via --llm flag)
+    llm_provider: str = "anthropic"           # "anthropic" or "openai"
+    llm_model: str = ""                       # Empty = use provider default
+    llm_batch_size: int = 10                  # Chunks per batch
+    llm_max_chunks: int | None = None         # Limit chunks processed (cost control)
+    llm_cache_enabled: bool = True            # Cache LLM results
+    llm_dry_run: bool = False                 # Estimate cost without calling API
+    llm_prompt_version: str = "1.0"           # Bump to invalidate cache
+    llm_max_retries: int = 3                  # Retries on API errors
+    llm_timeout_seconds: int = 60             # Per-request timeout
+
     # Concurrency
     max_workers: int = 1  # 1 = sequential (default for backwards compat)
     fannie_default_workers: int = 8

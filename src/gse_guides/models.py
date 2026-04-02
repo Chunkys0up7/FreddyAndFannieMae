@@ -242,6 +242,13 @@ class EnrichedChunk:
     numeric_constraints: list[NumericConstraint] = field(default_factory=list)
     conditional_refs: list[dict] = field(default_factory=list)
 
+    # LLM enrichment fields (optional — populated only with --llm)
+    llm_summary: str = ""
+    llm_entities: dict[str, list[str]] = field(default_factory=dict)
+    llm_constraints: list[NumericConstraint] = field(default_factory=list)
+    llm_relationships: list[dict] = field(default_factory=list)
+    llm_model: str = ""
+
 
 @dataclass
 class EnrichmentResult:
@@ -260,3 +267,22 @@ class EnrichmentResult:
     severity_distribution: dict[str, int] = field(default_factory=dict)
     total_constraints: int = 0
     total_ontology_edges: int = 0
+
+    # LLM enrichment stats
+    llm_chunks_processed: int = 0
+    llm_chunks_cached: int = 0
+    llm_total_tokens: int = 0
+    llm_estimated_cost: float = 0.0
+
+
+@dataclass
+class LLMEnrichmentResult:
+    """Result of LLM enrichment for a single chunk."""
+
+    summary: str = ""
+    entities: dict[str, list[str]] = field(default_factory=dict)
+    numeric_constraints: list[NumericConstraint] = field(default_factory=list)
+    relationships: list[dict] = field(default_factory=list)
+    model: str = ""
+    tokens_used: int = 0
+    cached: bool = False
