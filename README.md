@@ -1,177 +1,126 @@
 # GSE Guide Scraper
 
-Scrapes, parses, and enriches Fannie Mae and Freddie Mac mortgage lending guidelines into RAG-ready chunks with MISMO-aligned metadata.
+Scrapes, parses, and enriches Fannie Mae and Freddie Mac mortgage lending guidelines into RAG-ready chunks with MISMO-aligned metadata, entity extraction, ontology graph, and optional LLM enrichment.
+
+**For complete usage instructions, see [USAGE.md](USAGE.md).**
 
 ## Architecture
 
 ```
-Sitemap XML ─> Discovery ─> Scraper ─> Parser ─> Markdown Writer ─> output/*.md
-                                                                        │
-                                                    Enrichment Pipeline ◄┘
-                                                         │
-                                           Domain Tagger, MISMO Extractor,
-                                           Term Extractor, Cross-Linker,
-                                           Adaptive Chunker, Summarizer
-                                                         │
+Sitemap XML -> Discovery -> Scraper -> Parser -> Markdown Writer -> output/*.md
+                                                                        |
+                                                    Enrichment Pipeline <-
+                                                         |
+                                      Phase 1: Rule-based (12 steps)
+                                        Domain Tagger, MISMO Extractor,
+                                        Entity Extractor, Relationship Builder,
+                                        Adaptive Chunker, Severity Classifier
+                                                         |
+                                      Phase 2: LLM (optional, --llm flag)
+                                        Anthropic Claude / OpenAI
+                                        Summaries, entities, constraints
+                                                         |
                                                     enriched/chunks/*.txt
                                                     enriched/index.json
+                                                    enriched/ontology.json
 ```
 
 | Source | Method | Sections | Speed |
 |--------|--------|----------|-------|
 | Fannie Mae Selling Guide | `requests` + BeautifulSoup | ~423 | ~2 min (8 workers) |
-| Freddie Mac Guide | Playwright (headless Chromium) | ~897 | ~1 hr (4 workers) |
+| Freddie Mac Guide | Playwright (headless Chromium) | ~897 | ~1 hr (single-threaded) |
 
-## Setup
+## Quick Start
 
 ```bash
 # Install
 pip install -e ".[dev]"
-
-# Playwright browser (required for Freddie Mac)
 playwright install chromium
-```
 
-## Usage
-
-```bash
-# Discover sections (no scraping)
-gse-guides discover fannie-mae
-gse-guides discover freddie-mac
-
-# Scrape all sections
+# Scrape
 gse-guides scrape fannie-mae
 gse-guides scrape freddie-mac
-gse-guides scrape all
 
-# Scrape with options
-gse-guides scrape freddie-mac --workers 4 --max-sections 50 --verbose
-gse-guides scrape fannie-mae --section B3-3.1-01
+# Enrich
+gse-guides enrich --stats
 
-# Check progress
-gse-guides status
-
-# Enrich for RAG
-gse-guides enrich
-gse-guides enrich --incremental --stats
-gse-guides enrich --source fannie-mae
+# Optional: LLM enrichment
+pip install -e ".[llm]"
+export ANTHROPIC_API_KEY="sk-ant-..."
+gse-guides enrich --llm --llm-dry-run    # estimate cost
+gse-guides enrich --llm                   # run it
 ```
 
-## CLI Options
+## Commands
 
-### `scrape`
-| Flag | Description |
-|------|-------------|
-| `--section CODE` | Scrape a single section |
-| `--output PATH` | Output directory (default: `output/`) |
-| `--delay SECONDS` | Override request delay |
-| `--no-resume` | Re-scrape everything |
-| `--max-sections N` | Limit sections (for testing) |
-| `--workers N` | Parallel workers (default: 8 Fannie, 4 Freddie) |
-| `--verbose` | Debug logging |
-
-### `enrich`
-| Flag | Description |
-|------|-------------|
-| `--output PATH` | Scraped output directory |
-| `--enriched PATH` | Enriched output directory |
-| `--source` | Only enrich one source |
-| `--incremental` | Skip unchanged files |
-| `--stats` | Print domain/content-type distributions |
-
-## Output Format
-
-### Scraped Markdown (`output/`)
-Each section is a `.md` file with YAML frontmatter:
-```yaml
----
-source: fannie_mae
-section_code: B3-3.1-01
-title: General Income Information
-effective_date: "2026-03-04"
-word_count: 1847
-table_count: 1
-cross_references: [B3-3.1-02, B3-3.2-01]
----
-```
-
-### Enriched Chunks (`enriched/`)
-Each chunk is a `.txt` file with metadata header:
-```
-Source: fannie_mae
-Section: B3-3.1-01 - General Income Information
-Domains: BORROWER.borrower_income
-MISMO: LoanPurposeType(Purchase, Refinance)
-Key Terms: debt-to-income, employment, income
-Content Type: policy_rule
----
-```
-
-Plus `enriched/index.json` with full metadata for all chunks.
-
-## Resilience Features
-
-- **Parallel scraping**: ThreadPoolExecutor with per-source worker defaults
-- **Adaptive rate limiting**: Backs off on HTTP 429/503, speeds up after consecutive successes
-- **Circuit breaker**: Pauses after 5 consecutive failures, aborts if failures continue
-- **Content quality gate**: Retries sections producing <50 words
-- **Atomic manifest writes**: Write-then-rename prevents corruption on crash
-- **Resume**: Skips already-scraped sections based on manifest
+| Command | Description |
+|---------|-------------|
+| `gse-guides discover <source>` | List all section URLs from sitemap (no scraping) |
+| `gse-guides scrape <source>` | Download and parse guide sections to markdown |
+| `gse-guides status` | Show scraping progress from manifest files |
+| `gse-guides enrich` | Build enriched RAG-ready chunks with metadata |
 
 ## Enrichment Pipeline
 
-| Step | Module | Description |
-|------|--------|-------------|
-| 1 | `content_classifier` | Classifies as policy_rule, definition, procedure, eligibility_matrix, or reference |
-| 2 | `domain_tagger` | Tags with MISMO-aligned domains (BORROWER, PROPERTY, LOAN, etc.) |
-| 3 | `mismo_extractor` | Extracts MISMO enumeration values (LoanPurposeType, PropertyType, etc.) |
-| 4 | `cross_linker` | Links equivalent sections across Fannie Mae and Freddie Mac |
-| 5 | `adaptive_chunker` | Splits at H2/H3/H4 boundaries, preserves tables, merges undersized |
-| 6 | `term_extractor` | Extracts 163 domain-specific mortgage terms |
-| 7 | `summarizer` | Template-based summary (LLM placeholder available) |
+### Phase 1: Rule-Based (always runs, ~54 seconds)
+
+| Step | What It Does |
+|------|-------------|
+| Content classification | `policy_rule`, `definition`, `procedure`, `eligibility_matrix`, `reference` |
+| Domain tagging | MISMO-aligned domains (BORROWER, PROPERTY, LOAN, UNDERWRITING, etc.) |
+| MISMO extraction | Enumeration values (LoanPurposeType, PropertyType, etc.) |
+| Cross-source linking | Fannie Mae <-> Freddie Mac equivalent section mapping |
+| Adaptive chunking | Heading-aware splitting, table preservation, undersized merging |
+| Entity extraction | 13 entity types, 91 values (income sources, property types, etc.) |
+| Constraint extraction | Numeric thresholds (LTV, CLTV, DTI, credit score, reserves) |
+| Severity classification | `must_comply`, `should_comply`, `best_practice`, `info_only` |
+| Ontology graph | 5 edge types, 8,690+ edges, reverse entity-to-chunk index |
+
+### Phase 2: LLM Enrichment (optional, `--llm` flag)
+
+| Enhancement | What It Adds |
+|-------------|-------------|
+| `llm_summary` | Requirement-focused natural-language summaries |
+| `llm_entities` | Entities missed by regex (paraphrased, implied) |
+| `llm_constraints` | Thresholds from complex tables that regex can't parse |
+| `llm_relationships` | Implicit cross-section dependencies |
+
+Cost: ~$3-5 with Claude Haiku for all 2,248 chunks. Cached for free re-runs.
+
+## Output
+
+- `output/` - Scraped markdown with YAML frontmatter (one `.md` per section)
+- `enriched/chunks/` - Enriched chunk `.txt` files with metadata headers
+- `enriched/index.json` - Searchable metadata index for all chunks
+- `enriched/ontology.json` - Knowledge graph with entity relationships
 
 ## Development
 
 ```bash
-# Install with dev dependencies
 pip install -e ".[dev]"
-
-# Run tests
-pytest
-
-# Run with coverage
-pytest --cov=gse_guides --cov-report=html
+pytest                    # 566 tests, ~17 seconds
+pytest --cov=gse_guides   # with coverage
 ```
 
 ## Project Structure
 
 ```
 src/gse_guides/
-  __init__.py              # slugify utility
-  models.py                # All dataclasses and enums
-  config.py                # ScraperConfig
-  base_scraper.py          # Abstract base with retry/rate-limit/circuit-breaker
-  markdown_converter.py    # HTML -> Markdown
-  chunker.py               # Semantic chunking (scrape phase)
-  writer.py                # Markdown file writer
-  cli.py                   # Click CLI
-  fannie_mae/
-    discovery.py           # Sitemap parsing
-    parser.py              # HTML -> GuideSection
-    scraper.py             # requests-based scraper
-  freddie_mac/
-    discovery.py           # Sitemap parsing
-    parser.py              # SPA DOM -> GuideSection
-    scraper.py             # Playwright-based scraper
+  cli.py                         # 4 CLI commands
+  config.py                      # ScraperConfig (50+ fields)
+  models.py                      # 15 dataclasses, 2 enums
+  base_scraper.py                # Retry, rate-limit, circuit-breaker
+  fannie_mae/                    # HTTP scraper (requests + BS4)
+  freddie_mac/                   # Browser scraper (Playwright)
   enrichment/
-    pipeline.py            # Orchestrator
-    taxonomy.py            # Domain maps, MISMO patterns, terms
-    domain_tagger.py       # Section -> domain tags
-    mismo_extractor.py     # Content -> MISMO enums
-    term_extractor.py      # Content -> mortgage terms
-    content_classifier.py  # Section -> content type
-    cross_linker.py        # Fannie <-> Freddie linking
-    adaptive_chunker.py    # Heading-aware chunking
-    summarizer.py          # Template + LLM placeholder
-    writer.py              # Chunk files + index.json
+    pipeline.py                  # 12-step orchestrator
+    taxonomy.py                  # Entity types, domain maps, patterns
+    entity_extractor.py          # Typed entity + constraint extraction
+    relationship_builder.py      # Ontology graph builder
+    content_classifier.py        # Content type + severity
+    adaptive_chunker.py          # Heading-aware chunking
+    llm_provider.py              # Anthropic / OpenAI abstraction
+    llm_enricher.py              # LLM orchestrator with caching
+    llm_cache.py                 # Content-hash cache
+    ...                          # 7 more enrichment modules
 ```
