@@ -18,7 +18,7 @@ class EnrichmentWriter:
         self.output_dir = config.enriched_dir
 
     def write_chunk(self, chunk: EnrichedChunk) -> Path:
-        """Write a single chunk to a .txt file with metadata header."""
+        """Write a single chunk to a .txt file with markdown content and metadata header."""
         chunks_dir = self.output_dir / "chunks"
         chunks_dir.mkdir(parents=True, exist_ok=True)
 

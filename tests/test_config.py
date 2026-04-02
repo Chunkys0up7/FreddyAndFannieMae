@@ -62,7 +62,7 @@ class TestDefaults:
 
     def test_freddie_default_workers(self):
         cfg = ScraperConfig()
-        assert cfg.freddie_default_workers == 4
+        assert cfg.freddie_default_workers == 1  # Playwright sync API requires single thread
 
     def test_max_sections_default_none(self):
         cfg = ScraperConfig()

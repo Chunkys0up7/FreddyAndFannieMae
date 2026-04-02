@@ -56,7 +56,7 @@ def scrape(source, section, output, delay, no_resume, max_sections, workers, ver
     if workers is not None:
         config.max_workers = workers
 
-    scrapers = _create_scrapers(source, config)
+    scrapers = _create_scrapers(source, config, user_set_workers=workers is not None)
 
     for scraper in scrapers:
         click.echo(f"\n{'='*60}")
@@ -195,12 +195,11 @@ def enrich(output, enriched, source, incremental, stats, verbose):
             click.echo(f"    {ctype:<25} {count}")
 
 
-def _create_scrapers(source: str, config: ScraperConfig) -> list[BaseScraper]:
+def _create_scrapers(
+    source: str, config: ScraperConfig, *, user_set_workers: bool = False,
+) -> list[BaseScraper]:
     """Create appropriate scraper instances with per-source worker defaults."""
     scrapers = []
-
-    # If user didn't set --workers, use per-source defaults
-    user_set_workers = config.max_workers != 1  # 1 is the base default
 
     if source in ("fannie-mae", "all"):
         from gse_guides.fannie_mae.scraper import FannieMaeScraper

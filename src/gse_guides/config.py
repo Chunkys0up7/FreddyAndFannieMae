@@ -55,7 +55,7 @@ class ScraperConfig:
     # Concurrency
     max_workers: int = 1  # 1 = sequential (default for backwards compat)
     fannie_default_workers: int = 8
-    freddie_default_workers: int = 4
+    freddie_default_workers: int = 1  # Playwright sync API requires single thread
 
     # Resilience
     quality_min_words: int = 50

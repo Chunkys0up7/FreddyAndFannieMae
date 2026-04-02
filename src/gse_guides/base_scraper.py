@@ -364,11 +364,21 @@ class BaseScraper(ABC):
 
         status = self.manifest.sections.get(section_url.section_code)
         if status in (ScrapeStatus.SUCCESS.value, ScrapeStatus.QUALITY_WARNING.value):
+            # Check exact path first (fast path)
             output_path = self._writer._build_output_path_from_code(
                 section_url.section_code, section_url.slug, self.source
             )
             if output_path.exists():
                 return True
+
+            # Filename slug may differ from discovery slug — check by prefix
+            parent = output_path.parent
+            if parent.exists():
+                from gse_guides import safe_path_component
+                prefix = safe_path_component(section_url.section_code) + "_"
+                for f in parent.iterdir():
+                    if f.name.startswith(prefix) and f.suffix == ".md":
+                        return True
 
         return False
 

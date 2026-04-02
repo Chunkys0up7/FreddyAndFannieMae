@@ -108,16 +108,21 @@ class FreddieMacParser:
         logger.warning("Could not find main content in rendered DOM")
         return None
 
+    # H1 text that is site branding, not a section title
+    _SITE_BRANDING_RE = re.compile(
+        r"seller/servicer\s*guide|freddie\s*mac\s*guide", re.IGNORECASE
+    )
+
     def _extract_title(self, soup: BeautifulSoup, section_number: str) -> str:
         """Extract section title from rendered page."""
-        # Try h1
+        # Try h1 — but skip if it's the site branding
         h1 = soup.find("h1")
         if h1:
             text = h1.get_text(strip=True)
-            if text and len(text) > 3:
+            if text and len(text) > 3 and not self._SITE_BRANDING_RE.search(text):
                 return text
 
-        # Try h2 (some SPA pages use h2 for section titles)
+        # Try h2 (Freddie Mac SPA uses h2 for actual section titles)
         h2 = soup.find("h2")
         if h2:
             text = h2.get_text(strip=True)
@@ -129,9 +134,11 @@ class FreddieMacParser:
         if title:
             text = title.get_text(strip=True)
             if text:
-                # Remove site name
+                # Remove site name and "Guide Section" prefix
                 text = re.sub(r"\s*[-|]\s*Freddie Mac.*$", "", text)
-                return text
+                text = re.sub(r"^Guide Section\s*", "", text)
+                if text:
+                    return text
 
         return f"Section {section_number}"
 

@@ -401,22 +401,22 @@ class TestCreateScrapers:
     def test_workers_propagates_to_config_when_set(self):
         config = ScraperConfig(max_workers=12)
         with patch("gse_guides.fannie_mae.scraper.FannieMaeScraper") as MockFannie:
-            _create_scrapers("fannie-mae", config)
+            _create_scrapers("fannie-mae", config, user_set_workers=True)
             call_config = MockFannie.call_args[0][0]
-            # When user explicitly set workers (!=1), their value is used as-is
+            # When user explicitly set workers, their value is used as-is
             assert call_config.max_workers == 12
 
     def test_default_workers_used_when_not_set(self):
         config = ScraperConfig()  # max_workers=1 (default)
         with patch("gse_guides.fannie_mae.scraper.FannieMaeScraper") as MockFannie:
-            _create_scrapers("fannie-mae", config)
+            _create_scrapers("fannie-mae", config, user_set_workers=False)
             call_config = MockFannie.call_args[0][0]
             assert call_config.max_workers == config.fannie_default_workers
 
     def test_freddie_default_workers_when_not_set(self):
         config = ScraperConfig()
         with patch("gse_guides.freddie_mac.scraper.FreddieMacScraper") as MockFreddie:
-            _create_scrapers("freddie-mac", config)
+            _create_scrapers("freddie-mac", config, user_set_workers=False)
             call_config = MockFreddie.call_args[0][0]
             assert call_config.max_workers == config.freddie_default_workers
 
@@ -424,8 +424,8 @@ class TestCreateScrapers:
         config = ScraperConfig()
         with patch("gse_guides.fannie_mae.scraper.FannieMaeScraper") as MockFannie, \
              patch("gse_guides.freddie_mac.scraper.FreddieMacScraper") as MockFreddie:
-            _create_scrapers("all", config)
+            _create_scrapers("all", config, user_set_workers=False)
             fannie_cfg = MockFannie.call_args[0][0]
             freddie_cfg = MockFreddie.call_args[0][0]
             assert fannie_cfg.max_workers == 8
-            assert freddie_cfg.max_workers == 4
+            assert freddie_cfg.max_workers == 1  # Playwright requires single thread
