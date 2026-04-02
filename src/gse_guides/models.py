@@ -16,6 +16,7 @@ class ScrapeStatus(Enum):
     SUCCESS = "success"
     FAILED = "failed"
     SKIPPED = "skipped"
+    QUALITY_WARNING = "quality_warning"
 
 
 @dataclass
@@ -122,7 +123,9 @@ class ScrapeManifest:
     total_scraped: int = 0
     total_failed: int = 0
     total_skipped: int = 0
+    total_quality_warnings: int = 0
     sections: dict[str, str] = field(default_factory=dict)  # section_code -> status string
+    content_hashes: dict[str, str] = field(default_factory=dict)  # section_code -> sha256
     errors: list[ScrapeError] = field(default_factory=list)
     started_at: str = ""
     last_updated: str = ""

@@ -13,7 +13,6 @@ from gse_guides.models import (
     CrossReference,
     GuideSection,
     GuideSource,
-    RelatedAnnouncement,
     SectionURL,
     SubSection,
 )

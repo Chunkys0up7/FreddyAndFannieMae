@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 import re
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -13,6 +13,13 @@ from gse_guides.config import ScraperConfig
 from gse_guides.models import GuideSource, SectionURL
 
 logger = logging.getLogger(__name__)
+
+
+def _is_valid_url(url: str, allowed_base: str) -> bool:
+    """Validate URL is HTTPS and within the expected domain."""
+    parsed = urlparse(url)
+    base_parsed = urlparse(allowed_base)
+    return parsed.scheme == "https" and parsed.netloc == base_parsed.netloc
 
 
 class FannieMaeDiscovery:
@@ -30,24 +37,22 @@ class FannieMaeDiscovery:
         """Return all section URLs sorted by section code."""
         logger.info("Discovering Fannie Mae section URLs from sitemap...")
 
-        session = requests.Session()
-        session.headers.update({"User-Agent": self.config.user_agent})
+        with requests.Session() as session:
+            session.headers.update({"User-Agent": self.config.user_agent})
 
-        urls = self._fetch_sitemap_urls(session)
+            urls = self._fetch_sitemap_urls(session)
 
-        # If sitemap returned too few, try the TOC fallback
-        if len(urls) < 200:
-            logger.info(
-                "Sitemap returned only %d URLs, trying TOC fallback...", len(urls)
-            )
-            toc_urls = self._crawl_toc_fallback(session)
-            # Merge: keep sitemap URLs (have lastmod) and add any new from TOC
-            existing_codes = {u.section_code for u in urls}
-            for u in toc_urls:
-                if u.section_code not in existing_codes:
-                    urls.append(u)
-
-        session.close()
+            # If sitemap returned too few, try the TOC fallback
+            if len(urls) < 200:
+                logger.info(
+                    "Sitemap returned only %d URLs, trying TOC fallback...", len(urls)
+                )
+                toc_urls = self._crawl_toc_fallback(session)
+                # Merge: keep sitemap URLs (have lastmod) and add any new from TOC
+                existing_codes = {u.section_code for u in urls}
+                for u in toc_urls:
+                    if u.section_code not in existing_codes:
+                        urls.append(u)
 
         # Sort by section code
         urls.sort(key=lambda u: u.section_code)
@@ -84,6 +89,9 @@ class FannieMaeDiscovery:
         self, session: requests.Session, url: str
     ) -> list[SectionURL]:
         """Fetch and parse a single sitemap XML file."""
+        if not _is_valid_url(url, self.config.fannie_base_url):
+            logger.warning("Skipping untrusted sitemap URL: %s", url)
+            return []
         try:
             resp = session.get(url, timeout=30)
             resp.raise_for_status()
@@ -183,7 +191,7 @@ class FannieMaeDiscovery:
 
             # Make absolute
             if href.startswith("/"):
-                href = self.config.fannie_base_url + href
+                href = urljoin(self.config.fannie_base_url, href)
 
             code = self._extract_section_code(href)
             if code and code not in seen_codes:

@@ -90,8 +90,10 @@ class MarkdownConverter:
 
     def _normalize_whitespace(self, markdown: str) -> str:
         """Clean up excessive blank lines and trailing spaces."""
+        # Remove trailing whitespace from lines first (so blank-ish lines
+        # become truly empty, allowing the next regex to collapse them)
+        lines = [line.rstrip() for line in markdown.split("\n")]
+        markdown = "\n".join(lines)
         # Collapse 3+ consecutive blank lines to 2
         markdown = re.sub(r"\n{4,}", "\n\n\n", markdown)
-        # Remove trailing whitespace from lines
-        lines = [line.rstrip() for line in markdown.split("\n")]
-        return "\n".join(lines)
+        return markdown

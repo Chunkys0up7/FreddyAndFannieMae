@@ -12,3 +12,15 @@ def slugify(text: str, max_length: int = 60) -> str:
     text = re.sub(r"[\s-]+", "-", text)
     text = text.strip("-")
     return text[:max_length]
+
+
+def safe_path_component(component: str) -> str:
+    """Sanitize a string for safe use as a path component.
+
+    Strips path separators, traversal sequences, and null bytes.
+    """
+    component = component.replace("..", "").replace("/", "").replace("\\", "")
+    component = component.replace("\x00", "")
+    if not component:
+        component = "_unknown"
+    return component

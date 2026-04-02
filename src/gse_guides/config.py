@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 @dataclass
@@ -51,5 +52,50 @@ class ScraperConfig:
     enrich_table_max_words: int = 1500  # Tables get wider allowance
     enable_llm_summaries: bool = False
 
+    # Concurrency
+    max_workers: int = 1  # 1 = sequential (default for backwards compat)
+    fannie_default_workers: int = 8
+    freddie_default_workers: int = 4
+
+    # Resilience
+    quality_min_words: int = 50
+    circuit_breaker_threshold: int = 5
+    circuit_breaker_cooldown_seconds: float = 60.0
+    manifest_save_interval: int = 25
+
+    # Adaptive rate limiting
+    adaptive_rate_limit: bool = True
+    max_rate_limit_delay: float = 30.0
+
     # Limits (for testing)
     max_sections: int | None = None
+
+    def __post_init__(self) -> None:
+        """Validate config parameter ranges."""
+        if self.fannie_request_delay_seconds < 0:
+            raise ValueError("fannie_request_delay_seconds must be >= 0")
+        if self.freddie_request_delay_seconds < 0:
+            raise ValueError("freddie_request_delay_seconds must be >= 0")
+        if self.max_retries < 0 or self.max_retries > 10:
+            raise ValueError("max_retries must be 0-10")
+        if self.retry_backoff_factor < 1.0:
+            raise ValueError("retry_backoff_factor must be >= 1.0")
+        if self.request_timeout_seconds < 1:
+            raise ValueError("request_timeout_seconds must be >= 1")
+        if self.circuit_breaker_threshold < 1:
+            raise ValueError("circuit_breaker_threshold must be >= 1")
+        if self.circuit_breaker_cooldown_seconds < 0:
+            raise ValueError("circuit_breaker_cooldown_seconds must be >= 0")
+        if self.max_rate_limit_delay < 0.1:
+            raise ValueError("max_rate_limit_delay must be >= 0.1")
+        if self.max_workers < 1:
+            raise ValueError("max_workers must be >= 1")
+        if self.quality_min_words < 0:
+            raise ValueError("quality_min_words must be >= 0")
+        for url_field in (
+            self.fannie_base_url, self.fannie_sitemap_url,
+            self.freddie_base_url, self.freddie_sitemap_url,
+        ):
+            parsed = urlparse(url_field)
+            if parsed.scheme != "https":
+                raise ValueError(f"URL must use HTTPS: {url_field}")

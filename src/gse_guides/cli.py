@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import dataclasses
 import json
 import logging
 import sys
@@ -38,8 +39,9 @@ def cli():
 @click.option("--delay", type=float, help="Override request delay (seconds)")
 @click.option("--no-resume", is_flag=True, help="Re-scrape all sections")
 @click.option("--max-sections", type=int, help="Limit sections to scrape (for testing)")
+@click.option("--workers", "-w", type=int, help="Number of parallel workers (default: auto per source)")
 @click.option("--verbose", "-v", is_flag=True, help="Enable verbose logging")
-def scrape(source, section, output, delay, no_resume, max_sections, verbose):
+def scrape(source, section, output, delay, no_resume, max_sections, workers, verbose):
     """Scrape guide sections and save as markdown."""
     _setup_logging(verbose)
 
@@ -51,6 +53,8 @@ def scrape(source, section, output, delay, no_resume, max_sections, verbose):
         config.skip_existing = False
     if max_sections:
         config.max_sections = max_sections
+    if workers is not None:
+        config.max_workers = workers
 
     scrapers = _create_scrapers(source, config)
 
@@ -72,10 +76,11 @@ def scrape(source, section, output, delay, no_resume, max_sections, verbose):
         else:
             manifest = scraper.scrape_all()
             click.echo(f"\nResults:")
-            click.echo(f"  Discovered: {manifest.total_discovered}")
-            click.echo(f"  Scraped:    {manifest.total_scraped}")
-            click.echo(f"  Skipped:    {manifest.total_skipped}")
-            click.echo(f"  Failed:     {manifest.total_failed}")
+            click.echo(f"  Discovered:        {manifest.total_discovered}")
+            click.echo(f"  Scraped:           {manifest.total_scraped}")
+            click.echo(f"  Skipped:           {manifest.total_skipped}")
+            click.echo(f"  Quality warnings:  {manifest.total_quality_warnings}")
+            click.echo(f"  Failed:            {manifest.total_failed}")
 
             if manifest.errors:
                 click.echo(f"\nErrors ({len(manifest.errors)}):")
@@ -154,9 +159,10 @@ def discover(source, verbose):
 @click.option("--output", type=click.Path(), default="output", help="Scraped output directory")
 @click.option("--enriched", type=click.Path(), default="enriched", help="Enriched output directory")
 @click.option("--source", type=click.Choice(["fannie-mae", "freddie-mac"]), help="Only enrich one source")
+@click.option("--incremental", is_flag=True, help="Only re-enrich files that changed since last run")
 @click.option("--stats", is_flag=True, help="Print enrichment statistics")
 @click.option("--verbose", "-v", is_flag=True, help="Enable verbose logging")
-def enrich(output, enriched, source, stats, verbose):
+def enrich(output, enriched, source, incremental, stats, verbose):
     """Enrich scraped sections with domain tags, MISMO metadata, and adaptive chunks."""
     _setup_logging(verbose)
 
@@ -166,7 +172,7 @@ def enrich(output, enriched, source, stats, verbose):
     pipeline = EnrichmentPipeline(config)
 
     normalized_source = source.replace("-", "_") if source else None
-    result = pipeline.run(normalized_source)
+    result = pipeline.run(normalized_source, incremental=incremental)
 
     click.echo(f"\nEnrichment Complete:")
     click.echo(f"  Sections processed: {result.total_sections}")
@@ -190,18 +196,29 @@ def enrich(output, enriched, source, stats, verbose):
 
 
 def _create_scrapers(source: str, config: ScraperConfig) -> list[BaseScraper]:
-    """Create appropriate scraper instances."""
+    """Create appropriate scraper instances with per-source worker defaults."""
     scrapers = []
+
+    # If user didn't set --workers, use per-source defaults
+    user_set_workers = config.max_workers != 1  # 1 is the base default
 
     if source in ("fannie-mae", "all"):
         from gse_guides.fannie_mae.scraper import FannieMaeScraper
 
-        scrapers.append(FannieMaeScraper(config))
+        fannie_config = (
+            dataclasses.replace(config, max_workers=config.fannie_default_workers)
+            if not user_set_workers else config
+        )
+        scrapers.append(FannieMaeScraper(fannie_config))
 
     if source in ("freddie-mac", "all"):
         from gse_guides.freddie_mac.scraper import FreddieMacScraper
 
-        scrapers.append(FreddieMacScraper(config))
+        freddie_config = (
+            dataclasses.replace(config, max_workers=config.freddie_default_workers)
+            if not user_set_workers else config
+        )
+        scrapers.append(FreddieMacScraper(freddie_config))
 
     return scrapers
 

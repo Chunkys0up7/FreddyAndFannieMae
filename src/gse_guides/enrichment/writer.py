@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
-from gse_guides import slugify
+from gse_guides import safe_path_component, slugify
 from gse_guides.config import ScraperConfig
 from gse_guides.models import EnrichedChunk
 
@@ -22,14 +23,15 @@ class EnrichmentWriter:
         chunks_dir.mkdir(parents=True, exist_ok=True)
 
         heading_slug = slugify(chunk.heading) if chunk.heading else "intro"
-        filename = f"{chunk.source.value}__{chunk.section_code}__{heading_slug}.txt"
+        safe_code = safe_path_component(chunk.section_code)
+        filename = f"{chunk.source.value}__{safe_code}__{heading_slug}.txt"
         filepath = chunks_dir / filename
 
         # Avoid collisions by appending a counter
         if filepath.exists():
             counter = 2
             while filepath.exists():
-                filename = f"{chunk.source.value}__{chunk.section_code}__{heading_slug}_{counter}.txt"
+                filename = f"{chunk.source.value}__{safe_code}__{heading_slug}_{counter}.txt"
                 filepath = chunks_dir / filename
                 counter += 1
 
@@ -85,7 +87,10 @@ class EnrichmentWriter:
             "chunks": entries,
         }
 
-        index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
+        # Atomic write: write to .tmp then rename
+        tmp_path = index_path.with_suffix(".json.tmp")
+        tmp_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
+        os.replace(str(tmp_path), str(index_path))
         return index_path
 
     def _build_header(self, chunk: EnrichedChunk) -> str:

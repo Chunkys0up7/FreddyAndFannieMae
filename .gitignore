@@ -1,6 +1,33 @@
-Output
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Project output (generated, not source)
+output/
+enriched/
+
+# Claude Code
 .claude
 .specs
-enriched
-/output/freddie_mac
-output

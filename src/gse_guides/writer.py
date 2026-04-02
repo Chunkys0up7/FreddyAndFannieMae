@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from gse_guides import slugify
+from gse_guides import safe_path_component, slugify
 from gse_guides.config import ScraperConfig
 from gse_guides.models import Chunk, GuideSection, GuideSource
 
@@ -60,34 +60,36 @@ class MarkdownWriter:
     def _build_output_path(self, section: GuideSection) -> Path:
         """Determine file path from section hierarchy."""
         if section.source == GuideSource.FANNIE_MAE:
-            part_dir = f"part_{section.part_code.lower()}"
-            slug = slugify(section.title)
-            filename = f"{section.section_code.lower()}_{slug}.md"
+            part_dir = f"part_{safe_path_component(section.part_code.lower())}"
+            slug = safe_path_component(slugify(section.title))
+            filename = f"{safe_path_component(section.section_code.lower())}_{slug}.md"
             return self.output_dir / "fannie_mae" / part_dir / filename
 
         else:  # FREDDIE_MAC
-            chapter = section.chapter_code
+            chapter = safe_path_component(section.chapter_code)
             chapter_dir = f"chapter_{chapter}"
-            slug = slugify(section.title)
-            filename = f"{section.section_code}_{slug}.md"
+            slug = safe_path_component(slugify(section.title))
+            filename = f"{safe_path_component(section.section_code)}_{slug}.md"
             return self.output_dir / "freddie_mac" / chapter_dir / filename
 
     def _build_output_path_from_code(
         self, section_code: str, slug: str, source: GuideSource
     ) -> Path:
         """Build output path from just the section code (for skip checking)."""
+        safe_code = safe_path_component(section_code)
+
         if source == GuideSource.FANNIE_MAE:
-            part_letter = section_code[0].lower() if section_code else "x"
+            part_letter = safe_code[0].lower() if safe_code else "x"
             part_dir = f"part_{part_letter}"
-            filename_slug = slugify(slug) if slug else section_code.lower()
-            filename = f"{section_code.lower()}_{filename_slug}.md"
+            filename_slug = slugify(slug) if slug else safe_code.lower()
+            filename = f"{safe_code.lower()}_{filename_slug}.md"
             return self.output_dir / "fannie_mae" / part_dir / filename
 
         else:
-            chapter = section_code.split(".")[0] if "." in section_code else section_code
-            chapter_dir = f"chapter_{chapter}"
-            filename_slug = slugify(slug) if slug else section_code
-            filename = f"{section_code}_{filename_slug}.md"
+            chapter = safe_code.split(".")[0] if "." in safe_code else safe_code
+            chapter_dir = f"chapter_{safe_path_component(chapter)}"
+            filename_slug = slugify(slug) if slug else safe_code
+            filename = f"{safe_code}_{filename_slug}.md"
             return self.output_dir / "freddie_mac" / chapter_dir / filename
 
     def _build_frontmatter(self, section: GuideSection, chunks: list[Chunk]) -> str:

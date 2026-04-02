@@ -1,2 +1,0 @@
-[console_scripts]
-gse-guides = gse_guides.cli:cli

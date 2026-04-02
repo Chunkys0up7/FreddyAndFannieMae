@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 from pathlib import Path
 
@@ -40,10 +42,18 @@ class EnrichmentPipeline:
         self.chunker = AdaptiveChunker(config)
         self.writer = EnrichmentWriter(config)
 
-    def run(self, source: str | None = None) -> EnrichmentResult:
+    def run(
+        self, source: str | None = None, incremental: bool = False,
+    ) -> EnrichmentResult:
         """Run enrichment on all scraped output files."""
         result = EnrichmentResult()
         all_chunks: list[EnrichedChunk] = []
+
+        # Load previous state for incremental mode
+        prev_hashes: dict[str, str] = {}
+        new_hashes: dict[str, str] = {}
+        if incremental:
+            prev_hashes = self._load_state()
 
         # Discover all section codes for cross-linking resolution
         section_codes = self._discover_section_codes(source)
@@ -62,6 +72,16 @@ class EnrichmentPipeline:
 
             for md_path in tqdm(md_files, desc=f"Enriching {src_name}"):
                 try:
+                    # Incremental: skip unchanged files
+                    if incremental:
+                        content_bytes = md_path.read_bytes()
+                        file_hash = hashlib.sha256(content_bytes).hexdigest()
+                        file_key = str(md_path.relative_to(self.config.output_dir))
+                        new_hashes[file_key] = file_hash
+
+                        if prev_hashes.get(file_key) == file_hash:
+                            continue  # Unchanged, skip
+
                     chunks = self._process_file(md_path, src_enum)
                     all_chunks.extend(chunks)
                     result.total_sections += 1
@@ -86,11 +106,34 @@ class EnrichmentPipeline:
                 )
 
         # Write output
-        logger.info("Writing %d chunk files...", len(all_chunks))
-        for chunk in all_chunks:
-            self.writer.write_chunk(chunk)
-        index_path = self.writer.write_index(all_chunks)
-        logger.info("Index written to %s", index_path)
+        if all_chunks:
+            logger.info("Writing %d chunk files...", len(all_chunks))
+            for chunk in all_chunks:
+                self.writer.write_chunk(chunk)
+
+            if incremental:
+                # In incremental mode, rebuild index from all chunk files on disk
+                existing_chunks = self._load_existing_chunks_for_index()
+                # Merge: new chunks override existing for same chunk_id
+                chunk_map = {c["chunk_id"]: c for c in existing_chunks}
+                for chunk in all_chunks:
+                    chunk_map[chunk.chunk_id] = None  # Will be written by write_index
+                index_path = self.writer.write_index(all_chunks)
+            else:
+                index_path = self.writer.write_index(all_chunks)
+            logger.info("Index written to %s", index_path)
+        elif not incremental:
+            # Non-incremental with no chunks: write empty index
+            index_path = self.writer.write_index(all_chunks)
+            logger.info("Index written to %s", index_path)
+        else:
+            logger.info("No files changed — skipping index rebuild")
+
+        # Save state for incremental mode
+        if incremental:
+            # Merge new hashes with previous (keep unchanged files)
+            merged_hashes = {**prev_hashes, **new_hashes}
+            self._save_state(merged_hashes)
 
         return result
 
@@ -176,12 +219,18 @@ class EnrichmentPipeline:
         if not text.startswith("---"):
             return {}, text
 
-        end = text.index("---", 3)
+        try:
+            end = text.index("---", 3)
+        except ValueError:
+            logger.warning("Malformed frontmatter: no closing delimiter")
+            return {}, text
+
         fm_text = text[3:end]
         body = text[end + 3:].strip()
         try:
             fm = yaml.safe_load(fm_text) or {}
-        except yaml.YAMLError:
+        except yaml.YAMLError as e:
+            logger.warning("YAML parse failed: %s", e)
             fm = {}
         return fm, body
 
@@ -234,3 +283,37 @@ class EnrichmentPipeline:
             return all_sources
         normalized = source.replace("-", "_")
         return [(name, gs) for name, gs in all_sources if name == normalized]
+
+    # --- Incremental state management ---
+
+    def _state_path(self) -> Path:
+        return self.config.enriched_dir / "state.json"
+
+    def _load_state(self) -> dict[str, str]:
+        """Load previous enrichment state (file hashes)."""
+        path = self._state_path()
+        if path.exists():
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+                return data.get("file_hashes", {})
+            except (json.JSONDecodeError, KeyError):
+                logger.warning("Corrupt state.json, starting fresh")
+        return {}
+
+    def _save_state(self, file_hashes: dict[str, str]) -> None:
+        """Save enrichment state for incremental runs."""
+        path = self._state_path()
+        path.parent.mkdir(parents=True, exist_ok=True)
+        data = {"file_hashes": file_hashes}
+        path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+
+    def _load_existing_chunks_for_index(self) -> list[dict]:
+        """Load existing index entries for incremental merge."""
+        index_path = self.config.enriched_dir / "index.json"
+        if index_path.exists():
+            try:
+                data = json.loads(index_path.read_text(encoding="utf-8"))
+                return data.get("chunks", [])
+            except (json.JSONDecodeError, KeyError):
+                pass
+        return []

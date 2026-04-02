@@ -15,6 +15,13 @@ from gse_guides.models import GuideSource, SectionURL
 logger = logging.getLogger(__name__)
 
 
+def _is_valid_url(url: str, allowed_base: str) -> bool:
+    """Validate URL is HTTPS and within the expected domain."""
+    parsed = urlparse(url)
+    base_parsed = urlparse(allowed_base)
+    return parsed.scheme == "https" and parsed.netloc == base_parsed.netloc
+
+
 class FreddieMacDiscovery:
     """
     Discovers all Freddie Mac Guide section URLs from their sitemap.
@@ -56,8 +63,11 @@ class FreddieMacDiscovery:
                 continue
             url_str = loc.text.strip()
 
-            # Only process section URLs
+            # Only process section URLs from trusted domain
             if "/app/guide/section/" not in url_str:
+                continue
+            if not _is_valid_url(url_str, self.config.freddie_base_url):
+                logger.warning("Skipping untrusted URL: %s", url_str)
                 continue
 
             section_number = self._extract_section_number(url_str)
