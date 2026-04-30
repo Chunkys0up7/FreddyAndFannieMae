@@ -1,0 +1,16 @@
+apify-client==1.8.1
+chromadb==0.5.20
+sentence-transformers==3.2.1
+tiktoken==0.8.0
+pdfplumber==0.11.4
+pymupdf==1.24.13
+requests==2.32.3
+beautifulsoup4==4.12.3
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.9.2
+apscheduler==3.10.4
+structlog==24.4.0
+python-dotenv==1.0.1
+pytest==8.3.3
+pytest-asyncio==0.24.0

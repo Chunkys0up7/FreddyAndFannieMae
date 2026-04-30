@@ -1,0 +1,91 @@
+services:
+  gse-chroma:
+    image: chromadb/chroma:0.5.20
+    container_name: gse-chroma
+    ports:
+      - "8500:8000"
+    volumes:
+      - chroma-data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  gse-pipeline:
+    build:
+      context: ./pipeline
+      dockerfile: Dockerfile
+    container_name: gse-pipeline
+    depends_on:
+      gse-chroma:
+        condition: service_healthy
+    volumes:
+      - sqlite-data:/data/sqlite
+      - manifest-data:/data/manifests
+      - ./pipeline:/app
+    environment:
+      - APIFY_TOKEN=${APIFY_TOKEN}
+      - LLM_PROVIDER=${LLM_PROVIDER:-anthropic}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - CHROMA_HOST=gse-chroma
+      - CHROMA_PORT=8000
+      - EMBEDDING_PROVIDER=${EMBEDDING_PROVIDER:-local}
+      - SQLITE_PATH=/data/sqlite/gse.db
+      - MANIFEST_DIR=/data/manifests
+      - BULLETIN_POLL_HOURS=${BULLETIN_POLL_HOURS:-6}
+      - GUIDE_REFRESH_DAYS=${GUIDE_REFRESH_DAYS:-7}
+    ports:
+      - "8001:8001"
+    command: ["python", "-m", "pipeline.api"]
+
+  gse-agent:
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
+    container_name: gse-agent
+    depends_on:
+      gse-chroma:
+        condition: service_healthy
+    volumes:
+      - sqlite-data:/data/sqlite
+      - ./agent:/app
+    environment:
+      - LLM_PROVIDER=${LLM_PROVIDER:-anthropic}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - CHROMA_HOST=gse-chroma
+      - CHROMA_PORT=8000
+      - EMBEDDING_PROVIDER=${EMBEDDING_PROVIDER:-local}
+      - SQLITE_PATH=/data/sqlite/gse.db
+      - PIPELINE_API_URL=http://gse-pipeline:8001
+      - AGENT_PORT=8000
+    ports:
+      - "8000:8000"
+
+  gse-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: gse-frontend
+    depends_on:
+      - gse-agent
+      - gse-pipeline
+    environment:
+      - AGENT_URL=http://gse-agent:8000/copilotkit
+      - PIPELINE_API_URL=http://gse-pipeline:8001
+      - NEXT_PUBLIC_PIPELINE_API_URL=http://localhost:8001
+      - LLM_PROVIDER=${LLM_PROVIDER:-anthropic}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    ports:
+      - "3000:3000"
+
+volumes:
+  chroma-data:
+  sqlite-data:
+  manifest-data:
