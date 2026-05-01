@@ -44,3 +44,10 @@ data/
 manifests/
 
 frontend/tsconfig.tsbuildinfo
+
+# Local-run runtime artefacts (scripts/run-local.sh)
+.pids/
+logs/
+chroma.log
+data/chroma/
+.env

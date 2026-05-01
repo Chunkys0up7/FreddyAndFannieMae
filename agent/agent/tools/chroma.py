@@ -30,7 +30,8 @@ class _LocalEmbedder:
     def __call__(self, input):  # noqa: A002
         if isinstance(input, str):
             input = [input]
-        return self._load().encode(input, convert_to_numpy=True).tolist()
+        # Return numpy arrays — chromadb's HTTP client calls .tolist() on each row.
+        return self._load().encode(input, convert_to_numpy=True)
 
 
 @lru_cache(maxsize=1)

@@ -33,8 +33,8 @@ class _LocalEmbedder:
     def __call__(self, input):  # noqa: A002 — chromadb signature
         if isinstance(input, str):
             input = [input]
-        embeddings = self._load().encode(input, convert_to_numpy=True)
-        return embeddings.tolist()
+        # Return numpy arrays — chromadb's HTTP client calls .tolist() on each row.
+        return self._load().encode(input, convert_to_numpy=True)
 
 
 @lru_cache(maxsize=1)
